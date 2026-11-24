@@ -14,5 +14,11 @@ Personal website hosted on GitHub Pages with a custom domain (`nzdqr.fr`).
 ```text
 .
 ├── index.html      # Main landing page
-├── favicon.png     # Browser tab icon
-└── README.md       # Project documentation
+├── 404.html        # Custom "not found" page
+├── style.css       # Styles
+├── sigma.png       # Browser tab icon
+├── CNAME           # Custom domain for GitHub Pages
+└── README.md
+```
+
+nzdqr.com, nzdqr.info, nzdqr.online and nzdqr.store redirect here.
