@@ -1,27 +1,155 @@
 <!DOCTYPE html>
+<!--
+     _   _ _________   ___  ____
+    | \ | |__  /  _ \ / _ \|  _ \
+    |  \| | / /| | | | | | | |_) |
+    | |\  |/ /_| |_| | |_| |  _ <
+    |_| \_/____|____/ \__\_\_| \_\
+
+    N ⊂ Z ⊂ D ⊂ Q ⊂ R
+
+    Tiens, un curieux qui lit le code source.
+    Bienvenue. Tu as l'esprit qu'il faut ici.
+
+    Indice : tout ne s'arrête pas à R.
+    Les nombres continuent un peu plus loin...
+-->
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NZDQR</title>
-    <meta name="description" content="nzdqr.fr — petit site perso.">
+    <title>nzdqr OS</title>
+    <meta name="description" content="nzdqr.fr — mon coin d'internet.">
     <link rel="icon" type="image/png" href="sigma.png?v=100">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
-    <main class="container">
-        <span class="badge">ℕ ⊂ ℤ ⊂ 𝔻 ⊂ ℚ ⊂ ℝ</span>
-        <h1>nzdqr<span>.fr</span></h1>
-        <p class="subtitle">Premier test de site hébergé en ligne.</p>
+<div id="desk" class="wp-points">
 
-        <div class="links">
-            <a class="btn btn-primary" href="https://redar57.github.io/air-game/" target="_blank" rel="noopener noreferrer">Un super jeu à tester</a>
-            <a class="btn btn-secondary" href="https://libraryofbabel.info/" target="_blank" rel="noopener noreferrer">La Bibliothèque de Babel</a>
-            <a class="btn btn-secondary" href="https://github.com/redar57" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a class="btn btn-secondary" href="mailto:cfgauss@nzdqr.fr">cfgauss@nzdqr.fr</a>
+    <!-- icônes à gauche -->
+    <div class="ic" style="left:12px;top:14px;" data-open="about">
+        <svg width="30" height="30" viewBox="0 0 11 11" shape-rendering="crispEdges"><rect x="1" y="1" width="9" height="9" fill="#fff"/><rect x="2" y="3" width="7" height="1" fill="#555"/><rect x="2" y="5" width="7" height="1" fill="#555"/><rect x="2" y="7" width="5" height="1" fill="#555"/></svg>
+        <span>about.txt</span>
+    </div>
+    <div class="ic" style="left:12px;top:90px;" data-link="https://libraryofbabel.info/">
+        <svg width="34" height="30" viewBox="0 0 14 12" shape-rendering="crispEdges"><rect x="1" y="2" width="6" height="9" fill="#7a3b1e"/><rect x="7" y="2" width="6" height="9" fill="#8f4a26"/><rect x="2" y="3" width="4" height="7" fill="#f3e7c9"/><rect x="8" y="3" width="4" height="7" fill="#f3e7c9"/><rect x="6" y="1" width="2" height="11" fill="#3b1c0d"/></svg>
+        <span>babel</span>
+    </div>
+    <div class="ic" style="left:12px;top:166px;" data-link="https://redar57.github.io/air-game/">
+        <svg width="40" height="26" viewBox="0 0 17 11" shape-rendering="crispEdges"><rect x="2" y="5" width="13" height="2" fill="#ddd"/><rect x="14" y="5" width="2" height="2" fill="#aaa"/><rect x="7" y="1" width="3" height="4" fill="#eee"/><rect x="7" y="7" width="3" height="4" fill="#eee"/><rect x="1" y="3" width="2" height="2" fill="#eee"/><rect x="12" y="5" width="1" height="1" fill="#8cf"/></svg>
+        <span>air-game</span>
+    </div>
+    <div class="ic" style="left:12px;top:238px;" data-open="quote">
+        <svg width="30" height="30" viewBox="0 0 11 11" shape-rendering="crispEdges"><rect x="1" y="1" width="9" height="9" fill="#c0c0c0"/><rect x="1" y="1" width="9" height="2" fill="#2b2bd6"/><rect x="3" y="5" width="2" height="2" fill="#000"/><rect x="6" y="5" width="2" height="2" fill="#000"/></svg>
+        <span>citation.exe</span>
+    </div>
+    <div class="ic" style="left:12px;top:314px;" data-open="guest">
+        <svg width="30" height="30" viewBox="0 0 11 11" shape-rendering="crispEdges"><rect x="1" y="1" width="9" height="9" fill="#9b2335"/><rect x="2" y="2" width="7" height="7" fill="#b8384a"/><rect x="3" y="4" width="5" height="1" fill="#f3d36b"/></svg>
+        <span>livre d'or</span>
+    </div>
+    <div class="ic" style="left:12px;top:390px;" data-open="fond">
+        <svg width="32" height="28" viewBox="0 0 12 10" shape-rendering="crispEdges"><rect x="0" y="0" width="12" height="8" fill="#333"/><rect x="1" y="1" width="10" height="6" fill="#1f7a7a"/><rect x="2" y="4" width="3" height="3" fill="#4dff88"/><rect x="6" y="2" width="4" height="5" fill="#ffd84a"/><rect x="4" y="8" width="4" height="2" fill="#777"/></svg>
+        <span>fond d'écran</span>
+    </div>
+
+    <!-- icônes à droite -->
+    <div class="ic" style="right:12px;top:14px;" data-open="c">
+        <svg width="32" height="28" viewBox="0 0 12 10" shape-rendering="crispEdges"><rect x="0" y="2" width="12" height="8" fill="#f5c542"/><rect x="0" y="1" width="5" height="2" fill="#e0a92a"/></svg>
+        <span>ℂ</span>
+    </div>
+    <div class="ic" style="right:12px;bottom:44px;" data-open="trash">
+        <svg width="26" height="30" viewBox="0 0 9 11" shape-rendering="crispEdges"><rect x="1" y="2" width="7" height="1" fill="#ccc"/><rect x="3" y="1" width="3" height="1" fill="#ccc"/><rect x="2" y="3" width="5" height="7" fill="#aaa"/><rect x="3" y="4" width="1" height="5" fill="#777"/><rect x="5" y="4" width="1" height="5" fill="#777"/></svg>
+        <span>corbeille</span>
+    </div>
+
+    <!-- fenêtres -->
+    <div class="win open" id="w-about" style="left:110px;top:30px;width:340px;">
+        <div class="bar"><span>about.txt</span><span class="x">×</span></div>
+        <div class="bd">
+            <div class="big">NZDQR</div>
+            ℕ ⊂ ℤ ⊂ 𝔻 ⊂ ℚ ⊂ ℝ<br><br>
+            Salut, ici c'est mon coin d'internet.<br>
+            Prépa, code, avions et serveurs bricolés.<br><br>
+            Double-clique partout, il y a des trucs cachés.<br><br>
+            <a href="mailto:cfgauss@nzdqr.fr">cfgauss@nzdqr.fr</a> · <a href="https://github.com/redar57" target="_blank" rel="noopener">github</a>
         </div>
-    </main>
+    </div>
 
-    <footer>© 2026 nzdqr.fr</footer>
+    <div class="win open" id="w-quote" style="left:380px;top:300px;width:320px;">
+        <div class="bar"><span>citation.exe</span><span class="x">×</span></div>
+        <div class="bd">
+            <div id="qt"></div>
+            <div style="margin-top:10px;text-align:right;"><button class="btn98" id="qbtn">↻ une autre</button></div>
+        </div>
+    </div>
+
+    <div class="win open" id="w-uptime" style="right:110px;top:40px;width:180px;">
+        <div class="bar"><span>uptime</span><span class="x">×</span></div>
+        <div class="bd" style="text-align:center;">
+            tu es là depuis<br>
+            <span id="up" style="background:#000;color:#0f0;padding:0 6px;font-size:26px;">00:00:00</span>
+        </div>
+    </div>
+
+    <div class="win" id="w-guest" style="left:200px;top:90px;width:320px;">
+        <div class="bar"><span>livre_d_or.exe</span><span class="x">×</span></div>
+        <div class="bd">
+            Le livre d'or est en cours d'installation…<br>
+            <div style="margin:8px 0;border:2px inset #fff;background:#fff;height:16px;">
+                <div style="width:42%;height:100%;background:#2b2bd6;"></div>
+            </div>
+            Reviens bientôt pour laisser un mot.
+        </div>
+    </div>
+
+    <div class="win" id="w-c" style="left:260px;top:140px;width:300px;">
+        <div class="bar"><span>Erreur</span><span class="x">×</span></div>
+        <div class="bd">
+            ⚠ Ce dossier n'existe pas dans ℝ.<br><br>
+            Essaie plutôt <b>nzdqr.fr/ℂ</b>… si tu l'oses.
+        </div>
+    </div>
+
+    <div class="win" id="w-trash" style="left:300px;top:180px;width:300px;">
+        <div class="bar"><span>corbeille</span><span class="x">×</span></div>
+        <div class="bd">
+            · ancien_site.html<br>
+            · style_trop_moderne.css<br>
+            · demo_fermat.txt <i>(la marge était trop petite)</i>
+        </div>
+    </div>
+
+    <div class="win" id="w-fond" style="left:180px;top:120px;width:330px;">
+        <div class="bar"><span>Propriétés d'affichage</span><span class="x">×</span></div>
+        <div class="bd">
+            Choisis ton fond d'écran :
+            <div class="fonds" id="fonds"></div>
+            Ou une image à toi :<br>
+            <input type="file" id="fperso" accept="image/*" style="font-family:'Silkscreen',monospace;font-size:10px;margin-top:4px;">
+            <div style="font-size:15px;color:#555;margin-top:6px;">(ton choix est gardé dans ce navigateur, rien n'est envoyé)</div>
+        </div>
+    </div>
+
+    <!-- menu démarrer -->
+    <div id="start">
+        <div class="titre">nzdqr OS</div>
+        <div class="it" data-open="about">À propos</div>
+        <div class="it" data-link="https://redar57.github.io/air-game/">Jouer à air-game</div>
+        <div class="it" data-link="https://libraryofbabel.info/">Bibliothèque de Babel</div>
+        <div class="it" data-link="https://github.com/redar57">GitHub</div>
+        <div class="it" data-open="guest">Livre d'or</div>
+        <div class="it" data-open="fond">Fond d'écran…</div>
+        <div class="it" id="shut" style="border-top:1px solid #808080;">Éteindre…</div>
+    </div>
+
+    <div id="task">
+        <button class="btn98" id="sbtn">▶ nzdqr</button>
+        <span id="tasks"></span>
+        <span id="clk"></span>
+    </div>
+
+    <div id="off">Il est maintenant possible d'éteindre<br>votre ordinateur en toute sécurité.<br><span style="font-size:18px;color:#888;">(clique pour rallumer)</span></div>
+</div>
+<script src="script.js?v=2"></script>
 </body>
 </html>
