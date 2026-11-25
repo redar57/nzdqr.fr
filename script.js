@@ -36,15 +36,33 @@ document.getElementById('mots').innerHTML =
 
 const nadr = document.getElementById('nadr'), npage = document.getElementById('npage');
 const ncadre = document.getElementById('ncadre'), nstat = document.getElementById('nstat');
-let hist = [], pos = -1;
+let hist = [], pos = -1;   // entrées : { mot, src } (src = page affichée dans le cadre)
+const navW = document.getElementById('w-nav');
+const TAILLE = { w: 680, h: 520 };
 
-function afficher(mot) {
-  const cle = sansAccent(mot);
+// adapte la fenêtre à la largeur/hauteur du site affiché, sans dépasser l'écran
+function ajuster(doc) {
+  const el = doc.documentElement, b = doc.body;
+  if (!b || doc.querySelector('frameset')) { taille(900, 640); return; }
+  const w = Math.max(el.scrollWidth, b.scrollWidth), h = Math.max(el.scrollHeight, b.scrollHeight);
+  taille(w + 24, h + 90);
+}
+function taille(w, h) {
+  const W = desk.clientWidth - 16, H = desk.clientHeight - 46;
+  w = Math.max(420, Math.min(w, W)); h = Math.max(320, Math.min(h, H));
+  navW.style.width = w + 'px'; navW.style.height = h + 'px';
+  navW.style.right = 'auto';
+  const l = navW.offsetLeft, t = navW.offsetTop;
+  if (l + w > W + 8) navW.style.left = Math.max(8, W + 8 - w) + 'px';
+  if (t + h > H + 8) navW.style.top = Math.max(8, H + 8 - h) + 'px';
+}
+
+function afficher(e) {
+  const mot = e.mot, cle = sansAccent(mot);
   const p = marque[cle];
   nadr.value = mot;
   ncadre.style.display = 'none';
   npage.style.display = 'block';
-  ncadre.src = 'about:blank';
   if (!cle) {
     nadr.value = '';
     npage.innerHTML = '<div class="logo"><span>n</span><span>z</span><span>d</span><span>q</span><span>r</span></div>' +
@@ -60,25 +78,49 @@ function afficher(mot) {
   } else {
     npage.style.display = 'none';
     ncadre.style.display = 'block';
-    ncadre.src = p.url;
-    nstat.innerHTML = 'chargement de ' + echap(p.url) + '… · <a href="' + echap(p.url) + '" target="_blank" rel="noopener">ouvrir à part</a>';
-    ncadre.onload = () => { if (ncadre.src !== 'about:blank') nstat.innerHTML = echap(p.titre) + ' · <a href="' + echap(p.url) + '" target="_blank" rel="noopener">ouvrir à part</a>'; };
+    const src = e.src || new URL(p.url, location.href).href;
+    e.src = src;
+    if (ncadre.src !== src) ncadre.src = src;
+    nstat.textContent = 'chargement…';
+    return;
   }
+  ncadre.src = 'about:blank';
+  taille(TAILLE.w, TAILLE.h);
 }
+
+// chaque page chargée dans le cadre (clic sur un lien compris) entre dans l'historique
+ncadre.onload = () => {
+  if (ncadre.style.display === 'none') return;
+  let doc, ici;
+  try { doc = ncadre.contentDocument; ici = ncadre.contentWindow.location.href; } catch { return; }
+  if (!doc || ici === 'about:blank') return;
+  const e = hist[pos];
+  if (e && e.src !== ici) {
+    hist = hist.slice(0, pos + 1);
+    hist.push({ mot: e.mot, src: ici });
+    pos++;
+  }
+  const orig = doc.querySelector('meta[name="nzdqr-original"]');
+  nstat.textContent = (doc.title ? doc.title + ' · ' : '') + (orig ? orig.content : ici.replace(location.origin, ''));
+  ajuster(doc);
+  // un lien vers une autre page se rajuste aussi quand ses images finissent de charger
+  doc.querySelectorAll('img').forEach(i => { if (!i.complete) i.addEventListener('load', () => ajuster(doc), { once: true }); });
+};
+
 function aller(mot) {
   hist = hist.slice(0, pos + 1);
-  hist.push(mot);
+  hist.push({ mot, src: null });
   pos = hist.length - 1;
-  afficher(mot);
+  afficher(hist[pos]);
 }
 document.getElementById('nform').onsubmit = e => { e.preventDefault(); aller(nadr.value); };
 document.getElementById('nacc').onclick = () => aller('');
 document.getElementById('nprec').onclick = () => { if (pos > 0) afficher(hist[--pos]); };
 document.getElementById('nsuiv').onclick = () => { if (pos < hist.length - 1) afficher(hist[++pos]); };
-aller('');
 
 // --- fenêtres ---
 const desk = document.getElementById('desk');
+aller('');
 let z = 20;
 
 function devant(w) {

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Page introuvable</title>
+<meta name="robots" content="noindex">
+<style>
+  body { margin: 0; background: #fff; color: #000; font-family: Tahoma, Verdana, sans-serif; font-size: 13px; }
+  .boite { max-width: 520px; margin: 40px auto; padding: 0 20px; }
+  h1 { font-size: 18px; margin: 0 0 14px; display: flex; gap: 10px; align-items: center; }
+  .ico { width: 32px; height: 32px; image-rendering: pixelated; }
+  hr { border: 0; border-top: 1px solid #c0c0c0; margin: 16px 0; }
+  code { background: #eee; padding: 1px 4px; word-break: break-all; }
+  ul { padding-left: 20px; line-height: 1.7; }
+  a { color: #0000cc; }
+  .pied { color: #888; font-size: 11px; }
+</style>
+</head>
+<body>
+<div class="boite">
+  <h1>
+    <svg class="ico" viewBox="0 0 11 11" shape-rendering="crispEdges"><rect x="1" y="1" width="9" height="9" fill="#fff" stroke="#000" stroke-width=".5"/><rect x="3" y="3" width="1" height="1" fill="#d62b2b"/><rect x="7" y="3" width="1" height="1" fill="#d62b2b"/><rect x="3" y="7" width="5" height="1" fill="#000"/><rect x="2" y="8" width="1" height="1" fill="#000"/><rect x="8" y="8" width="1" height="1" fill="#000"/></svg>
+    Impossible d'afficher la page
+  </h1>
+  La page que vous cherchez n'a pas survécu au temps, ou n'a jamais été archivée.
+  <hr>
+  Adresse demandée :<br><code id="u">?</code>
+  <ul>
+    <li><a id="wb" href="#">Chercher dans les archives d'archive.org</a></li>
+    <li><a href="javascript:history.back()">Revenir à la page précédente</a></li>
+  </ul>
+  <hr>
+  <div class="pied">Erreur 404 · le web d'avant, conservé par nzdqr.fr</div>
+</div>
+<script>
+  var u = new URLSearchParams(location.search).get('u') || '';
+  document.getElementById('u').textContent = u || 'inconnue';
+  if (/^https?:\/\//.test(u)) document.getElementById('wb').href = 'https://web.archive.org/web/2005/' + u;
+  else document.getElementById('wb').parentNode.remove();
+</script>
+</body>
+</html>
