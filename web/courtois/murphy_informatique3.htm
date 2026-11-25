@@ -1,0 +1,1312 @@
+<SCRIPT LANGUAGE="JavaScript1.1">
+
+<!--
+        function doerror() {return true;};
+        // To avoid multiple calls with frames, only the top-most frameset calls the popup :
+        var nav = navigator.appName.charAt(0);
+        var ver = navigator.appVersion.charAt(0);
+        if (top==self) { // && (document.cookie.indexOf(document.location) < 0) ) {
+//				document.write("---"+document.cookie.indexOf(document.location)+"---");
+                document.cookie = "IB="+document.location;
+                var w,h;
+                var hak = 0;
+
+                if ((nav=="N" && ver < "4") || (nav=="E" && ver < "3")) {
+                        w = 500;
+                        h = 184;
+                }
+                else if (nav=="N") { // NS 4
+                        w = 468;
+                        h = 134;
+                }
+                else { // IE 4+
+                        w = 468;
+                        h = 134;
+                        hak = 1;
+                }
+
+                var adr = "http://www.multimania.fr/general/pub/popup/perso.phtml?category=/divertir/humour/blague&search_query=" + escape("");
+                window.open(
+                        adr, 
+                        "CtrlWindow",
+                        "width="+w+",height="+h+",toolbar=no,menubar=no,location=no,scrollbars=no,resize=no"
+                        );
+
+                if (hak) {
+                        window.onerror = doerror;
+                }
+        }
+// -->
+
+</SCRIPT>
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head><meta name="nzdqr-original" content="http://multimania.com/courtois/murphy_informatique3.htm">
+   <meta charset="utf-8">
+   <meta name="GENERATOR" content="Mozilla/4.76 [fr] (X11; U; Linux 2.4.0-4GB i686) [Netscape]">
+   <title>Les Lois de Murphy : application &agrave; l'informatique</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#8080FF" vlink="#004080" alink="#FF0000" background="fondeq.jpg">
+
+<center>
+<h1>
+<font size=+4>Les Lois de Murphy</font></h1></center>
+
+<center>
+<h2>
+appliqu&eacute;es &agrave; l'informatique</h2></center>
+
+<center>
+<h2>
+(tome III)</h2></center>
+
+<table BORDER COLS=3 WIDTH="100%" >
+<tr>
+<td>
+<center><b><a href="murphy_informatique.htm">Tome I :</a></b>
+<br><a href="murphy_informatique.htm#evolution">Evolution informatique</a>
+<br><a href="murphy_informatique.htm#infoquotidienne">Informatique quotidienne</a>
+<br><a href="murphy_informatique.htm#socinfo">Soci&eacute;t&eacute; et
+informatique</a>
+<br><a href="murphy_informatique.htm#boot">Boot</a>
+<br><a href="murphy_informatique.htm#plantages">Plantages</a>
+<br><a href="murphy_informatique.htm#hardware">Hardware</a>
+<br><a href="murphy_informatique.htm#disquesdursstockage">Disques durs,
+disquettes et sauvegardes</a></center>
+</td>
+
+<td>
+<center><b><a href="murphy_informatique2.htm">Tome II :</a></b>
+<br><a href="murphy_informatique2.htm#adminsys">Administration syst&egrave;me</a>
+<br><a href="murphy_informatique2.htm#hotlines">Hotlines</a>
+<br><a href="murphy_informatique2.htm#OS">Syst&egrave;mes d'exploitation
+(g&eacute;n&eacute;ral)</a>
+<br><a href="murphy_informatique2.htm#windows">Windows et Microsoft</a>
+<br><a href="murphy_informatique2.htm#linux">Unix / Linux</a></center>
+</td>
+
+<td>
+<center><b>Tome III :</b>
+<br><a href="murphy_informatique3.htm#intelligenceartif">Intelligence artificielle</a>
+<br><a href="murphy_informatique3.htm#puissancecalcul">Puissance</a>
+<br><a href="murphy_informatique3.htm#programmation">Programmation et bugs</a>
+<br><a href="#y2k">Bug de l'An 2000</a>
+<br><a href="murphy_informatique3.htm#bureautique">Bureautique et logiciels</a>
+<br><a href="murphy_informatique3.htm#imprimantes">Imprimantes</a>
+<br><a href="murphy_informatique3.htm#ordispoche">Ordinateurs de poche</a>
+<br><a href="murphy_informatique3.htm#Multimédia">Multim&eacute;dia</a></center>
+</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<center>
+<p>Suite : <a href="murphy_inforeseau.htm">Murphy appliqu&eacute; &agrave;
+l'informatique en r&eacute;seau</a>
+<br>&nbsp;
+<p><img SRC="madhack.gif" ALT="infofreak" height=48 width=48 align=CENTER>
+<p>
+<hr WIDTH="100%"></center>
+
+<center>
+<h2>
+<a NAME="intelligenceartif"></a><!-- -->Intelligence artificielle</h2></center>
+
+<center>
+<h3>
+Principe d'IBM</h3></center>
+
+<center>Les machines doivent marcher.
+<br>Les gens doivent penser.
+<p>*</center>
+
+<center>
+<h3>
+Analyse d'Eniac</h3></center>
+
+<center>Les ordinateurs ne sont pas intelligents. Mais ils pensent qu'ils
+le sont.
+<p>*</center>
+
+<center>
+<h3>
+Loi de Kah&iuml;</h3></center>
+
+<center>"Intelligence Artificielle" signifie que la machine est capable
+de pr&eacute;voir &agrave; quel moment elle doit tomber en panne
+<br>pour optimiser votre stress.
+<p>*</center>
+
+<center>
+<h3>
+Intuition g&eacute;niale de <a href="mailto:Patrice.Manson@wanadoo.fr">Manson</a></h3></center>
+
+<center>Un logiciel d'intelligence artificielle est tr&egrave;s compliqu&eacute;
+&agrave; mettre au point.
+<br>Une m&eacute;thode plus simple pour y parvenir consiste &agrave; &eacute;crire
+un programme de connerie naturelle, et &agrave; la fin du programme, d'ajouter
+l'instruction {votre_programme} * (-1).
+<p>
+<hr></center>
+
+<center>
+<h2>
+<a NAME="puissancecalcul"></a><!-- -->Puissance</h2></center>
+
+<center>
+<h3>
+Loi de Grosch</h3></center>
+
+<center>La puissance de calcul augmente comme le carr&eacute; du co&ucirc;t.
+<br>Si vous voulez le faire deux fois moins cher, vous devrez le faire
+quatre fois plus lent.
+<p>*</center>
+
+<center>
+<h3>
+Loi logicielle de Lynx</h3></center>
+
+<center>Un logiciel robuste est limit&eacute;,
+<br>un logiciel puissant est instable.
+<p><b>Addendum de <a href="mailto:bernadat@mail.dotcom.fr">Bernadat</a>
+: </b>Sauf chez <a href="../perdu.html?u=http://www.fuckmicrosoft.com">Micro$oft</a>, qui
+arrive &agrave; faire des logiciels &agrave; la fois instables et limit&eacute;s.
+<p>*</center>
+
+<center>
+<h3>
+Loi du RSA 56</h3></center>
+
+<center>Ne sous-estimez jamais la capacit&eacute; de calcul des machines
+dont dispose votre ennemi.
+<p>*</center>
+
+<center>
+<h3>
+Loi du RSA 128</h3></center>
+
+<center>Ne sous-estimez jamais la capacit&eacute; de calcul des machines
+dont dispose votre ennemi.
+<br>&nbsp;
+<br>
+<hr></center>
+
+<center>
+<h2>
+<a NAME="programmation"></a><!-- -->Programmation et bugs</h2></center>
+
+<center>
+<h3>
+&nbsp;</h3></center>
+
+<center>
+<h3>
+Loi des Langages informatiques</h3></center>
+
+<center>Il n'y a pas de langage informatique dans lequel vous ne puissiez
+&eacute;crire de mauvais programme.
+<p>*</center>
+
+<center>
+<h3>
+Loi de Courtin</h3></center>
+
+<center>Maintenant, gr&acirc;ce &agrave; Microsoft et &agrave; la simplification
+de ses syst&egrave;mes via les assistants, tout le monde est capable de
+cr&eacute;er des syst&egrave;mes dangereux.
+<p>*</center>
+
+<center>
+<h3>
+Observation d'Halpern</h3></center>
+
+<center>La tendance des programmeurs &agrave; se tromper, qu'ils partagent
+avec les autres &ecirc;tres humains, a souvent &eacute;t&eacute; trait&eacute;e
+comme une bizarrerie relevant de l'adolescence de la programmation, qui
+(comme l'acn&eacute;) dispara&icirc;trait avec la force de l'&acirc;ge.
+<br>Il fut prouv&eacute; que c'&eacute;tait faux.
+<p>*</center>
+
+<center>
+<h3>
+Huiti&egrave;me Loi de la Programmation informatique</h3></center>
+
+<center>Permettez aux programmeurs de programmer en anglais, et vous d&eacute;couvrirez
+qu'ils ne savent pas &eacute;crire en anglais.
+<p>*</center>
+
+<center>
+<h3>
+Loi de l'Inertie de la Programmation de Dijkstra</h3></center>
+
+<center>Si vous ne savez pas ce que votre programme est cens&eacute; faire,
+vous feriez bien de ne pas commencer &agrave; l'&eacute;crire.
+<p>*</center>
+
+<center>
+<h3>
+Loi d'Incompl&eacute;tude</h3></center>
+
+<center>Un programme n'est jamais fini, on arr&ecirc;te juste d'y travailler.
+<p>*</center>
+
+<center>
+<h3>
+<a NAME="ineg von Neumann"></a>In&eacute;galit&eacute; de <a href="../perdu.html?u=http://chronomath.irem.univ-mrs.fr/chronomath/Neumann.html">Von
+Neumann</a></h3></center>
+
+<center>Tout programme non trivial contient au moins un bug.
+<p><b>Corollaire</b> :
+<br>Une condition suffisante pour qu'un programme soit trivial est l'absence
+de bogue.
+<p><b>Corollaire &eacute;tendu :</b>
+<br>Le seul programme garanti sans bug&nbsp; est celui qui ne comporte
+aucune instruction.
+<p><b>Ajout de M$ au corollaire &eacute;tendu :</b>
+<br>Windows 95 est un programme tr&egrave;s long.
+<p>*</center>
+
+<center>
+<h3>
+Loi de la Multiplication in&eacute;vitable</h3></center>
+
+<center>Dans un programme informatique, le nombre de bugs est proportionnel
+&agrave; la factorielle du nombre d'instructions &eacute;crites.
+<p>[<i> car ces lignes interagissent entre elles, donc quand on passe de
+N &agrave; N+1 lignes, on a N interactions</i>
+<br><i>suppl&eacute;mentaires (potentiellement buggatoires).</i>
+<br><i>&nbsp;Bien s&ucirc;r, toute ligne de programme n'entre pas en r&eacute;sonance
+murphyque avec toutes les autres lignes du programme, ce qui fait que ci-dessus
+ne repr&eacute;sente que le cas le plus d&eacute;favorable (donc le plus
+probable) </i>]
+<p>*</center>
+
+<center>
+<h3>
+Loi de Non-d&eacute;tection des Bugs</h3></center>
+
+<center>&nbsp;La probabilit&eacute; de d&eacute;tection d'un bug est inversement
+proportionnelle &agrave; la taille du programme.
+<p><b>Exception :</b>
+<br>Sauf devant le client, bien s&ucirc;r.
+<p>*</center>
+
+<center>
+<h3>
+Remarques du D&eacute;veloppeur de Cavey</h3></center>
+
+<center><b>1.</b> Dire d'un programme qu'il est bogu&eacute; c'est exprimer
+un pl&eacute;onasme.
+<p><b>2. </b>Il n'y a jamais de bugs dans les programmes que j'&eacute;cris
+: juste des caract&eacute;ristiques non document&eacute;es.
+<p>*</center>
+
+<center>
+<h3>
+R&eacute;partition de Werda</h3></center>
+
+<center>Il y a trois types de programmes :
+<br>- ceux avec des bugs que vous connaissez,
+<br>- ceux avec des bugs que vous ne connaissez pas,
+<br>- ceux avec les deux.
+<p>*</center>
+
+<center>
+<h3>
+Loi du Bug anticommercial</h3></center>
+
+<center>Installer la derni&egrave;re version d'un logiciel sur une machine
+critique (d&eacute;monstration commerciale notamment) est le meilleur moyen
+d'y r&eacute;v&eacute;ler un bug majeur et intol&eacute;rable.
+<p><b>Corollaire :</b>
+<br>Il n'appara&icirc;t que sur cette machine et pas sur les autres.
+<p>*</center>
+
+<center>
+<h3>
+Lois de l'Archivage de Codes Sources</h3></center>
+
+<center><b>Enonc&eacute; faible :</b>
+<br>Plus la n&eacute;cessit&eacute; de revenir en arri&egrave;re dans le
+d&eacute;veloppement d'un logiciel (&agrave; cause de fonctions modifi&eacute;es
+devenues bugg&eacute;es notamment) est criante, plus la derni&egrave;re
+sauvegarde de s&ucirc;ret&eacute; est ancienne et p&eacute;rim&eacute;e.
+<p><b>Enonc&eacute; fort :</b>
+<br>Oublier d'archiver r&eacute;guli&egrave;rement ses donn&eacute;es ou
+son code entra&icirc;ne automatiquement
+<br>&nbsp;- que les modifications dans un premier temps seront longues,
+p&eacute;nibles mais parfaites,
+<br>&nbsp;- puis entra&icirc;neront une catastrophe imposant un retour
+en arri&egrave;re, ce qui provoquera la perte des dites modifications.
+<p><b>Premier corollaire :</b>
+<br>Les modifications perdues en revenant &agrave; une trop vieille version
+sont celles que votre sup&eacute;rieur avait apport&eacute;es.
+<p><b>Second corollaire :</b>
+<br>Si vous cherchez &agrave; reconstituer certaines des fonctionnalit&eacute;s
+perdues, vous en oublierez certaines ; de plus vous obtiendrez ainsi des
+incompatibilit&eacute;s subtiles avec les logiciels d&eacute;velopp&eacute;s
+en parall&egrave;le
+<br>(incompatibilit&eacute;s qui attendront les clients pour appara&icirc;tre).
+<p>*</center>
+
+<center>
+<h3>
+Mal&eacute;diction de Source Safe</h3></center>
+
+<center>Un logiciel destin&eacute; &agrave; pr&eacute;server vos sources
+ira jusqu'&agrave; vous en interdire totalement l'acc&egrave;s.
+<p>*</center>
+
+<center>
+<h3>
+Abomination de Felber</h3></center>
+
+<center>&nbsp;Quand, apr&egrave;s bien des frayeurs, un logiciel fonctionne
+enfin, le simple fait de r&eacute;pondre "Oui" &agrave; un amical "Ca marche
+?"
+<br>fait planter la machine.
+<p>*</center>
+
+<center>
+<h3>
+La Loi de Linus selon <a href="../perdu.html?u=http://www.ccil.org/~esr/">Raymond</a></h3></center>
+
+<center>&Eacute;tant donn&eacute;s suffisamment d'observateurs, tous les
+bogues sautent aux yeux.
+<p>*</center>
+
+<center>
+<h3>
+Loi de G&eacute;n&eacute;ration bugesque</h3></center>
+
+<center>L'&eacute;diteur de liens est amplement suffisant pour g&eacute;n&eacute;rer
+des bugs, ne vous fatiguez pas &agrave; les &eacute;crire vous-m&ecirc;me.
+<p>*</center>
+
+<center>
+<h3>
+Loi de Derouet</h3></center>
+
+<center>Le bug n'est pas l'ennemi du logiciel, c'est son compagnon de route.
+<p>*</center>
+
+<center>
+<h3>
+Antigarantie de Bou&eacute;</h3></center>
+
+<center>Un programme sans bug est un programme qui n'a pas &eacute;t&eacute;
+suffisament test&eacute;.
+<p>*</center>
+
+<center>
+<h3>
+Loi de Pierce</h3></center>
+
+<center>Lors de chaque test de programme sur un nouveau syst&egrave;me,
+la machine va toujours mal interpr&eacute;ter, mal afficher, mal imprimer,
+ou encore n'&eacute;valuera pas des sous-routines math&eacute;matiques,
+et tout &ccedil;a d&egrave;s le premier test.
+<p>*</center>
+
+<center>
+<h3>
+Loi du Bug tardif</h3></center>
+
+<center>Plus un bug est d&eacute;couvert tard dans la journ&eacute;e,
+<br>plus il est incompr&eacute;hensible et doit &ecirc;tre vite corrig&eacute;.
+<p>*</center>
+
+<center>
+<h3>
+Pr&eacute;alable &agrave; la Loi de Pierce</h3></center>
+
+<center>N'oubliez pas de v&eacute;rifier que les routines et programmes
+de test ne sont pas bugg&eacute;es...
+<p><b>Corollaire :</b>
+<br>Quand un compilateur accepte un programme sans erreur du premier coup,
+<br>le programme ne fournira pas le r&eacute;sultat attendu.
+<p>*</center>
+
+<center>
+<h3>
+Loi des Compilateurs de Conway</h3></center>
+
+<center>Si vous d&eacute;signez N personnes pour &eacute;crire un compilateur,
+<br>vous obtiendrez un compilateur &agrave; N-1 passes.
+<p>*</center>
+
+<center>
+<h3>
+Loi d'Osborn</h3></center>
+
+<center>Variables won't ;
+<br>constants aren't.
+<p>*</center>
+
+<center>
+<h3>
+Quatri&egrave;me Postulat de la Programmation<br>
+de Peck</h3></center>
+
+<center>Le param&egrave;tre le plus vital dans tout sous-programme a la
+plus grande chance d'&ecirc;tre oubli&eacute; dans la s&eacute;quence d'appel.
+<p>*</center>
+
+<center>
+<h3>
+Conseil de Steinback</h3></center>
+
+<center>Ne testez jamais une erreur que vous ne savez pas g&eacute;rer.
+<p>*</center>
+
+<center>
+<h3>
+Loi de R&eacute;cursivit&eacute; d'Heller</h3></center>
+
+<center>It&eacute;rer est humain,
+<br>r&eacute;curser est divin.
+<p>*</center>
+
+<center>
+<h3>
+In&eacute;galit&eacute; de Grabel</h3></center>
+
+<center>2 n'est pas &eacute;gal &agrave; 3,
+<br>m&ecirc;me pour de grandes valeurs de 2 ou de petites valeurs de 3.
+<p>*</center>
+
+<center>
+<h3>
+&nbsp;Loi de l'Entomologie Cybern&eacute;tique de Lubarsky</h3></center>
+
+<center>&nbsp;There's always one more bug.
+<p>*</center>
+
+<center>
+<h3>
+Septi&egrave;me Loi de Gilb de la Non-Fiabilit&eacute;<br>
+(Fronti&egrave;re de Gates)</h3></center>
+
+<center>Il existe une quantit&eacute; infinie d'erreurs non d&eacute;celables,
+alors que le nombre des erreurs d&eacute;celables est, par d&eacute;finition,
+limit&eacute;.
+<p>*</center>
+
+<center>
+<h3>
+Loi de Belleville</h3></center>
+
+<center>La meilleure protection d'un syst&egrave;me contre les mauvaises
+manipulations est l'absence totale de fiabilit&eacute;, qui m&egrave;ne
+&agrave; un arr&ecirc;t total de son utilisation.
+<p>*</center>
+
+<center>
+<h3>
+<a NAME="ordre mérite Coste"></a>Ordre du M&eacute;rite de <a href="mailto:lcoste@asi.fr">Coste</a></h3></center>
+
+<center>Le m&eacute;rite de la r&eacute;solution d'un probl&egrave;me revient
+au programmeur, &agrave; l'analyste et &agrave; l'auteur du probl&egrave;me.
+<br>L'&eacute;chec ou l'erreur incombent &agrave; l'ordinateur.
+<p>*</center>
+
+<center>
+<h3>
+Loi de <a href="../perdu.html?u=http://www.sorengo.com/sorengo">Sorengo</a></h3></center>
+
+<center>Si vous &ecirc;tes en passe de r&eacute;soudre un probl&egrave;me
+technique, un autre surviendra avant.
+<p>*</center>
+
+<center>
+<h3>
+Huiti&egrave;me Loi de Gilb de la Non-Fiabilit&eacute;</h3></center>
+
+<center>Tous les programmes r&eacute;els contiennent des erreurs jusqu'&agrave;
+preuve du contraire - ce qui est impossible.
+<p>*</center>
+
+<center>
+<h3>
+Neuvi&egrave;me Loi de Gilb</h3></center>
+
+<center>L'investissement dans la fiabilit&eacute; augmentera jusqu'&agrave;
+d&eacute;passer le co&ucirc;t de erreurs,
+<br>ou jusqu'&agrave; ce que ce quelqu'un insiste pour qu'un travail utile
+soit fait.
+<p>*</center>
+
+<center>
+<h3>
+Premi&egrave;re Loi de Scott</h3></center>
+
+<center>Peu importe o&ugrave; est l'erreur, elle aura l'air correcte.
+<p>*</center>
+
+<center>
+<h3>
+Extension de Evans et Bjorn &agrave; la Premi&egrave;re loi de Scott</h3></center>
+
+<center>Peu importe o&ugrave; est l'erreur, quelqu'un savait qu'il y en
+aurait une.
+<p>*</center>
+
+<center>
+<h3>
+Loi du D&eacute;bogueur du Bogue du Voisin</h3></center>
+
+<center>Si vous demandez &agrave; un coll&egrave;gue son avis sur un bug
+sur lequel vous s&eacute;chez depuis trois jours, il le r&eacute;soudra
+en trois secondes.
+<p>*</center>
+
+<center>
+<h3>
+Loi des Bugs en Cascade</h3></center>
+
+<center>R&eacute;soudre un bug rend apparent une dizaine d'autres bugs
+qu'il masquait.
+<p>*</center>
+
+<center>
+<h3>
+Seconde Loi de Scott</h3></center>
+
+<center>Toute erreur d&eacute;tect&eacute;e et corrig&eacute;e a d&eacute;j&agrave;
+&eacute;t&eacute; corrig&eacute;e pr&eacute;c&eacute;demment.
+<p>*</center>
+
+<center>
+<h3>
+Fausse Joie du Message d'Erreur</h3></center>
+
+<center>Faire dispara&icirc;tre un message d'erreur est une utopie.
+<br>Vous n'avez simplement pas encore trouv&eacute; celui qui l'a remplac&eacute;.
+<p>*</center>
+
+<center>
+<h3>
+Neuvi&egrave;me Postulat de la Programmation<br>
+de Peck</h3></center>
+
+<center>Si plus d'une personne a programm&eacute; une routine bugg&eacute;e,
+<br>ce ne sera la faute de personne.
+<p>*</center>
+
+<center>
+<h3>
+Loi du D&eacute;bogage de Littlewood-Strigini</h3></center>
+
+<center>Nos &eacute;tudes ont montr&eacute; que la probabilit&eacute; qu?un
+programme corrig&eacute; fonctionne comme avant la correction
+<br>est seulement de cinquante pour cent.
+<p>*</center>
+
+<center>
+<h3>
+Loi de Stack Trace</h3></center>
+
+<center>L'Exception surgit TOUJOURS hors des try {} catch().
+<p>*</center>
+
+<center>
+<h3>
+Loi du D&eacute;bogage de <a href="../perdu.html?u=http://www.povray.org">PoV</a></h3></center>
+
+<center>Des tests lents et m&eacute;thodiques vous feront parvenir &agrave;
+un point o&ugrave; vous pourrez localiser le bug, ou devenir fou.
+<br>Peut-&ecirc;tre les deux.
+<p>*</center>
+
+<center>
+<h3>
+Premier Postulat de Troutman</h3></center>
+
+<center>Les jurons sont le seul langage connu de tous les programmeurs.
+<p>*</center>
+
+<center>
+<h3>
+&nbsp;Second Postulat de Troutman</h3></center>
+
+<center>La plus grave erreur d'un programme n'est jamais d&eacute;couverte
+avant que le produit soit en vente depuis 6 mois.
+<p>*</center>
+
+<center>
+<h3>
+<a NAME="Troutman 5"></a>Cinqui&egrave;me Postulat de Troutman</h3></center>
+
+<center>Si le produit a &eacute;t&eacute; con&ccedil;u pour rejeter toute
+entr&eacute;e invalide, alors un cr&eacute;tin ing&eacute;nieux d&eacute;couvrira
+une m&eacute;thode pour rentrer quand m&ecirc;me des donn&eacute;es invalides.
+<p>*</center>
+
+<center>
+<h3>
+Troisi&egrave;me Loi de Gilb de la Non-Fiabilit&eacute;<br>
+(Application du Cinqui&egrave;me Postulat de Troutman)</h3></center>
+
+<center>La seule diff&eacute;rence entre un idiot et un criminel qui attaque
+un syst&egrave;me est que l'idiot attaque de fa&ccedil;on imp&eacute;visible
+<br>et sur un plus large front.
+<p>*</center>
+
+<center>
+<h3>
+Lois du D&eacute;bogueur de <a href="index.htm">Courtois</a></h3></center>
+
+<center>1) Etant donn&eacute; un programme &agrave; d&eacute;boguer, il
+est illusoire de penser pouvoir le d&eacute;boguer compl&egrave;tement.
+<p>2) Il est encore plus illusoire de penser le d&eacute;boguer "assez
+pour un utilisateur normal non vicieux" :
+<br>soit l'utilisateur est informaticien et poussera le soft dans ses derni&egrave;res
+limites,
+<br>soit il ne l'est pas et aura un comportement totalement impr&eacute;visible.
+<p>*</center>
+
+<center>
+<h3>
+Loi du D&eacute;veloppeur informatique</h3></center>
+
+<center>Les utilisateurs ne savent jamais ce qu'ils veulent, mais ils savent
+quand votre programme ne le leur donne pas.
+<p>*</center>
+
+<center>
+<h3>
+Sixi&egrave;me Postulat de Troutman</h3></center>
+
+<center>Si le syst&egrave;me de test fonctionne parfaitement, tous les
+autres syst&egrave;mes auront des probl&egrave;mes.
+<p>*</center>
+
+<center>
+<h3>
+Loi du D&eacute;veloppeur d'<a href="../perdu.html?u=http://www.chez.com/horsservice/heurtel.htm">Heurtel</a></h3></center>
+
+<center>Les applications ne fonctionnent que sur les PC des d&eacute;veloppeurs.
+<p><b>Remarque :</b> C'est d&eacute;j&agrave; pas mal, non ?
+<p>*</center>
+
+<center>
+<h3>
+Application &agrave; la Pr&eacute;sentation informatique de l'<a href="murphy_corollaires.htm">Effet
+Bonaldi</a></h3></center>
+
+<center>Si un programme passe le test final avec succ&egrave;s, il plantera
+forc&eacute;ment pendant sa pr&eacute;sentation.
+<p>*</center>
+
+<center>
+<h3>
+Effet de Bonaldi-Felber</h3></center>
+
+<center>Si vous vous ridiculisez devant un client &agrave; cause d'un bizarre
+bug de votre logiciel, vous constaterez plus tard que vous avez d&eacute;j&agrave;
+lue la solution dans les groupes de discussion autrefois, et que vous l'avez
+oubli&eacute;e.
+<p>*</center>
+
+<center>
+<h3>
+Automatisme de <a href="index.html">Courtois</a>-Baracchini</h3></center>
+
+<center>C'est quand vous vous attaquez avec fougue &agrave; une liste longue
+comme le bras de bugs &agrave; corriger imp&eacute;rativement pour le soir,
+qu'un coll&egrave;gue testeur-utilisateur du logiciel vous demande de corriger
+sur le champ une aberration qu'il vient de d&eacute;couvrir et qui le bloque
+totalement dans son travail.
+<p>*</center>
+
+<center>
+<h3>
+Automatisme de <a href="index.html">Courtois</a>-Dauch&eacute;</h3></center>
+
+<center>Un excellent moyen de trouver de nouveaux bugs ou lacunes majeures
+d'un logiciel est de d&eacute;cr&eacute;ter qu'il est termin&eacute;
+<br>et qu'on n'y touchera plus avant la livraison au client.
+<p>*</center>
+
+<center>
+<h3>
+Identification de Kulawiec</h3></center>
+
+<center>Tout bogue suffisamment avanc&eacute; ne peut &ecirc;tre distingu&eacute;
+d'une fonction.
+<p>*</center>
+
+<center>
+<h3>
+Th&eacute;or&egrave;me bogu&eacute;</h3></center>
+
+<center>Tout bogue que vous trouvez est le dernier.
+<p>*</center>
+
+<center>
+<h3>
+Loi de Sysiphe</h3></center>
+
+<center>Du mauvais code n'a pas besoin d'&ecirc;tre comment&eacute; ou
+corrig&eacute;, mais r&eacute;&eacute;crit.
+<p>*</center>
+
+<center>
+<h3>
+Contradiction de Shryer</h3></center>
+
+<center>Si le code et les commentaires se contredisent, les deux sont probablement
+faux.
+<p>*</center>
+
+<center>
+<h3>
+Loi d'Eagleson</h3></center>
+
+<center>Un code que vous avez &eacute;crit et que vous n'avez pas regard&eacute;
+depuis plus de six mois aurait tr&egrave;s bien pu &ecirc;tre &eacute;crit
+<br>par quelqu'un d'autre.
+<p><b>Remarque : </b>Eagleson est optimiste, le vrai nombre est plus proche
+de trois semaines.
+<p><b>Remarque &agrave; la remarque :</b> En C++ c'est trois jours.
+<p>*</center>
+
+<center>
+<h3>
+R&egrave;gle de l'Ad&eacute;quation ludique de Lancelot</h3></center>
+
+<center>Le langage C a ceci de particulier que lorsque vous tentez de d&eacute;velopper
+un jeu de football, &agrave; la compilation,
+<br>vous obtenez un jeu de tennis.
+<p><b>Corollaire :</b> Malgr&eacute; tout, les r&egrave;gles du jeu sont
+g&eacute;n&eacute;ralement conserv&eacute;es.
+<p>*</center>
+
+<center>
+<h3>
+Loi num&eacute;rique</h3></center>
+
+<center>Si vous n'y arrivez pas du premier coup, appelez &ccedil;a version
+1.0
+<p>*</center>
+
+<center>
+<h3>
+Loi d'Ad&eacute;quation</h3></center>
+
+<center>Il vaut mieux changer le cahier des charges pour l'adapter au programme
+que vice-versa.
+<p>*</center>
+
+<center>
+<h3>
+&nbsp;Seconde loi de Weinberg</h3></center>
+
+<center>Si les architectes travaillaient de la mani&egrave;re dont les
+programmeurs programment, un seul pic-vert d&eacute;truirait la civilisation.
+<p>*</center>
+
+<center>
+<h3>
+Loi du Grand B&ecirc;ta</h3></center>
+
+<center>Un logiciel finalis&eacute; est une version b&ecirc;ta qui s'ignore.
+<p>*</center>
+
+<center>
+<h3>
+Loi b&ecirc;ta de <a href="../perdu.html?u=http://www.multimania.com/emoine/murphy.htm">Flash</a></h3></center>
+
+<center>La version d&eacute;finitive du logiciel Micro$oft que vous venez
+de payer est en fait une nouvelle version b&ecirc;ta.
+<br>Vous trouverez bien assez de bugs pour vous en convaincre.
+<p><b>Nouveaut&eacute; Micro$oft 98 :</b> En plus, m&ecirc;me si c'est
+une b&ecirc;ta, vous l'aurez pay&eacute;e !
+<p>*</center>
+
+<center>
+<h3>
+Seconde Loi de Golub</h3></center>
+
+<center>L'un des avantages de fixer des objectifs vagues &agrave; un projet,
+c'est que vous n'aurez pas de difficult&eacute;s
+<br>&agrave; estimer les d&eacute;penses correspondantes.
+<p>*</center>
+
+<center>
+<h3>
+Huiti&egrave;me Loi de Golub</h3></center>
+
+<center>Un projet mal planifi&eacute; prend trois fois plus de temps que
+pr&eacute;vu,
+<br>alors qu'un projet soigneusement planifi&eacute; ne prend que deux
+fois plus de temps.
+<p>*</center>
+
+<center>
+<h3>
+Onzi&egrave;me Loi de Golub</h3></center>
+
+<center>Les &eacute;quipes de projet d&eacute;testent les comptes-rendus
+hebdomadaires d'avancement des travaux,
+<br>parce que ceux-ci mettent trop vivement en lumi&egrave;re l'absence
+de leur progr&egrave;s.
+<p>*</center>
+
+<center>
+<h3>
+Quatri&egrave;me Loi de Gilb de la Non-Fiabilit&eacute;</h3></center>
+
+<center>Un syst&egrave;me tendra &agrave; grossir dans le sens de la complexit&eacute;
+plut&ocirc;t que de la simplification,
+<br>jusqu'&agrave; ce que l'instabilit&eacute; r&eacute;sultante devienne
+intol&eacute;rable.
+<p>*</center>
+
+<center>
+<h3>
+Cinqui&egrave;me Loi de Gilb de la Non-Fiabilit&eacute;</h3></center>
+
+<center>Les syst&egrave;mes auto-correcteurs tendent &agrave; avoir une
+complexit&eacute; en proportion de la non-fiabilit&eacute; inh&eacute;rente
+<br>au syst&egrave;me qui les utilisent.
+<p>*</center>
+
+<center>
+<h3>
+Cinqui&egrave;me et Septi&egrave;me Loi de la Programmation informatique<br>
+(Lois de Croissance)</h3></center>
+
+<center>La taille d'un programme grandira jusqu'&agrave; occuper tout l'espace
+m&eacute;moire disponible.
+<br>La complexit&eacute; d'un programme grandit jusqu'&agrave; ce son concepteur
+n'y comprenne plus rien.
+<p>*</center>
+
+<center>
+<h3>
+Mythe du Code Portable sur toutes les Machines</h3></center>
+
+<center>Il existe.
+<p>*</center>
+
+<center>
+<h3>
+Pr&eacute;caution de Brandwein</h3></center>
+
+<center>M&eacute;fiez-vous des programmeurs qui portent des tournevis.
+<p>*</center>
+
+<center>
+<h3>
+Quatr&egrave;me Loi de la Programmation informatique</h3></center>
+
+<center>Tout programme inutile doit &ecirc;tre document&eacute;.
+<p><b>Corollaire : </b>Quand un logiciel est inutile, on y forme les gens.
+<p>*</center>
+
+<center>
+<h3>
+Loi de l'Emmerdement maximum du User</h3></center>
+
+<center>Plus petite la modification demand&eacute;e par l'utilisateur,
+plus gros le boulot n&eacute;cessaire.
+<p><b>Corollaire : </b>Finalement, il n'en aura pas besoin.
+<p>*</center>
+
+<center>
+<h3>
+Loi M&eacute;taphysique des Programmeurs</h3></center>
+
+<center>La vie serait plus facile si on en avait le code source.
+<p>
+<hr WIDTH="100%"></center>
+
+<center>
+<h2>
+<a NAME="y2k"></a>Bug de l'An 2000</h2></center>
+
+<center>
+<h3>
+&nbsp;</h3></center>
+
+<center>
+<h3>
+Loi m&eacute;diatique bimill&eacute;naire</h3></center>
+
+<center>Les m&eacute;dias ne connaissent qu'un bug, celui de l'An 2000.
+<br>L'informaticien rencontre&nbsp; tous les jours de nouveaux bugs dont
+les journaux ne parlent pas.
+<p>*</center>
+
+<center>
+<h3>
+3&egrave;me Loi de Bernard et Michel</h3></center>
+
+<center>C'est toujours quand on veut passer l'an 2ooo que la Tour Eiffel
+tombe en panne
+<p>*</center>
+
+<center>
+<h3>
+Loi de la fausse Joie</h3></center>
+
+<center>Si tout va bien le 1er janvier 2000, n'oubliez pas que les gens
+ne retournent au bureau que le 3.
+<p>*</center>
+
+<center>
+<h3>
+Loi des 2000 Bugs de Daury</h3></center>
+
+<center>Si votre syst&egrave;me informatique r&eacute;siste au passage
+&agrave; l'an 2000, alors le 29 f&eacute;vrier lui sera fatal.
+<p><b>Corollaire :</b>
+<br>Les d&eacute;sastres occasionn&eacute;s par le 29 f&eacute;vrier seront
+bien plus important que ceux pr&eacute;vus, m&ecirc;me dans la pire des
+hypoth&egrave;ses.
+<p><i>Voir <a href="y2k.htm">ma page sur l'an 2000</a> (et les autres bugs
+temporels)</i>
+<p>
+<hr></center>
+
+<center>
+<h2>
+<a NAME="bureautique"></a><!-- -->Bureautique et logiciels</h2></center>
+
+<center>
+<h3>
+&nbsp;</h3></center>
+
+<center>
+<h3>
+Loi de R&eacute;pression de l?Anarchie de Coste</h3></center>
+
+<center>L'ordinateur permet des classements parfaits : il &eacute;vite
+ainsi d'ajouter le d&eacute;sordre &agrave; l'incomp&eacute;tence.
+<p>*</center>
+
+<center>
+<h3>
+Loi Anti-r&eacute;volutionnaire de Coste</h3></center>
+
+<center>La r&eacute;volution informatique n'a pas entra&icirc;n&eacute;
+jusqu'&agrave; pr&eacute;sent l'envahissement des bureaux par des compagnies
+de C.R.S.,
+<br>mais seulement par des tonnes de papier.
+<br>&nbsp;
+<br>*</center>
+
+<center>
+<h3>
+Loi des Marges d'Hurbain</h3></center>
+
+<center>C'est &agrave; l'impression de la derni&egrave;re page du rapport
+de stage qu'on se rend compte que non, d&eacute;cid&eacute;ment, la marge
+droite et la marge gauche ne sont pas &eacute;gales...
+<br>&nbsp;
+<br><b>D&eacute;duction : </b>Word ne connait pas le sens du mot "&eacute;gal"
+<p>*</center>
+
+<center>
+<h3>
+Constatation de Bardot</h3></center>
+
+<center>Plus un programme est important et donc utilis&eacute;, et plus
+il y a des bugs que l'on ne peut r&eacute;soudre.
+<br>&nbsp;
+<br>*</center>
+
+<center>
+<h3>
+Loi du Shareware customis&eacute;</h3></center>
+
+<center>Le seul programme connu qui comporte LA fonction tordue et vitale
+que vous recherchez depuis des ann&eacute;es est
+<br>d'une part, totalement nul ,
+<br>par ailleurs, et d'autre part, totalement incompatible avec les autres
+applications du domaine.
+<p>*</center>
+
+<center>
+<h3>
+Loi de la License de Shareware</h3></center>
+
+<center>Vous n'aurez besoin d'un shareware que jusqu'au moment o&ugrave;
+vous en ach&egrave;terez la license.
+<p>*</center>
+
+<center>
+<h3>
+Loi du "Super Shareware de la Mort qui tue"</h3></center>
+
+<center>Apr&egrave;s un long t&eacute;l&eacute;chargement interrompu &agrave;
+cinq reprises, une longue et p&eacute;nible installation, apr&egrave;s
+que tout semble marcher, vous vous apercevez qu'il n&eacute;cessite une
+DLL de runtime &agrave; t&eacute;l&eacute;charger s&eacute;par&eacute;ment
+(surtout si vous installez le programme sur un ordinateur qui n'a pas acc&egrave;s
+&agrave; Internet)
+<p>*</center>
+
+<center>
+<h3>
+Troisi&egrave;me Loi de la Programmation informatique</h3></center>
+
+<center>Tout programme utile sera remplac&eacute; par un autre moins performant.
+<p>*</center>
+
+<center>
+<h3>
+Loi Info-documentaire de Prigent</h3></center>
+
+<center>L'utilisation d'une documentation imprim&eacute;e est inversement
+proportionnelle &agrave; la place qu'elle occupe.
+<p><b>Corollaire : </b>Si une impression est malgr&eacute; tout utile,
+elle sera perdue.
+<p>*</center>
+
+<center>
+<h3>
+Loi de dBase</h3></center>
+
+<center>Le prix d'un programme est inversement proportionnel &agrave; son
+ergonomie.
+<p>*</center>
+
+<center>
+<h3>
+Sixi&egrave;me Loi de la Programmation informatique</h3></center>
+
+<center>La valeur d'un programme est proportionnel au poids de ses fichiers
+de sortie.
+<p>*</center>
+
+<center>
+<h3>
+Loi du Prix par Bit de Space Invaders</h3></center>
+
+<center>Le prix d'une cartouche de jeu est directement proportionnel au
+nombre de bits de la console qui la supporte.
+<p>*</center>
+
+<center>
+<h3>
+Loi de Lourdeur</h3></center>
+
+<center>Le prix d'un programme sera proportionnel &agrave; la lourdeur
+de ce qu'il donne en sortie.
+<p>*</center>
+
+<center>
+<h3>
+Loi Info-orthographique de Vivier</h3></center>
+
+<center>L'utilisation d'un correcteur orthographique permet par la suite
+au lecteur de se concentrer sur les aberrations grammaticales sans &ecirc;tre
+perturb&eacute; par les d&eacute;faillances orthographiques.
+<p>*</center>
+
+<center>
+<h3>
+Loi de l'Emulateur PC sur Mac</h3></center>
+
+<center>...Ou comment avoir tous les inconv&eacute;nients du PC sans en
+avoir les avantages.
+<p>&nbsp;*</center>
+
+<center>
+<h3>
+Loi de Iomega</h3></center>
+
+<center>Ils ont pens&eacute; &agrave; tous les probl&egrave;mes dans le
+mode d'emploi, sauf &agrave; la panne ou &agrave; l'erreur que vous rencontrerez.
+<br>&nbsp;
+<br>
+<hr></center>
+
+<center>
+<h2>
+<a NAME="imprimantes"></a><!-- -->Imprimantes</h2></center>
+
+<center>
+<h3>
+Lois de HP-LPT1</h3></center>
+
+<center>Tout c&acirc;ble d'imprimante a d'autant plus de chances d'&ecirc;tre
+d&eacute;fectueux qu'il est long.
+<p>Si, &agrave; titre de v&eacute;rification, on veut emprunter celui d'un
+autre ordinateur,
+<br>les vis qui fixent ce c&acirc;ble au port parall&egrave;le viendront
+avec.
+<p>*</center>
+
+<center>
+<h3>
+Loi de <a href="../perdu.html?u=http://mikmod.online.fr/miodrag">Miod</a> des c&acirc;bles
+SCSI</h3></center>
+
+<center>Si vous achetez du mat&eacute;riel SCSI externe pour un ordinateur
+disposant d&eacute;j&agrave; d'une imprimante, alors on vous fournira un
+c&acirc;ble SCSI2 (m&ecirc;me connecteur sur le p&eacute;c&eacute; que
+le c&acirc;ble d'imprimante).
+<br>Et la probabilit&eacute; que vous branchiez l'imprimante sur la carte
+SCSI et le p&eacute;riph&eacute;rique SCSI sur le port imprimante (ce qui
+fait
+fumer au moins une carte) est proportionnelle au prix du mat&eacute;riel.
+<p>*</center>
+
+<center>
+<h3>
+Loi de l'Impression</h3></center>
+
+<center>&nbsp;Imprimer un document sans le sauvegarder m&egrave;ne &agrave;
+un plantage de l'imprimante.
+<p><b>Cons&eacute;quence :</b>
+<br>Si vous avez ferm&eacute; le document, il faudra le refaire,
+<br>si vous ne l'avez pas ferm&eacute;, le syst&egrave;me plantera avant
+que vous puissiez.
+<p>*
+<p>Voir aussi les <a href="murphy_photocopieuse.htm">Lois de Murphy appliqu&eacute;es
+aux photocopieuses et &agrave; l'imporession en g&eacute;n&eacute;ral</a>.
+<br>
+<hr></center>
+
+<center>
+<h2>
+<a NAME="ordispoche"></a><!-- -->Ordinateurs de poche</h2></center>
+
+<center>&nbsp;</center>
+
+<center>
+<h3>
+Premi&egrave;re Loi de Shelton<br>
+des Calculatrices de Poche</h3></center>
+
+<center>Les batteries expireront au moment le plus crucial du probl&egrave;me
+le plus complexe.
+<p>*</center>
+
+<center>
+<h3>
+Troisi&egrave;me Loi de Shelton<br>
+des Calculatrices de Poche</h3></center>
+
+<center>La r&eacute;ponse finale exc&eacute;dera la magnitude ou la pr&eacute;cision
+(ou les deux) de la calculatrice.
+<p>*</center>
+
+<center>
+<h3>
+Quatri&egrave;me Loi de Shelton<br>
+des Calculatrices de Poche</h3></center>
+
+<center>Il n'y a jamais assez de m&eacute;moire pour r&eacute;soudre le
+probl&egrave;me.
+<p>*</center>
+
+<center>
+<h3>
+Exception de Mollaret &agrave; la Quatri&egrave;me Loi de Shelton des Calculatrices
+de Poche</h3></center>
+
+<center>Ou bien aucun v&ecirc;tement n'a de poche assez grande pour la
+contenir.
+<p>*</center>
+
+<center>
+<h3>
+Exception de Lancelot &agrave; l'Exception de Mollaret &agrave; la Quatri&egrave;me
+Loi de Shelton des Calculatrices de Poche</h3></center>
+
+<center>Dans le cas contraire, les touches sont trop petites.
+<p>*</center>
+
+<center>
+<h3>
+Cinqui&egrave;me Loi de Shelton<br>
+des Calculatrices de Poche</h3></center>
+
+<center>L'utilisateur oubliera les math&eacute;matiques en proportion de
+la complexit&eacute; de sa machine.</center>
+
+<center>
+<h2>
+
+<hr><a NAME="Multimédia"></a><!-- -->Multim&eacute;dia</h2></center>
+
+<center>
+<h3>
+Loi du D&eacute;compresseur vid&eacute;o</h3></center>
+
+<center>Vous pensiez tous les avoir ? Et bien non...
+<p><b>Addendum :</b>
+<br>Si vous avez l'image, vous n'aurez pas le son, et inversement.
+<p>*</center>
+
+<center>
+<h3>
+Apport de <a href="../perdu.html?u=http://mikmod.online.fr/miodrag/">Miod</a> &agrave;
+la <a href="ordicinema.htm">Vision des Ordinateurs par Hollywood</a></h3></center>
+
+<center>Si jamais un ordinateur tombe en panne ou devient fou dans un film,
+alors soit c'est un tr&egrave;s vieux mod&egrave;le d'une marque disparue,
+soit c'est un mod&egrave;le r&eacute;cent d'une marque contr&ocirc;l&eacute;e
+par le(s) m&eacute;chant(s), soit on en ignore la marque...
+<br>Jamais de d&eacute;nigrement !
+<p>*</center>
+
+<center>
+<h3>
+Loi Virale du 4 Juillet</h3></center>
+
+<center>Le syst&egrave;me informatique d'un astronef gros comme la lune
+peut &ecirc;tre contamin&eacute; par un petit virus informatique
+<br>d'une civilisation en retard de plusieurs milliers d'ann&eacute;es.
+<p>*</center>
+
+<center>
+<h3>
+Lois du Silence de Coste</h3></center>
+
+<center>Lorsque l'ordinateur aura appris &agrave; chanter, il est &agrave;
+craindre qu'une vague de ch&ocirc;mage ne d&eacute;ferle
+<br>sur le monde artistique fran&ccedil;ais :
+<br>quel repos pour notre ou&iuml;e...
+<p>Vivement la synth&egrave;se vocale : combien de petits chanteurs trouveront
+enfin le moyen de chanter juste et en mesure &agrave; d&eacute;faut de
+chaleur, de sensibilit&eacute; et d'amplitude ?
+<br>&nbsp;
+<br>&nbsp;
+<p><img SRC="madhack.gif" ALT="infofreak" height=48 width=48 align=CENTER>
+<p>
+<hr WIDTH="100%"></center>
+
+<p><br>
+<center>
+<h4>
+Suite : <a href="murphy_inforeseau.htm">Murphy appliqu&eacute; &agrave;
+l'informatique en r&eacute;seau</a></h4></center>
+
+<center>
+<p><br>
+<hr WIDTH="100%">
+<br>Lucien a &eacute;tabli des Lois informatiques relatives &agrave; la
+politique : voir les <b><font size=+1><a href="murphy_politique.htm">Lois
+de Coste</a></font></b>.
+<p>De l'<a href="#ineg von Neumann">In&eacute;galit&eacute; de Von Neumann</a>
+a &eacute;t&eacute; d&eacute;duite par Christophe Camel toute une <b><a href="theorie_bug.htm">Th&eacute;orie
+des Bugs</a></b>.
+<p>La <a href="../perdu.html?u=http://www.multimania.com/hconline/delire1.htm">face cach&eacute;e
+de l'informatique</a> chez Chris Hohmann</center>
+
+<p><br>
+<br>
+<br>
+<p>
+<hr ALIGN=LEFT WIDTH=100% SIZE=2>
+<p><a href="index.html">Retour &agrave; la page principale de chez Christophe</a>.
+<p>Retour &agrave; la <a href="index_blagues.htm">page humour</a> / &agrave;
+la <a href="murphy.htm">page des Lois de Murphy</a>.
+<p><a href="index.html#sommaire">Retour &agrave; la page principale.</a>
+<div style="font:11px monospace;color:#888;text-align:center;padding:8px;background:#fff;clear:both">archive de multimania.com/courtois/murphy_informatique3.htm · capture archive.org du 16/08/2001</div></body>
+</html>

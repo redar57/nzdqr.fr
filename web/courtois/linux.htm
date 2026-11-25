@@ -1,0 +1,302 @@
+<SCRIPT LANGUAGE="JavaScript1.1">
+
+<!--
+        function doerror() {return true;};
+        // To avoid multiple calls with frames, only the top-most frameset calls the popup :
+        var nav = navigator.appName.charAt(0);
+        var ver = navigator.appVersion.charAt(0);
+        if (top==self || self.name.substring(0,5)=="ULDIR") { // && (document.cookie.indexOf(document.location) < 0) ) {
+//				document.write("---"+document.cookie.indexOf(document.location)+"---");
+                document.cookie = "IB="+document.location;
+                var w,h;
+                var hak = 0;
+
+                if ((nav=="N" && ver < "4") || (nav=="E" && ver < "3")) {
+                        w = 500;
+                        h = 184;
+                }
+                else if (nav=="N") { // NS 4
+                        w = 468;
+                        h = 134;
+                }
+                else { // IE 4+
+                        w = 468;
+                        h = 134;
+                        hak = 1;
+                }
+
+                var adr = "http://www.multimania.fr/general/pub/popup/perso.phtml?category=/divertir/humour/blague&search_query=" + escape("");
+                window.open(
+                        adr, 
+                        "CtrlWindow",
+                        "width="+w+",height="+h+",toolbar=no,menubar=no,location=no,scrollbars=no,resize=no"
+                        );
+
+                if (hak) {
+                        window.onerror = doerror;
+                }
+        }
+// -->
+
+</SCRIPT>
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head><meta name="nzdqr-original" content="http://multimania.com/courtois/linux.htm">
+   <meta charset="utf-8">
+   <meta name="GENERATOR" content="Mozilla/4.75 [en] (Win98; U) [Netscape]">
+   <meta name="KeyWords" content="Linux">
+   <meta name="Author" content="Christophe Courtois">
+   <title>Linux</title>
+</head>
+<body text="#000000" bgcolor="#FFCCCC" link="#666600" vlink="#000099" alink="#33CCFF" background="">
+
+<center>
+<h1>
+Linux</h1></center>
+
+<center>&nbsp;&nbsp; <a href="#Intro">Intro</a>
+<br><a href="#danger">Linux , un danger pour votre entreprise</a></center>
+
+<center>
+<h2>
+&nbsp;<img SRC="" height=151 width=128></h2></center>
+
+<center>
+<h2>
+<a NAME="Intro"></a>Intro pour ceux qui ne connaissent pas encore</h2></center>
+Linux est un syst&egrave;me d'exploitation de type Unix <i>[hybride BSD-System
+V para&icirc;t-il, personnellement je m'en contrefiche], </i>qui a plusieurs
+particularit&eacute;s par rapport &agrave; la concurrence (<a href="../perdu.html?u=http://www.ihatewindows.com">Windows</a>,
+<a href="../perdu.html?u=http://www.be.com">Be</a>,
+<a href="../perdu.html?u=http://www.apple.com">MacOS</a>...):
+<br>&nbsp;
+<ul>
+<ul>
+<li>
+Il est <b>LIBRE</b> et sous licence GPL : le code source est disponible,
+redistribuable gratuitement, modifiable, debugable... Accessoirement, il
+est <b>GRATUIT</b>.</li>
+
+<li>
+Il est <b>STABLE</b> : j'ai un Pentium 75 sous Linux, il ne reboote que
+quand EDF coupe le jus ou que le ventilo l&acirc;che. Aucun plantage logiciel
+en plusieurs mois de fonctionnement ininterrompu comme serveur de fichier,
+de mail, serveur d'applications, FTP et web.</li>
+
+<li>
+Il n'est <b>PAS EXIGEANT</b> et tourne sur tout et n'importe quoi : j'ai
+recycl&eacute; ce vieux Pentium 75, un 386 aurait aussi fonctionn&eacute;
+pour ce que j'en fait. Linux est port&eacute; sur tout et n'importe quoi,
+de la <a href="../perdu.html?u=http://www.transfert.net/fr/techno/article.cfm%3Fidx_rub%3D89%26idx_art%3D1342">montre</a>
+au <a href="../perdu.html?u=http://www.s390.ibm.com/linux/">super-serveur S/390</a> (les
+deux par IBM !)<a href="../perdu.html?u=http://www.s390.ibm.com/linux/">.</a></li>
+
+<li>
+Des liens : <a href="../perdu.html?u=http://www.suse.com">SuSE</a>, le <a href="../perdu.html?u=http://tux.u-strasbg.fr">club
+de Strasbourg</a> , <b><a href="../perdu.html?u=http://www.kde.org">KDE&nbsp;<a href="../perdu.html?u=http://www.kde.org"><img SRC="kde_logotp3.gif" height=40 width=147 align=ABSCENTER></a></a></b>,
+<a href="../perdu.html?u=http://www.linux.org">Linux.Org&nbsp;</a><a href="../perdu.html?u=http://www.linux.org"><img SRC="linuxorg.gif" height=60 width=145 align=ABSCENTER></a></li>
+
+<br><a href="../perdu.html?u=http://www.linuxfr.org">Da Linux French Homepage&nbsp;<a href="../perdu.html?u=http://www.linuxfr.org"><img SRC="dalinuxfrenchhompage_top.gif" height=52 width=266 align=ABSCENTER></a></a>,
+la <a href="../perdu.html?u=http://www.linuxgazette.com/">Linux Gazette</a>, le <a href="../perdu.html?u=http://www.linuxjournal.com">Linux
+Journal</a></ul>
+</ul>
+
+<hr WIDTH="100%">
+<br>&nbsp;
+<center>
+<h2>
+<a NAME="danger"></a>Linux , un danger pour votre entreprise</h2></center>
+
+<p><br>&nbsp;&nbsp;&nbsp; Cher Monsieur Groballo,
+<p>Directeur Informatique respect&eacute; et respectable d'une soci&eacute;t&eacute;
+prosp&egrave;re, attentif aux &eacute;volutions technologiques de notre
+fin de si&egrave;cle, vous avez c&eacute;d&eacute; aux sir&egrave;nes de
+la tendance la plus hype du moment : vous avez d&eacute;cid&eacute; d'installer
+du Linux dans votre entreprise.
+<p>A priori, bonne pioche. Vous allez enfin pouvoir commencer &agrave;
+vous affranchir de l'emprise tentaculaire de la pieuvre hydroc&eacute;phale
+de Redmond qui vous pompe les 4/5 de votre budget informatique si durement
+n&eacute;goci&eacute; en fin d'ann&eacute;e avec Monsieur Nomonet, cette
+ordure de DAF. Oui, VOUS Marcel Groballo, Directeur informatique, calvitie
+pr&eacute;coce et brioche apparente, nourri pendant 20 ans &agrave; la
+gamelle des mainframes IBM, vous allez participer &agrave; ce mouvement
+irr&eacute;sistible vers le logiciel libre. Oui nous avons bien entendu
+: libre ! Pas plus tard que d&eacute;sormais vous allez faire partie de
+l'avant-garde de ces esprits sup&eacute;rieurs qui pensent et font l'informatique
+de demain. Vous avez m&ecirc;me, pour l'occasion, desserr&eacute; votre
+cravate, d&eacute;fait le premier bouton de votre chemise et vous vous
+surprenez m&ecirc;me &agrave; siffloter "let the sun shine in" en plein
+comit&eacute; de direction. Ca vous redonne les frissons oubli&eacute;s
+de votre jeunesse libertaire lorsque vous aviez taggu&eacute; "no future"
+sur les murs de votre &eacute;cole d'ing&eacute;nieur &agrave; 12000 boules
+le trimestre. Linux, vous en &ecirc;tes convaincu, va vous donner une seconde
+jeunesse.
+<p>&nbsp;Mais avez-vous conscience, Monsieur Groballo, des cons&eacute;quences
+monstrueuses de cet acte impulsif ? ZipiZ, une fois de plus, va vous &eacute;clairer
+sur cette douloureuse question.
+<p>Disons le franchement et sans d&eacute;tour : Linux repr&eacute;sente
+un danger mortel pour votre entreprise. Enfin, pas directement Linux qui
+n'est somme toute qu'un syst&egrave;me d'exploitation inoffensif. Le vrai
+danger c'est le p&eacute;riph&eacute;rique redoutablement indispensable
+de linux : le linuxien.
+<p>Zipiz vous aura pr&eacute;venu, le linuxien est l'ennemi mortel de votre
+infrastructure informatique. Le linuxien, sachez-le, est en effet le premier
+virus polymorphe &agrave; lunette et barbiche non d&eacute;tectable par
+MacAffee, Panda et autres NAVettes antivirales. Il a toutes les caract&eacute;ristiques
+du trojan, puisque vous l'avez vous-m&ecirc;me install&eacute; au coeur
+de votre syst&egrave;me informatique et, tel un monstrueux Back Orifice,
+il va laisser toute sorte de choses dangereuses y entrer et toute l'information
+vitale de votre entreprise en sortir.
+<p>Je vous donnerai un seul conseil pour l'instant : n'ouvrez jamais un
+courrier contenant un CV de linuxien en pi&egrave;ce jointe. Melissa &agrave;
+cot&eacute;, c'est du hoax &agrave; 2 balles.
+<p>Et oui, vous n'y couperez pas : si vous voulez installer du Linux vous
+allez h&eacute;las devoir recruter du linuxien. C'est simple, c'est math&eacute;matique
+1=1 , on peut pas faire autrement. Quelquefois c'est m&ecirc;me le contraire
+: vous recrutez sans le savoir un linuxien et c'est lui qui vous refile
+le linux. De toutes fa&ccedil;ons, dans les deux cas, vous &ecirc;tes foutu.
+Et linux, c'est pas comme votre premi&egrave;re blenno : quand on l'attrape,
+c'est pas 3 semaines d'antibiotiques qui en viennent &agrave; bout !
+<p>Pour se d&eacute;barrasser du linux, faut y aller au fusil de chasse
+en esp&eacute;rant tr&egrave;s fort que les dommages collat&eacute;raux
+entra&icirc;nent aussi la disparition du linuxien (en g&eacute;n&eacute;ral
+&ccedil;a marche, &eacute;tant donn&eacute; que le linuxien est toujours
+post&eacute; devant le linux - visez le pingouin, bien au centre).
+<p>Mais pourquoi le linuxien est-il dangereux pour l'entreprise, me demanderez-vous
+l&eacute;gitimement ? Je vais vous le dire, Monsieur Groballo.
+<p>En premier lieu, sachez que le Linuxien n'est utile &agrave; l'entreprise
+qu'une fois par jour : le soir, au moment o&ugrave; il s'en va. Le reste
+du temps, il ne s'occupe ni de la bonne marche de vos syst&egrave;mes,
+ni du service aux utilisateurs (le service &agrave; l'utilisateur est une
+fonction non impl&eacute;ment&eacute;e dans le noyau du linuxien). Le linuxien
+n'a qu'une pr&eacute;occupation existentielle : Linux. Linux est une fin
+en soi.
+<p>Linux est dans tout et tout est dans Linux. Le reste n'a pas d'importance.
+N'essayez pas d'argumenter sur le sujet avec un linuxien. C'est inutile.
+Autant essayer de persuader un pitbull d'arr&ecirc;ter de se branler sur
+votre pantalon du dimanche. Et avec le linuxien aussi, impuissant, vous
+laisserez faire. D'ailleurs pour le linuxien, les autres syst&egrave;mes
+de votre entreprise ne sont pas des syst&egrave;mes (OS/2, NT, Netware,
+AS400...) ou &eacute;ventuellement ressemblent vaguement &agrave; des syst&egrave;mes
+(HPUX, Aix, Solaris...). Observons attentivement le d&eacute;roulement
+habituel d'une journ&eacute;e de linuxien : le linuxien va se tripoter
+la config, se compiler le noyau, s'installer des conneries, les compiler,
+planter sa machine,&nbsp; recompiler, replanter sa machine, recompiler,
+insulter les free, open et net bsdiens dans les newsgroups, lire les 300
+messages/minutes qu'il re&ccedil;oit des mailing lists sur linux et envoyer
+balader les utilisateurs qui osent encore l'interrompre dans les activit&eacute;s
+pr&eacute;c&eacute;dentes... Il est bien &eacute;vident qu'il ne lui reste
+pas beaucoup de temps pour faire autre chose m&ecirc;me s'il lui en prenait
+l'envie. D'ailleurs le linuxien n'a pas envie de faire autre chose ; il
+est pay&eacute; pour &ccedil;a : jouer avec linux au bureau et discuter
+sans fin des m&eacute;rites compar&eacute;s des distribs.
+<p>Il va&nbsp; bouffer votre bande passante &agrave; t&eacute;l&eacute;charger
+du source puis passer des heures &agrave; recompiler tous les logiciels
+libres pouvant tourner sur cette&nbsp; plate-forme et Dieu sait s'il y
+en a. Vous allez enfin comprendre les r&eacute;ticences de la communaut&eacute;
+&agrave; traduire "free software" par "logiciel gratuit". Parce que le
+logiciel "gratuit", faites-moi confiance, le linuxien va vous le faire
+payer !
+<p>Inutile bien s&ucirc;r de lui parler de vos serveurs Windows NT sous
+peine de recevoir, avant d'avoir pu terminer votre phrase, une lettre de
+d&eacute;mission antidat&eacute;e des 3 mois de pr&eacute;avis. Estimez-vous
+heureux s'il ne&nbsp; vous crache pas dessus un flot de bile verte, s'il
+ne se roule pas dans ses excr&eacute;ments et s'il ne s'arrache pas les
+testicules pour vous les jeter au visage rien que pour avoir pu imaginer
+une fraction de seconde qu'il pourrait se compromettre avec un produit
+microsoft. Si vous avez pu penser un jour qu'un linuxien allait pouvoir
+s'attaquer &agrave; l'impossible challenge de s&eacute;curiser vos serveurs
+NT ou administrer
+<br>votre messagerie Notes, faites une croix dessus. Jamais, jamais, jamais.
+Mettez-vous cette illusion sur l'oreille, vous la fumerez plus tard.
+<p>Vos serveurs Windows NT ne seront absolument pas prot&eacute;g&eacute;s
+mais &ccedil;a, le linuxien s'en bat les RPM ; pour lui ils ne font pas
+partie de son&nbsp; univers professionnel voire cosmique. M&ecirc;me s'ils
+repr&eacute;sentent 99,9 % de votre parc install&eacute;. Vous avez &eacute;t&eacute;
+assez con pour acheter du microsoft, faut pas venir lui demander en plus
+d'assumer vos conneries. Donc s'ils se font hacker, bien fait pour vous,
+c'est pas ses oignons. N'avez qu'&agrave; recruter un d&eacute;bile profond
+qui pensera faire de l'informatique en administrant du Windows NT. Suffirait
+simplement de migrer vos 3215 serveurs NT et vos 23674 utilisateurs Windows
+98 sous linux pour qu'il consente &agrave; s'en pr&eacute;occuper. C'est
+quand m&ecirc;me pas la mer &agrave; boire. Faites un effort, merde.
+<p>D'ailleurs le linuxien va s'installer sendmail ou postfix comme serveur
+de messagerie. Notes, Exchange et tous ces logiciels pour tapette en windows,
+il voudra m&ecirc;me pas en entendre parler. Tant qu'on est dans les installations,
+si vous avez le malheur de lui laisser installer votre proxy http, votre
+relais de messagerie et votre DNS sur Linux vous &ecirc;tes cuit ! D'ailleurs
+ceci n'est qu'une hypoth&egrave;se d'&eacute;cole, il ne vous demandera
+m&ecirc;me pas votre avis ! Vous &ecirc;tes cuit de toutes fa&ccedil;ons
+! Vous avez recrut&eacute; le package infernal "sendmail/bind/squid" en
+m&ecirc;me temps que le linuxien. C'est livr&eacute; avec. Pr&eacute;install&eacute;.
+Si on essaye d'enlever un seul morceau, tout p&egrave;te. Bien s&ucirc;r,
+toutes ces machines vont rebooter r&eacute;guli&egrave;rement au rythme
+des upgrades de ses logiciels qu'il aura t&eacute;l&eacute;charg&eacute;
+sur le net, c'est &agrave; dire en moyenne 16 fois par jour. Vous aviez
+eu du mal &agrave; comprendre le concept de DMZ, zone d&eacute;militaris&eacute;e.
+Vous&nbsp; mordez l'esprit maintenant ? C'est un terrain min&eacute;. M&ecirc;me
+les miliciens serbes n'y tiendraient pas la journ&eacute;e.
+<p>Au cas o&ugrave; il aurait laiss&eacute; un peu de bande passante aux
+3000 autres utilisateurs, les fen&ecirc;tres de disponibilit&eacute;s qu'il
+offrira entre deux "compilations/boot" ne permettront pas &agrave; quiconque
+de charger une page html en entier. Par contre les utilisateurs pourront
+consulter les 200 Go de news feed&eacute;s par le linuxien sur le serveur
+qu'il a install&eacute; (300 Mo de feed par jour) et dont bien s&ucirc;r
+ils se contrefoutent.
+<p>Bon tout ceci n'est pas bien m&eacute;chant me direz vous. Je suis d'accord.
+Mais pour la s&eacute;curit&eacute; de votre r&eacute;seau, le pire reste
+&agrave; venir. En effet le linuxien va vous "monitorer" votre r&eacute;seau.
+Ca veut dire en clair que quand sa machine n'est pas en train de compiler,
+elle sature votre r&eacute;seau avec des pings, des scans de ports, des
+requ&ecirc;tes snmp etc... Le linuxien vous mettra tout &ccedil;a sous
+forme de graphique sur un serveur http o&ugrave; vous pourrez constater
+de visu que vous pourriez avoir un r&eacute;seau performant si l'outil
+de monitoring de ce cr&eacute;tin des alpes ne l'effondrait pas en permanence.
+Il sera tellement fier de ses graphiques qu'il les laissera en consultation
+sur internet, avec en prime les statistiques de votre squid g&eacute;n&eacute;r&eacute;
+par prostat. MRTG et Prostat, vos pires ennemis. Ce gugusse que vous avez
+recrutse&eacute; pour assurer la s&eacute;curit&eacute; de votre r&eacute;seau
+va remettre aux millions de "script kiddies" de la plan&egrave;te la description
+exacte de votre r&eacute;seau : les routeurs et autres &eacute;l&eacute;ments
+du r&eacute;seau tournant snmp avec les graphes MRTG, le nom et l'adresse
+de toutes vos machines avec Prostat (ou autre netsaint). Il r&eacute;v&eacute;lera
+&agrave; la plan&egrave;te enti&egrave;re que vos utilisateurs, comme les
+autres, passent leur journ&eacute;e sur porncity... En plus de ruiner la
+s&eacute;curit&eacute; de votre entreprise, il va aussi bousiller son image
+de marque. Une semaine apr&egrave;s l'arriv&eacute;e de votre linux guru
+dans la maison, le plan intime de votre r&eacute;seau va exister en 3 millions
+d'exemplaires. La seule personne qui ne l'aura pas, c'est vous. Votre linuxien
+n'aura bien s&ucirc;r jamais le temps de le faire. En plus comme il passe
+sa journ&eacute;e &agrave; poster dans les newsgroups et &agrave; r&eacute;pondre
+aux mailing lists, tous les hackers conna&icirc;tront le moindre changement
+de version de vos produits et au prochain exploit sur ceux-ci, vous y avez
+droit en premier ! Si vous n'&ecirc;tes pas encore fix&eacute; sur votre
+nom de domaine, je vous conseille nukecity.com ; &ccedil;a aura le m&eacute;rite
+d'&ecirc;tre clair. Pas la peine de vous abonner &agrave; Bugtraq, c'est
+vous qui allez les d&eacute;couvrir en premier. Parce qu'&agrave; poster
+avec son&nbsp; esprit de caract&eacute;riel (le linuxien est soit caract&eacute;riel
+soit mort), il s'est fait autant d'ennemis que Milosevic et Saddam Hussein
+r&eacute;unis.
+<p>Mais ses ennemis &agrave; lui sont plus dangereux et mieux arm&eacute;s.
+Comme les "script&nbsp; kiddies" adorent linux, ils ont exactement les
+m&ecirc;mes centres d'int&eacute;r&ecirc;t que votre barjot poilu &agrave;
+lunettes, lisent les m&ecirc;mes newsgroups et sont abonn&eacute;s aux
+m&ecirc;mes mailing lists. Ca cr&eacute;e des liens et ces liens-l&agrave;,
+je vous l'assure, conduisent directement &agrave; votre serveur comptabilit&eacute;/paye.
+<p>Et &ccedil;a, &ccedil;a risque pas de vous rabibocher avec Monsieur
+Nomonet. Avec Windows NT vous seriez &agrave; l'abri de ce genre d'individus
+: personne n'a jamais pris son pied &agrave; l'installer ni &agrave; l'administrer.
+Finalement, c'est un avantage.
+<br>&nbsp;
+<p>C'&eacute;tait un message d'avertissement de ZipiZ &agrave; Monsieur&nbsp;
+Groballo.
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p>
+<hr WIDTH="100%">
+<p><a href="mailto:christophe@courtois.cc">Me laisser un mot</a>
+<p>Retour &agrave; la <a href="index_blagues.htm">page humour</a>.
+<p><a href="index.html#sommaire">Retour &agrave; la page principale.</a>
+<div style="font:11px monospace;color:#888;text-align:center;padding:8px;background:#fff;clear:both">archive de multimania.com/courtois/linux.htm · capture archive.org du 01/11/2001</div></body>
+</html>

@@ -1,0 +1,372 @@
+<SCRIPT LANGUAGE="JavaScript1.1">
+
+<!--
+        function doerror() {return true;};
+        // To avoid multiple calls with frames, only the top-most frameset calls the popup :
+        var nav = navigator.appName.charAt(0);
+        var ver = navigator.appVersion.charAt(0);
+        if (top==self || self.name.substring(0,5)=="ULDIR") { // && (document.cookie.indexOf(document.location) < 0) ) {
+//				document.write("---"+document.cookie.indexOf(document.location)+"---");
+                document.cookie = "IB="+document.location;
+                var w,h;
+                var hak = 0;
+
+                if ((nav=="N" && ver < "4") || (nav=="E" && ver < "3")) {
+                        w = 500;
+                        h = 184;
+                }
+                else if (nav=="N") { // NS 4
+                        w = 468;
+                        h = 134;
+                }
+                else { // IE 4+
+                        w = 468;
+                        h = 134;
+                        hak = 1;
+                }
+
+                var adr = "http://www.multimania.fr/general/pub/popup/perso.phtml?category=/divertir/humour/blague&search_query=" + escape("");
+                window.open(
+                        adr, 
+                        "CtrlWindow",
+                        "width="+w+",height="+h+",toolbar=no,menubar=no,location=no,scrollbars=no,resize=no"
+                        );
+
+                if (hak) {
+                        window.onerror = doerror;
+                }
+        }
+// -->
+
+</SCRIPT>
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head><meta name="nzdqr-original" content="http://multimania.com/courtois/jargon.htm">
+   <meta charset="utf-8">
+   <meta name="GENERATOR" content="Mozilla/4.73 [en] (Win98; U) [Netscape]">
+   <meta name="KeyWords" content="jargon,informatique,Génération X">
+   <title>Le jargon informatique : traduction</title>
+</head>
+<body text="#00FFFF" bgcolor="#000000" link="#0000FF" vlink="#8080FF" alink="#FF0000">
+
+<center>
+<h1>
+Le jargon informatique : traduction</h1></center>
+
+<center><a href="#jargon">La vraie signification du jargon des vendeurs
+de mat&eacute;riel informatique</a>
+<br><a href="#jargon">...et des informaticiens</a>
+<br><a href="#termes géné X">Termes de la G&eacute;n&eacute;ration X</a>
+<br><a href="definitions.htm#revuesscientifiques">Comment &eacute;crire
+et d&eacute;crypter les articles des revues scientifiques ?</a>
+<p><a href="#anglicismes">Traductions fran&ccedil;aises d'anglicismes</a>
+<br><i><a href="hommes-femmes.htm#oestrogenestestosterone">Oestrog&egrave;nes
+et testost&eacute;rone</a></i>
+<br><i><a href="definitions.htm">Autres d&eacute;finitions</a></i>
+<p>A lire absolument pour les informaticiens et cybernautes : le <b><a href="../perdu.html?u=http://www.tuxedo.org/~esr/jargon/">New
+Hacker's Dictionary</a></b> d'Eric S. Raymond (en anglais)
+<br>
+<hr WIDTH="100%"></center>
+
+<center>
+<h1>
+<a NAME="jargon"></a><b>La vraie signification du jargon des vendeurs de
+mat&eacute;riel informatique</b></h1></center>
+
+<ul>&nbsp;
+<br><font color="#FFFFFF"><b>Nouveau</b> </font>: couleur diff&eacute;rente
+du mod&egrave;le pr&eacute;c&eacute;dent.
+<p><font color="#FFFFFF">Vrai<b>ment nouvea</b>u</font> : non compatible
+avec le mod&egrave;le pr&eacute;c&eacute;dent.
+<p><b><font color="#FFFFFF">Exclusif</font></b> : import&eacute;.
+<p><font color="#FFFFFF"><b>In&eacute;gal&eacute;</b> </font>: presque
+aussi bon que la concurrence.
+<p><b><font color="#FFFFFF">Simple d'utilisation</font> </b>: fonctions
+r&eacute;duites au minimum pour limiter les co&ucirc;ts du constructeur.
+<p><b><font color="#FFFFFF">Ergonomie avanc&eacute;e</font> </b>: incompr&eacute;hensible.
+<p><b><font color="#FFFFFF">C'est enfin sorti </font></b>: personne ne
+s'attendait &agrave; ce que &ccedil;a sorte.
+<p><b><font color="#FFFFFF">Test&eacute; sur le terrain </font></b>: le
+constructeur ne l'a pas test&eacute;.
+<p><b><font color="#FFFFFF">Vente directe seulement</font> </b>: le constructeur
+et le distributeur sont f&acirc;ch&eacute;s.
+<p><b><font color="#FFFFFF">Des ann&eacute;es de d&eacute;veloppement</font></b>:
+on a enfin r&eacute;ussi &agrave; en faire marcher un exemplaire.
+<p><font color="#FFFFFF"><b>R&eacute;volutionnaire</b> </font>: diff&eacute;rent
+de la concurrence.
+<p><b><font color="#FFFFFF">Futuriste </font></b>: ne marche que sur les
+ordinateurs de la prochaine g&eacute;n&eacute;ration.
+<p><b><font color="#FFFFFF">Performances prouv&eacute;es</font> </b>: a
+surv&eacute;cu au b&ecirc;ta-test..
+<p><b><font color="#FFFFFF">Compatible avec les tous les standards</font></b>
+: les n&ocirc;tres, pas les v&ocirc;tres.
+<p><b><font color="#FFFFFF">Haute fiabilit&eacute; </font></b>: &ccedil;a
+marche assez longtemps pour pouvoir sortir de l'usine.
+<p><b><font color="#FFFFFF">Nouvelle g&eacute;n&eacute;ration</font> </b>:
+l'ancien design a &eacute;chou&eacute;, celui-l&agrave; marchera peut-&ecirc;tre
+mieux.
+<p><b><font color="#FFFFFF">Service client dans tout le pays</font> </b>:
+vous pouvez nous le renvoyer &agrave; partir de n'importe quel a&eacute;roport.
+<p><b><font color="#FFFFFF">Performances jamais r&eacute;alis&eacute;es</font></b>:
+jamais rien n'a jamais fonctionn&eacute; de <i>cette</i> mani&egrave;re.
+<p><b><font color="#FFFFFF">Performances in&eacute;gal&eacute;es</font></b>
+: on n'a jamais vu aussi lent.
+<p><b><font color="#FFFFFF">Satisfaction garantie</font> </b>: si le CD
+n'est pas lisible, on vous le change.
+<p><b><font color="#FFFFFF">Derni&egrave;re technologie a&eacute;rospatiale</font></b>:
+un de nos techniciens a autrefois &eacute;t&eacute; vir&eacute; de chez
+Boeing.
+<p><b><font color="#FFFFFF">Progiciel client-serveur</font></b> : effectivement,
+le client n'est jamais servi.
+<p><b><font color="#FFFFFF">Multim&eacute;dia </font></b>: &eacute;met
+un bip apr&egrave;s chaque message d'erreur.
+<p><b><font color="#FFFFFF">Compatible Windows 95 </font></b>: ne marche
+pas avec Windows 3.1
+<p><b><font color="#FFFFFF">Langage ind&eacute;pendant de la plate-forme
+</font></b>:
+ne marche sur aucune machine.
+<p><b><font color="#FFFFFF">Etat de l'art </font></b>: ce qu'on pourrait
+faire avec assez de fric.
+<p><b><font color="#FFFFFF">Windows 95</font></b> : extentions et engin
+graphique 32 bits pour un patch 16 bits d'un OS 8 bits originalement cod&eacute;
+pour un microprocesseur 4 bits par une compagnie de 2 bits qui ne tol&egrave;re
+pas 1 bit de comp&eacute;tition.
+<p><b><font color="#FFFFFF">Plusieurs approches sont pr&eacute;sentement
+&eacute;valu&eacute;es : </font></b>on essaie encore jusqu'&agrave; ce
+que &ccedil;a fonctionne.
+<p><b><font color="#FFFFFF">Coordination de projet tr&egrave;s s&eacute;rieuse
+:</font></b> on a pris notre pause caf&eacute; ensemble.
+<p><b><font color="#FFFFFF">C'est une r&eacute;volution technologique :
+</font></b>&ccedil;a
+fonctionne pas mieux mais &ccedil;a l'air hi-tech !
+<p><b><font color="#FFFFFF">La satisfaction des consommateurs est assur&eacute;e
+: </font></b>on est tellement en retard dans notre &eacute;ch&eacute;ancier
+que le public va accepter d'avaler n'importe quoi !
+<p><b><font color="#FFFFFF">Les testes pr&eacute;liminaires furent inconclusifs
+: </font></b>on a fait sauter un mainframe d'un demi-million de dollar
+en essayant de compiler le programme.
+<p><b><font color="#FFFFFF">Les r&eacute;sultats des tests sont plus que
+satisfaisants : </font></b>on a &eacute;t&eacute; capable de rebouter Windows
+95 apr&egrave;s l'installation.
+<p><b><font color="#FFFFFF">Le projet devra &ecirc;tre abandonn&eacute;
+:
+</font></b>le seul gars qui arrivait &agrave; comprendre comment &ccedil;a
+fonctionne vient de d&eacute;missionner.
+<p><b><font color="#FFFFFF">N&eacute;cessite un syst&egrave;me robuste
+:</font></b> n&eacute;cessite 128 Mo de RAM au minimum.
+<p><b><font color="#FFFFFF">Ne n&eacute;cessite pas un syst&egrave;me robuste
+:</font></b> accepte de tourner avec 64 Mo.
+<p><b><font color="#FFFFFF">Aucun entretien n&eacute;cessaire : </font></b>&ccedil;a
+ne se r&eacute;pare pas de toutes fa&ccedil;ons.
+<p><b><font color="#FFFFFF">Nous respectons les normes </font></b>: on
+l'a toujours fait comme &ccedil;a.
+<br>&nbsp;
+<br>&nbsp;</ul>
+
+<hr WIDTH="100%">
+<center>
+<h1>
+<a NAME="informaticiens"></a>...et des informaticiens</h1></center>
+
+<p><br><b><font color="#FFFFFF">Bug :</font></b> Fonction qui n'a pas r&eacute;ussi
+&agrave; figurer dans le manuel.
+<p><b><font color="#FFFFFF">Convivial : </font></b>Syst&egrave;me qui met
+tellement de temps &agrave; se lancer que vous avez le temps d'aller vous
+prendre une mousse.
+<br>&nbsp;
+<br><b><font color="#FFFFFF">Distribu&eacute; (syst&egrave;me) :</font></b>
+Ensemble informatique o&ugrave; la panne d'un ordinateur dont vous ignoriez
+l'existence rend le v&ocirc;tre inutilisable.
+<br>&nbsp;
+<br><b><font color="#FFFFFF">Multit&acirc;che </font></b>: 1) fait plusieurs
+erreurs &agrave; la fois&nbsp;&nbsp; 2) peut booter et se crasher simultan&eacute;ment.
+<p><b><font color="#FFFFFF">Pentium : </font>P</b>ractically <b>E</b>verybody
+<b>N</b>ow
+<b>T</b>hinks <b>I</b>t's <b>U</b>seless for <b>M</b>aths.
+<p><b><font color="#FFFFFF">Programme : </font></b>Outil pour transformer
+des donn&eacute;es en messages d'erreur.
+<p><b><font color="#FFFFFF">Rebouteux</font></b> n.m.: (fam) Utilisateur
+de Windows, ainsi appel&eacute; parce qu'il passe l'essentiel de son temps
+&agrave; rebouter. Mi-chamane, mi-gu&eacute;risseur, le rebouteux pratique
+son art en concoctant des potions &agrave; base de fr&eacute;quents et
+couteux updates, d'anti-virus, de programmes inutilitaires autant que cher
+pay&eacute;s, de drivers instables t&eacute;l&eacute;charg&eacute;s au
+prix d'une longue patience. Il pratique &eacute;galement l'imposition des
+mains, et clame des incantations principalement compos&eacute;es d'injures
+orduri&egrave;res que nous ne pouvons reproduire ici. Malgr&eacute; tous
+ses efforts, le rebouteux ne parvient que rarement &agrave; trouver la
+Stabilit&eacute; Philosophale. Obstin&eacute;, il reboute pour l'Eternit&eacute;.
+<br>&nbsp;
+<br><b><font color="#FFFFFF">S&eacute;curis&eacute; (syt&egrave;me) :</font></b>
+Eteint, d&eacute;branch&eacute;, mis au coffre, mis dans un cercueil plomb&eacute;
+et coul&eacute; dans le b&eacute;ton au fond d'une fosse maritime de 5
+000 m.
+<br>&nbsp;
+<br><b><font color="#FFFFFF">Utilisateur </font></b>(nom commun) : Mot
+utilis&eacute; par les informaticiens en lieu et place d'"idiot".
+<p><b><font color="#FFFFFF">Windows :</font></b> Emulateur 8086 sur Pentium.
+<br>&nbsp;
+<br>&nbsp;
+<p>
+<hr WIDTH="100%">
+<center>
+<h1>
+<a NAME="termes géné X"></a>Termes divers de la G&eacute;n&eacute;ration
+X</h1></center>
+
+<ul>
+<li>
+<b><font color="#FFFFFF">Consultant tron&ccedil;onneuse</font></b> : expert
+ext&eacute;rieur engag&eacute; pour r&eacute;duire le nombre d'employ&eacute;s
+selon les voeux des&nbsp;&nbsp;&nbsp;&nbsp; actionnaires, et laissant les
+mains propres au management.</li>
+
+<br>&nbsp;
+<li>
+<b><font color="#FFFFFF">Blamestorming </font></b>: s&eacute;ance de discussion
+en groupe pass&eacute;e &agrave; discuter pourquoi une date limite n'a
+pas &eacute;t&eacute; respect&eacute;e, ou pourquoi un projet est parti
+dans les choux, et &agrave; d&eacute;cider qui est responsable.</li>
+
+<br>&nbsp;
+<li>
+<b><font color="#FFFFFF">Flamestorming </font></b>: blamestorming assorti
+d'engueulades.</li>
+
+<br>&nbsp;
+<li>
+<b><font color="#FFFFFF">404 </font></b>: Injoignable, perdu (selon le
+message d'erreur du Web)</li>
+
+<br>&nbsp;
+<li>
+<b><font color="#FFFFFF">On-line potatoe</font></b> : &eacute;quivalent,
+une g&eacute;n&eacute;ration apr&egrave;s, de la <i>couch potatoe, </i>&eacute;tal&eacute;e
+cette fois non plus pr&egrave;s devant t&eacute;l&eacute;, mais devant
+son ordi.</li>
+
+<br>&nbsp;
+<li>
+<b><font color="#FFFFFF">Prairie-dogging ("chien de prairie"-ing)</font></b>
+: quelqu'un hurle dans le couloir, tout le monde sort la t&ecirc;te de
+son bureau pour voir ce que c'&eacute;tait.</li>
+
+<br>&nbsp;
+<li>
+<b><font color="#FFFFFF">D&eacute;sinstall&eacute; </font></b>: vir&eacute;.</li>
+
+<br>&nbsp;
+<li>
+<b><font color="#FFFFFF">Strat&eacute;gie </font></b>: plan &agrave; long
+terme dont on ne peut &eacute;valuer l'effet que bien longtemps apr&egrave;s
+que ceux qui l'ont cr&eacute;&eacute; aient quitt&eacute; l'organisation.</li>
+
+<br>&nbsp;
+<li>
+<b><font color="#FFFFFF">Compatible </font></b>: accepte toute erreur,
+quelle qu'en soit la source.</li>
+</ul>
+
+<hr WIDTH="100%">
+<br>&nbsp;
+<center>
+<h1>
+<a NAME="anglicismes"></a>Traduction fran&ccedil;aise d'anglicismes</h1></center>
+
+<p><br><b><font color="#FFFFFF">Abreuvware</font></b> : serveur de r&eacute;seau
+<br><b><font color="#FFFFFF">Arrosware</font></b> : logiciel de diffusion
+de messages &eacute;lectroniques
+<br><b><font color="#FFFFFF">Assomware</font></b> : logiciel tr&egrave;s
+difficile &agrave; comprendre
+<br><b><font color="#FFFFFF">Aurevware</font></b> : proc&eacute;dure de
+sortie d'un logiciel
+<br><b><font color="#FFFFFF">Avware</font></b> : logiciel qui vaut le coup
+d'oeil
+<br><b><font color="#FFFFFF">Baigneware</font></b> : logiciel de nettoyage
+du disque rigide
+<br><b><font color="#FFFFFF">Boudware</font></b> : logiciel d&eacute;di&eacute;
+&agrave; la m&eacute;ditation
+<br><b><font color="#FFFFFF">Bavware</font></b> : logiciel pour le premier
+&acirc;ge
+<br><b><font color="#FFFFFF">Cafenware</font></b> : logiciel tr&egrave;s
+&eacute;nervant
+<br><b><font color="#FFFFFF">Cherware</font></b> : logiciel qui co&ucirc;te
+la peau des fesses
+<br><b><font color="#FFFFFF">Cibware</font></b> : logiciel mal fait qui
+nous fait sacrer lorsqu'on l'utilise
+<br><b><font color="#FFFFFF">D&eacute;potware</font></b> : poubelle de
+Windows
+<br><b><font color="#FFFFFF">Dortware</font></b> : logiciel &agrave; dormir
+debout
+<br><b><font color="#FFFFFF">Egoutware</font></b>: logiciel qui filtre
+les donn&eacute;es inutiles
+<br><b><font color="#FFFFFF">Embaumware</font></b>: logiciel d&eacute;di&eacute;
+&agrave; l'archivage de longue dur&eacute;e
+<br><b><font color="#FFFFFF">Entonware</font></b> : logiciel de compression
+de donn&eacute;es
+<br><b><font color="#FFFFFF">Isolware</font></b> : logiciel d'application
+&eacute;lectorale
+<br><b><font color="#FFFFFF">Manware</font></b> : logiciel destin&eacute;
+aux personnes riches
+<br><b><font color="#FFFFFF">Mirware</font></b> : logiciel de copie
+<br><b><font color="#FFFFFF">Mouchware</font></b> : logiciel antivirus
+<br><b><font color="#FFFFFF">Oratware</font></b> : logiciel dont il faut
+prier pour esp&eacute;rer qu'il fonctionne
+<br><b><font color="#FFFFFF">Panternware</font></b> : logiciel dangereux
+pour l'utilisateur
+<br><b><font color="#FFFFFF">Peignware</font></b> : logiciel &agrave; debuguer
+les boucles.
+<br><b><font color="#FFFFFF">Purgatware</font></b> : logiciel dont il faut
+se confesser apr&egrave;s utilisation
+<br><b><font color="#FFFFFF">Promontware</font></b> : logiciel d'observation
+<br><b><font color="#FFFFFF">Promouvware</font></b> : logiciel de d&eacute;monstration
+<br><b><font color="#FFFFFF">Rotisware</font></b> : salle d'informatique
+mal climatis&eacute;e
+<br><b><font color="#FFFFFF">Suppositware</font></b> : logiciel qui fait
+chier
+<br><b><font color="#FFFFFF">Tirware</font></b> : logiciel sp&eacute;cialis&eacute;
+dans le rangement des dossiers
+<br><b><font color="#FFFFFF">Tupperware</font></b> : R&eacute;union de
+directrices de plusieurs entreprises
+<br><b><font color="#FFFFFF">Vatferware</font></b> : logiciel de contr&ocirc;le
+d'acc&egrave;s
+<br>&nbsp;
+<p><b><font color="#FFFFFF">Accesware</font> </b>: Logiciel dont on peut
+se passer
+<br><b><font color="#FFFFFF">Arrosware</font></b> : Augmentation de salaire
+d'un d&eacute;veloppeur
+<br><b><font color="#FFFFFF">Balansware</font></b> : Fauteuil de responsable
+informatique
+<br><b><font color="#FFFFFF">Blocoperatware</font></b> : Salle de calcul
+<br><b><font color="#FFFFFF">Broidunware</font></b> : D&eacute;buggage
+<br><b><font color="#FFFFFF">Envoyerrecevware</font></b> : Logiciel de
+messagerie
+<br><b><font color="#FFFFFF">Essayevware</font></b> : Version b&ecirc;ta
+<br><b><font color="#FFFFFF">Extensionmemware</font></b> : Extension m&eacute;moire
+<br><b><font color="#FFFFFF">Grimware</font></b> : Documentation d'un logiciel
+<br><b><font color="#FFFFFF">Labware</font></b> : P&eacute;pini&egrave;re
+d'informaticiens
+<br><b><font color="#FFFFFF">Laminware</font></b> : Utilitaire de compression
+de donn&eacute;es
+<br><b><font color="#FFFFFF">Mainelware</font></b> : Zone &agrave; Informatisation
+Prioritaire (ZIP)
+<br><b><font color="#FFFFFF">Peremptware</font></b> : Guru de l'informatique
+<br><b><font color="#FFFFFF">Redhibitware</font></b> : Bug
+<br><b><font color="#FFFFFF">Refectware</font></b> : Alimentation d'ordinateur
+<br><b><font color="#FFFFFF">Rienavware</font></b> : Algorythme de cryptage
+<br><b><font color="#FFFFFF">Saslesbware</font></b> : Logiciel ergonomique
+<br><b><font color="#FFFFFF">Underware</font></b> : Sous-v&ecirc;tements
+d'informaticien(ne)
+<br><b><font color="#FFFFFF">Urinware</font></b> : Programme qui soulage
+la charge du r&eacute;seau
+<br><b><font color="#FFFFFF">Vienvware</font></b> : Signal sonore destin&eacute;
+&agrave; attirer l'attention
+<br><b><font color="#FFFFFF">Voulezvouscoucheravecmoicesware</font></b>
+: Site web porno
+<p>
+<hr WIDTH="100%">
+<p><a href="mailto:christophe@courtois.cc">Me laisser un mot</a>
+<p>Retour &agrave; la <a href="index_blagues.htm">page humour</a>.
+<p><a href="index.html#sommaire">Retour &agrave; la page principale.</a>
+<div style="font:11px monospace;color:#888;text-align:center;padding:8px;background:#fff;clear:both">archive de multimania.com/courtois/jargon.htm · capture archive.org du 01/11/2001</div></body>
+</html>

@@ -1,0 +1,243 @@
+<meta charset="utf-8">
+<SCRIPT LANGUAGE="JavaScript1.1">
+
+<!--
+        function doerror() {return true;};
+        // To avoid multiple calls with frames, only the top-most frameset calls the popup :
+        var nav = navigator.appName.charAt(0);
+        var ver = navigator.appVersion.charAt(0);
+        if (top==self || self.name.substring(0,5)=="ULDIR") { // && (document.cookie.indexOf(document.location) < 0) ) {
+//				document.write("---"+document.cookie.indexOf(document.location)+"---");
+                document.cookie = "IB="+document.location;
+                var w,h;
+                var hak = 0;
+
+                if ((nav=="N" && ver < "4") || (nav=="E" && ver < "3")) {
+                        w = 500;
+                        h = 184;
+                }
+                else if (nav=="N") { // NS 4
+                        w = 468;
+                        h = 134;
+                }
+                else { // IE 4+
+                        w = 468;
+                        h = 134;
+                        hak = 1;
+                }
+
+                var adr = "http://www.multimania.fr/general/pub/popup/perso.phtml?category=/divertir/humour/blague&search_query=" + escape("");
+                window.open(
+                        adr, 
+                        "CtrlWindow",
+                        "width="+w+",height="+h+",toolbar=no,menubar=no,location=no,scrollbars=no,resize=no"
+                        );
+
+                if (hak) {
+                        window.onerror = doerror;
+                }
+        }
+// -->
+
+</SCRIPT>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD><meta name="nzdqr-original" content="http://multimania.com/courtois/theorie_bug.htm">
+   <TITLE>Th&eacute;orie des bugs</TITLE>
+   <META NAME="GENERATOR" CONTENT="Mozilla/3.01Gold (Win95; I) [Netscape]">
+   <META NAME="Author" CONTENT="Christophe Camel <ChrisCamel@COMPUSERVE.COM>">
+   <META NAME="KeyWords" CONTENT="theoriebugs">
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#FFFFFF" LINK="#400080" VLINK="#000000" ALINK="#FF0000" BACKGROUND="fondeq.jpg">
+
+<H1 ALIGN=CENTER>Th&eacute;orie des Bugs</H1>
+
+<CENTER><P><B>par <A HREF="../perdu.html?u=http://ourworld.compuserve.com/homepages/Le_Rush">Christophe
+Camel</A></B></P></CENTER>
+
+<H2>I) Univers des bugg&eacute;s</H2>
+
+<P>On pose : </P>
+
+<UL>
+<P>X : Un &eacute;l&eacute;ment, constitu&eacute; d'un ensemble d'instructions.</P>
+
+<P>|X| : Taille de X. C'est la quantit&eacute; d'instructions mise en jeu
+pour d&eacute;finir X.</P>
+
+<P>[X] : Cardinalit&eacute; de X. C'est sa <B><U>bogosit&eacute;</U></B>.
+Elle donne une information sur la quantit&eacute; de bugs contenus dans
+l'&eacute;l&eacute;ment X.</P>
+</UL>
+
+<P>Alors :</P>
+
+<P>U : Univers des bugg&eacute;s. <BR>
+Un &eacute;l&eacute;ment X appartient &agrave; cet univers si et seulement
+si la quantit&eacute; de bugs qui le contient est au minimum &eacute;gale
+&agrave; 1.</P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<P><B>Proposition </B>: Tout logiciel appartient &agrave; U.</P>
+
+<UL>
+<P><I>D&eacute;monstration </I>: L'<A HREF="murphy_informatique.htm#ineg von Neumann">in&eacute;galit&eacute;
+de Von Neumann</A> prouve l'inexistance d'un espace d&eacute;bugg&eacute;
+pour tout programme non trivial. Or, par d&eacute;finition, un logiciel
+est non trivial ( soit [X] &gt; 0 ). Sachant que tout programme non trivial
+appartient &agrave; U ( [X]&gt;0 =&gt; X dans U ), tout logiciel appartient
+aussi &agrave; U.</P>
+</UL>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<P><B>Proposition </B>: Tout programme trivial est exclu de U. L'ensemble
+des programmes triviaux est appel&eacute; &Ugrave;. (U barre).</P>
+
+<UL>
+<P><I>D&eacute;monstration </I>: Evidente.</P>
+</UL>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H2>II) Fonctions de transfert inter-univers</H2>
+
+<P>Le transfert d'un &eacute;l&eacute;ment X d'un univers vers un autre
+consiste en la modification de cet &eacute;l&eacute;ment pour que la r&egrave;gle
+d'appartenance soit v&eacute;rifi&eacute;e dans le nouvel univers.</P>
+
+<P>On d&eacute;finit la fonction B comme suit :</P>
+
+<P>B : X --------&gt; Y <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&Ugrave; --------&gt; U</P>
+
+<P>La fonction Y = B(X) est appel&eacute; <B>fonction de Buggage</B>. Elle
+&quot;transforme&quot; un programme trivial en logiciel (programme bugg&eacute;)
+par le passage de l'univers d&eacute;bugg&eacute; &Ugrave; &agrave; l'univers
+des bugg&eacute;s U. La fonction B est n'est pas une fonction bijective.</P>
+
+<P>La fonction r&eacute;ciproque D = B<I><FONT SIZE=-1>-1</FONT></I> peut
+se d&eacute;finir comme cela : <BR>
+X --------&gt; Y <BR>
+U --------&gt; &Ugrave;</P>
+
+<P>D r&eacute;alise le passage d'un logiciel bugg&eacute; &agrave; l'univers
+d&eacute;bugg&eacute;, c'est la <B>fonction de d&eacute;buggage TOTAL</B>.
+Cette fonction n'existe pas, du fait de l'<A HREF="murphy_informatique.htm#ineg von Neumann">in&eacute;galit&eacute;
+de Von Neuman</A>. (La fonction B n'est pas bijective).</P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H2>III) Partitions de l'espace U</H2>
+
+<P><B>a) D&eacute;finition </B></P>
+
+<P>L'espace U peut se voir partitionn&eacute; en sous ensembles Un. X appartient
+&agrave; Un si et seulement si : [X] = n.</P>
+
+<P>L'union de tous les Un donne U. </P>
+
+<P>b) <B>U est ordonn&eacute;.</B></P>
+
+<CENTER><P>Ainsi : U0 &lt; U1 &lt; U2 &lt; U3 &lt; .... &lt; Up</P></CENTER>
+
+<P>(p tend vers l'infini)</P>
+
+<P>c) <B>D&eacute;buggage partiel</B></P>
+
+<P>Le principe de d&eacute;buggage partiel est l'op&eacute;ration qui fait
+passer X de Un &agrave; Up avec p &lt; n.</P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H2>III) Comportements asymptotiques de la bogosit&eacute;</H2>
+
+<P><B>Th&eacute;or&egrave;me </B>: La bogosit&eacute; d'un &eacute;l&eacute;ment
+X est born&eacute;e. </P>
+
+<UL>
+<P><I>D&eacute;monstration </I>: Passer de U &agrave; &Ugrave; n&eacute;cessite
+de faire diminuer la bogosit&eacute; &agrave; 0. Or ce transfert &eacute;tant
+impossible, la limite inf&eacute;rieure de la bogosit&eacute; est 1.</P>
+</UL>
+
+<P>Il existe &eacute;galement une <B>borne sup&eacute;rieure</B> : h. <BR>
+h est la bogosit&eacute; maximale. C'est une fonction croissante de la
+taille de X. </P>
+
+<P>|X| = cte =&gt; lim [X] = h<BR>
+<FONT SIZE=-2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h(|X|)
+croissant.</FONT></P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+<H2>IV) Principes de correction</H2>
+
+<P>a) <B>Patch</B>. </P>
+
+<P>Un patch est aussi un &eacute;l&eacute;ment de U. On appelle pouvoir
+correcteur Cp du patch P, le rapport : Cp = bc / [P] avec : <BR>
+bc est le nombre de bugs qu'il corrige, <BR>
+[P] la bogosit&eacute; (intrins&egrave;que) du patch. </P>
+
+<P>Un Cp &gt; 1 indique un patch efficace. Il corrige plus de bugs qu'il
+n'en apporte. </P>
+
+<CENTER><P>{ Cp &gt; 1 } -&gt; [Y] &lt; [X] + [P] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;avec
+Y = X + P et bc &lt;[X]</P></CENTER>
+
+<P>Un Cp &lt; 1 indique un patch inefficace.</P>
+
+<CENTER><P>{ Cp &lt; 1 } -&gt; [Y] &gt; [X] + [P]</P></CENTER>
+
+<P><B>In&eacute;galit&eacute;s des ajouts patch&eacute;s :</B></P>
+
+<CENTER><TABLE BORDER=1 >
+<TR>
+<TD>
+<CENTER><P>[P1] + [P2] &gt; [P1+P2] <BR>
+Cp1&nbsp;&nbsp;+&nbsp;Cp2 &lt; &nbsp;&nbsp;&nbsp;Cp</P></CENTER>
+</TD>
+</TR>
+</TABLE></CENTER>
+
+<P>Le pouvoir correcteur ajout&eacute; a une performance moindre qu'un
+patch global. Ceci montre bien que l'application d'une infinit&eacute;
+de patch &agrave; un programme fait tendre la bogosit&eacute; de celui
+vers 0 sans jamais l'atteindre.</P>
+
+<P>Ainsi, l'application r&eacute;p&eacute;t&eacute; de patchs fait passer
+X de Un vers Up avec (p-n) tendant vers 0 </P>
+
+<P>b) <B>Patch autocorrecteur</B></P>
+
+<P>Est dit patch autocorrecteur, tout patch &agrave; Cp infini.</P>
+
+<P>Ceci implique une bogosit&eacute; intrins&egrave;que nulle. Le patch
+est en fait un patch pour le programme mais aussi pour lui-m&ecirc;me.
+Il s'agit du mod&egrave;le parfait du patch, qui n'a pas sa place en milieu
+industriel. </P>
+
+<DIV ALIGN=right><P><B><A HREF="mailto:ChrisCamel@COMPUSERVE.COM">Christophe
+Camel &lt;ChrisCamel@COMPUSERVE.COM&gt;</A></B></P></DIV>
+
+<P>
+<HR ALIGN=LEFT WIDTH=100% SIZE=2></P>
+
+<P><A HREF="mailto:christophe@courtois.cc">Me laisser un mot</A> </P>
+
+<P>Retour &agrave; la <A HREF="index_blagues.htm">page humour</A> / &agrave;
+la <A HREF="murphy.htm">page des Lois de Murphy</A>.</P>
+
+<P><A HREF="index.html#sommaire">Retour &agrave; la page principale.</A>
+</P>
+
+<div style="font:11px monospace;color:#888;text-align:center;padding:8px;background:#fff;clear:both">archive de multimania.com/courtois/theorie_bug.htm · capture archive.org du 01/11/2001</div></body>
+</HTML>

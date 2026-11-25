@@ -1,0 +1,2576 @@
+<SCRIPT LANGUAGE="JavaScript1.1">
+
+<!--
+        function doerror() {return true;};
+        // To avoid multiple calls with frames, only the top-most frameset calls the popup :
+        var nav = navigator.appName.charAt(0);
+        var ver = navigator.appVersion.charAt(0);
+        if (top==self || self.name.substring(0,5)=="ULDIR") { // && (document.cookie.indexOf(document.location) < 0) ) {
+//				document.write("---"+document.cookie.indexOf(document.location)+"---");
+                document.cookie = "IB="+document.location;
+                var w,h;
+                var hak = 0;
+
+                if ((nav=="N" && ver < "4") || (nav=="E" && ver < "3")) {
+                        w = 500;
+                        h = 184;
+                }
+                else if (nav=="N") { // NS 4
+                        w = 468;
+                        h = 134;
+                }
+                else { // IE 4+
+                        w = 468;
+                        h = 134;
+                        hak = 1;
+                }
+
+                var adr = "http://www.multimania.fr/general/pub/popup/perso.phtml?category=/divertir/humour/blague&search_query=" + escape("");
+                window.open(
+                        adr, 
+                        "CtrlWindow",
+                        "width="+w+",height="+h+",toolbar=no,menubar=no,location=no,scrollbars=no,resize=no"
+                        );
+
+                if (hak) {
+                        window.onerror = doerror;
+                }
+        }
+// -->
+
+</SCRIPT>
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head><meta name="nzdqr-original" content="http://multimania.com/courtois/hotline.htm">
+    
+  <meta charset="utf-8">
+    
+  <meta name="GENERATOR" content="Mozilla/4.76 [fr] (X11; U; Linux 2.4.0-4GB i686) [Netscape]">
+    
+  <meta name="KeyWords" content="hotline,administration syst&egrave;me,informatique,anecdote,neuneu">
+    
+  <meta name="Author" content="Christophe Courtois">
+  <title>Histoires de hotline et d'administration syst&egrave;me</title>
+</head>
+ <body text="#00ffff" bgcolor="#000000" link="#33ff33" vlink="#009900" alink="#ff0000">
+  
+<center> 
+<h1> Histoires de Hotline informatique&nbsp;<br>
+ et d'Administration syst&egrave;me</h1>
+</center>
+  
+<center>Les histoires ici sont soit des classiques de l'Internet, soit tomb&eacute;es
+dans ma bo&icirc;te aux lettres via des listes (et je n'yai pas touch&eacute;,
+&agrave; quelques corrections de fautes d'orthographe pr&egrave;s), soit
+directement venues des protagonistes, soit issues et traduites du g&eacute;nial
+<i><a href="../perdu.html?u=http://www.rinkworks.com/stupid">ComputerStupidities</a>
+</i>. Le site <a href="../perdu.html?u=http://techtales.com/">Techtales</a>
+ est aussi une mine (tous les deux sont en anglais). Il y a une <a href="../perdu.html?u=http://www.lebetisier.com/lire.asp%3Fgnr%3D1">
+page francophone chez Leb&ecirc;tisier</a>
+. 
+<p>Il existe <a href="../perdu.html?u=http://www.eastbayexpress.com/archive/120100/cover_120100.html">
+ici un article</a>
+ (en anglais) sur la vie d'une bo&icirc;te de hotline. Les commentaires et
+d'autres anecdotes sur les hotliners se trouvent dans un<a href="../perdu.html?u=http://slashdot.org/article.pl%3Fsid%3D00/12/05/165241%26mode%3Dthread">
+ articlede Slashdot</a>
+. <br>
+ </p>
+<hr width="100%"> <br>
+<a href="#Noos">Noos</a>
+ <br>
+<a href="#formulaire">Formulaire en cas de probl&egrave;me informatique</a>
+ <br>
+<a href="#tarifsAdminsSys">Les tarifs des administrateurs syst&egrave;me</a>
+ <br>
+<a href="#hotline">Dialogue r&eacute;el (?) &agrave; la hotline deWordperfect</a>
+ <br>
+<a href="#HotlineEntrpFr">Dialogue &agrave; la hotline d'une entreprisepublique 
+fran&ccedil;aise</a>
+ <br>
+<a href="#curseur">O&ugrave; est mon curseur ?</a>
+ <br>
+<a href="#NeuneuPowerUser">Mon neueu est un power user</a>
+ <br>
+<a href="#martine">Martine</a>
+ <br>
+<a href="#TellementVrai">C'est tellement vrai...</a>
+ 
+<p><i><font size="+1"><a href="#LegendesInformatiques">L&eacute;gendes informatiques</a>
+ :</font></i> <br>
+<a href="#LegBugMinuit">Le bug de minuit et quart</a>
+ <br>
+<a href="#LegSauvetage">Le sauvetage</a>
+ <br>
+<a href="#LegBug8h">Le bug de huit heures du matin</a>
+ <br>
+<a href="#LegImprimante">Imprimante lunatique</a>
+ <br>
+<a href="#Leg4emefichier">Quatri&egrave;me fichier</a>
+ <br>
+<a href="#LegSouris">Souris lunatique</a>
+ <br>
+<a href="#LegTraitementTexte">Traitement de texte</a>
+ <br>
+<a href="#LegJoTechnikos">Jo, ou la revanche du technikos</a>
+ <br>
+<a href="#LegLimite">Limite</a>
+ </p>
+<p><a href="#AutresHistoires">Autres histoires de hotline et d'administration 
+syst&egrave;me</a>
+ </p>
+<p><a href="#journeeMurphyOrdinaire">Une journ&eacute;e Murphy-ordinaire</a>
+ </p>
+<p><a href="#regles">Les r&egrave;gles du support</a>
+</p>
+</center>
+  
+<p><br>
+ <br>
+ <br>
+ <br>
+ <br>
+ </p>
+<p> </p>
+<hr width="100%"> <br>
+&nbsp; 
+<center> 
+<h1> <a name="Noos"></a>
+Noos</h1>
+</center>
+ La hotline de <a href="../perdu.html?u=http://www.noos.fr">Noos</a>
+ (fournisseur fran&ccedil;aise de liaison soit-disant rapide par le c&acirc;ble)
+est connue pour sa redoutable incomp&eacute;tence (comme le reste de la bo&icirc;te
+d'ailleurs), quece soit la hotline par mail sp&eacute;cialiste des r&eacute;ponses
+automatiques et de la langue de bois copi&eacute;e-coll&eacute;e, ou la hotline
+t&eacute;l&eacute;phonique&agrave; 1 F/minute. (Plus de renseignement sur
+le site de l'<a href="../perdu.html?u=http://luccas.eu.org/"> associationdes clients Luccas</a>
+ et sur la <a href="../perdu.html?u=http://www.egroups.fr/group/cybercable">listede diffusion
+des utilisateurs</a>
+.) 
+<blockquote> 
+  <hr width="100%"> <br>
+  <b>Petite anecdote : </b>le vendredi 6 octobre je tel pour avoir monlogin 
+administratif, ils me disent qu'ils m'appelleront, mais comme jene reste pas
+pr&egrave;s du t&eacute;l toute la journ&eacute;e &agrave;attendre leur appel
+je leur demande de m'envoyer un mail. <br>
+J'ai d&ucirc; rappeler plusieurs fois la semaine suivante car pas deniouzes 
+de leur part. Le jeudi, miracle, je gueule et un type me dit queleur HL est
+vraiment nulle, il le sait, le lucide, et me donne mon logindans le quart
+d'heure. Et hier, coup de t&eacute;l&eacute;phone "oui, c'estxxxx, pour votre
+login. Non on ne vous a pas envoy&eacute; de mails parceque c'est IMPOSSIBLE,
+on ne peut que t&eacute;l&eacute;phoner"&nbsp; Ilssont FAI et c'est impossible
+!!!! et ils ne pouvaient pas me le dire plust&ocirc;t ces cr&eacute;tins
+???? <br>
+  <i>(Rapport&eacute; par sybarite100, 18 octobre 2000)</i> <br>
+ 
+  <hr width="100%"> <br>
+Le dernier guignol que j'ai eu a quand m&ecirc;me un peu d'humour : <br>
+  <i>moi </i>: &agrave; quoi sert l'informatique ? <br>
+  <i>elle </i>: &agrave; tomber en panne. <br>
+  <i>(Rapport&eacute; par Denis Ducamp, 18 octobre 2000)</i> <br>
+ 
+  <hr width="100%"> <br>
+  <b>De</b> : "Monique Neubourg" &lt;Adresse@supprimee.sur.demande&gt; <br>
+  <b>Groupes de discussion</b> : <a href="../perdu.html?u=news://noos.discussions%2Ccybercable.discussions">
+noos.discussions,cybercable.discussions</a>
+ <br>
+  <b>Envoy&eacute;</b> : dimanche 10 septembre 2000 11:48 <br>
+  <b>Objet</b> : (TRES LONG &amp; ANECDOTIQUE] Une histoire de hotline(ou 
+Noos deconnecte aussi rayon tele) 
+  <p>Il y a une dizaine de jours, j'ai appel&eacute; la hotline pour ma t&eacute;l&eacute; 
+(num&eacute;rique). Je ne recevais pas (ou si mal) quelques cha&icirc;nes 
+(Festival, Mezzo, Odys&eacute;e...) et toutes les radios du groupe RadioFrance. 
+Il s'agit des fameux gels/sauts d'image et de son, quand pas l'&eacute;cran 
+bleu demandant de rappeler le service client dont parlait Max ici-m&ecirc;me. 
+  </p>
+  <p>Le premier mec sur qui je tombe m'explique que c'est normal que lesimages 
+et les sons arrivent un peu en vrac vu que &ccedil;a nous est transmispar 
+satellite. Les bras m'en tombant autant que les mots, je lui dis poliment 
+au revoir (faut jamais tenter de raisonner les grands d&eacute;lirants)et 
+je d&eacute;cide de rappeler plus tard. </p>
+  <p>Ce que je fais, au bout de quelques jours (j'avais eu besoin d'un sas 
+de d&eacute;compression avec l'histoire des images/sons qui arrivaientdans 
+le d&eacute;sordre &agrave; cause du satellite). L&agrave;, j'ai affaire&agrave; 
+une sp&eacute;cialiste. La dame n'h&eacute;site pas une seconde,elle est formelle.
+Il faut que j'intervertisse mes prises P&eacute;ritel,voire m&ecirc;me, si
+j'en ai des neuves sous la main, que je rebranchetout avec les neuves. Je
+m'ex&eacute;cute avec les vieilles, vu que desneuves, j'en manque en ce moment,
+on les a toutes fum&eacute;es quand lec&acirc;ble ethernet est venu &agrave;
+manquer. <br>
+Ce n'est pas mieux. </p>
+  <p>La dame, pas rebut&eacute;e par cet &eacute;chec, me sugg&egrave;red'aller 
+au plus vite en acheter des nouvelles, car l&agrave; est la solution&agrave; 
+mon probl&egrave;me. Un peu interloqu&eacute;e, je lui demandesi par hasard, 
+ce ne serait pas un probl&egrave;me de signal, car l'ann&eacute;ederni&egrave;re, 
+dans mon ancien appartement, j'avais eu les m&ecirc;messoucis mais avec la
+s&eacute;rie des Canal, Com&eacute;die etc. Et que&ccedil;a s'&eacute;tait 
+r&eacute;gl&eacute; hors P&eacute;ritel. </p>
+  <p>Absolument pas, ass&egrave;ne l'impertubable. Mais vous me dites que 
+vous avez d&eacute;m&eacute;nag&eacute; ? C'est r&eacute;cent ? Alors sans 
+doute que l'arri&egrave;re de votre t&eacute;l&eacute; a &eacute;t&eacute; 
+endommag&eacute;, pr&eacute;cis&eacute;ment l&agrave; o&ugrave; se connecte 
+la prise p&eacute;ritel, et donc, si les prises p&eacute;ritel neuves nemarchent 
+pas, il suffit de faire venir un d&eacute;panneur t&eacute;l&eacute;qui r&eacute;parera
+le bidule qui que bla bla... </p>
+  <p>Je lui demande si toutefois, avant que je me lance dans des achats peut-&ecirc;tre 
+inutiles et co&ucirc;teux, s'il ne lui serait pas possible de m'envoyerun 
+technicien pour faire des mesures. Me sentant radin (forc&eacute;ment,&agrave; 
+un balle la minute, j'avais d&eacute;j&agrave; d&eacute;pens&eacute;avec elle
+de quoi rembourser une partie de la dette du Tiers Monde), elleme pr&eacute;vient
+que si un technicien se d&eacute;place pour des prunes,ce sera pour ma pomme. 
+  </p>
+  <p>Alors, si apr&egrave;s tout ce que j'aurais fait et achet&eacute;, si 
+&ccedil;a ne marche toujours pas, Noos me remboursera, n'est ce pas ? Certainement 
+pas Madame, c'est &agrave; votre charge. </p>
+  <p>Je tente une feinte toutefois p&eacute;trie de logique : pouvez-vous 
+m'expliquer pourquoi mes P&eacute;ritel d&eacute;conneraient avec Festival, 
+Odyss&eacute;e et les deux autres et pas avec Teva, Paris Premi&egrave;re 
+et Euronews ? Je ne sais pas tr&egrave;s bien ce qu'elle a avanc&eacute;comme 
+fumisterie, l'adr&eacute;naline commen&ccedil;ait &agrave; faireparasite. 
+Mais elle a clairement affirm&eacute; qu'un probl&egrave;me d'imageet de son,
+c'est P&eacute;ritel (au moment o&ugrave; j'&eacute;cris ceslignes, un copain
+qui fait de la musique avec des ordinateurs, et ensuitedes images avec cette
+musique s'&eacute;touffe, para&icirc;t que P&eacute;ritelc'est pour l'analogique
+et pas le num&eacute;rique, je lui laisse la responsabilit&eacute; de ses
+propos). </p>
+  <p>Je marchande encore mollement, elle part se renseigner, revient 6 ou 
+7 francs plus tard me dire que c'est bien P&eacute;ritel, y a pas photo. </p>
+  <p>J'ai dit au revoir, regrett&eacute; de ne pas avoir not&eacute; sonnom, 
+pris un grand verre d'eau (le Coca m&ecirc;me Light aurait pu m'&ecirc;tre 
+fatal) et j'ai rappel&eacute; quelqu'un d'autre. On m'a envoy&eacute; untechnicien. 
+Il a test&eacute;, puis a bricol&eacute; un truc en 5 minutesdans le r&eacute;partiteur. 
+  </p>
+  <p>Depuis &ccedil;a marche tr&egrave;s bien. Et je n'ai m&ecirc;me paseu 
+&agrave; euthanasier mes vieilles prises P&eacute;ritel. </p>
+  <p>Monique </p>
+  <p>(Le technicien qui est pass&eacute; m'a dit que ce genre de probl&egrave;mes 
+arrivait souvent avec la hotline)</p>
+  </blockquote>
+  
+  <p><br>
+ </p>
+  <hr width="100%"> 
+  <center> 
+  <h1> <a name="formulaire"></a>
+Formulaire en cas de probl&egrave;me informatique</h1>
+  </center>
+ Si vous &ecirc;tes un technicien en informatique et avez &agrave; aider,de 
+temps en temps, des usagers qui ont des probl&egrave;mes, vous avezs&ucirc;rement 
+remarqu&eacute; que vous vous faites souvent d&eacute;rangerpour rien. <br>
+Voici un questionaire que vous pouvez transmettre sur votre r&eacute;seau; 
+questionnaire auquel les usagers devront r&eacute;pondre, puis vous faxer 
+les r&eacute;ponses avant de vous demander de l'aide. 
+  <center> 
+  <h3> Rapport de probl&egrave;me informatique</h3>
+  </center>
+  
+  <ul>
+ 
+    <li> D&eacute;crivez le probl&egrave;me.</li>
+  <br>
+&nbsp; 
+    <li> D&eacute;crivez le probl&egrave;me correctement.</li>
+  <br>
+&nbsp; 
+    <li> Sp&eacute;culez largement sur les causes possibles de votre probl&egrave;me.</li>
+  <br>
+&nbsp; 
+    <li> Quel est le degr&eacute; du probl&egrave;me ?</li>
+  
+    <ol>
+ 
+      <li> mineur.</li>
+  
+      <li> mineur</li>
+  
+      <li> mineur</li>
+  
+      <li> important</li>
+  <br>
+&nbsp;
+    </ol>
+  
+    <li> L'ordinateur est-il branch&eacute; ? OUI_ NON_</li>
+  <br>
+&nbsp; 
+    <li> L'ordinateur est-il en fonction ? OUI_ NON_</li>
+  <br>
+&nbsp; 
+    <li> Avez-vous essay&eacute; de r&eacute;gler le probl&egrave;me ? OUI_
+NON_</li>
+  <br>
+&nbsp; 
+    <li> Avez vous empir&eacute; le probl&egrave;me ? OUI_ NON_</li>
+  <br>
+&nbsp; 
+    <li> Avez-vous lu le manuel de l'utilisateur ? OUI_ NON_</li>
+  <br>
+&nbsp; 
+    <li> &Ecirc;tes-vous sur d'avoir bien lu le manuel ? OUI_ NON_</li>
+  <br>
+&nbsp; 
+    <li> &Ecirc;tes-vous absolument certain d'avoir bien lu TOUT le manuel
+? NON_</li>
+  <br>
+&nbsp; 
+    <li> Pensez-vous que vous avez compris le manuel ? OUI_ NON_</li>
+  <br>
+&nbsp; 
+    <li> Si oui, pourquoi n'&ecirc;tes-vous pas capable de r&eacute;gler
+le probl&egrave;mevous m&ecirc;me ?</li>
+  <br>
+&nbsp; 
+    <li> De quelle grandeur &ecirc;tes-vous : d&eacute;passez-vous cette
+ligne? ________________</li>
+  <br>
+&nbsp; 
+    <li> Que faisiez-vous avec l'ordinateur lorsque que le probl&egrave;me
+est arriv&eacute;?</li>
+  <br>
+&nbsp; 
+    <p>&nbsp; <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp; </p>
+    <li> Si la r&eacute;ponse &agrave; 15 est "RIEN", expliquez pourquoi
+vous &eacute;tiezlogu&eacute; ?</li>
+  <br>
+&nbsp; 
+    <p>&nbsp; <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp; </p>
+    <li> &Ecirc;tes-vous s&ucirc;r que vous n'imaginez pas ce probl&egrave;me
+?</li>
+  <br>
+&nbsp; 
+    <li> D&eacute;crivez comment ce probl&egrave;me vous fait sentir ?</li>
+  <br>
+&nbsp; 
+    <li> D&eacute;crivez votre enfance troubl&eacute;e.</li>
+  <br>
+&nbsp; 
+    <li> Avez-vous de bons t&eacute;moins pour votre probl&egrave;me ?</li>
+  <br>
+&nbsp; 
+    <li> N'avez-vous pas d'autres choses &agrave; faire que me d&eacute;ranger
+?</li>
+ 
+  </ul>
+  
+  <center> 
+  <h1>  
+  <hr width="100%"></h1>
+  </center>
+  
+  <center> 
+  <h1> <a name="tarifsAdminsSys"></a>
+Les tarifs des Administrateurs syst&egrave;me</h1>
+  </center>
+  
+  <ul>
+ 
+    <li> M'appeler pour une question : 10 euros</li>
+  
+    <li> M'appeler pour une question stupide : 20 euros</li>
+  
+    <li> M'appeler pour une question stupide que vous ne pouvez m&ecirc;me
+pas articuler: 30 euros</li>
+  
+    <li> Supposer que je suis incomp&eacute;tent parce que je ne peux interpr&eacute;ter 
+votre description de probl&egrave;me inarticul&eacute;e : 1000 euros +dommages 
+et int&eacute;r&ecirc;ts</li>
+  
+    <li> Questions par t&eacute;l&eacute;phone avant m&ecirc;me de contacter
+lebureu d'aide : 10 euros</li>
+  
+    <li> Questions dont la r&eacute;ponse est : "Lisez ce p*** de manuel
+!!" : 10euros (devrait &ecirc;tre plus)</li>
+  
+    <li> Questions durant une partie de Xpilot, Doom, Halflife, D&eacute;mineur 
+: 20 euros</li>
+  
+    <li> Me rappeler pour le m&ecirc;me probl&egrave;me <i>apr&egrave;s</i>
+ queje l'ai r&eacute;solu : 100 euros</li>
+  
+    <li> Insister sur "j'ai rien cass&eacute;, c'est de votre faute" : 200
+euros</li>
+  
+    <li> Me demander de me d&eacute;placer jusqu'&agrave; votre b&acirc;timent
+:5 euros / pas</li>
+  
+    <li> Me demander de me d&eacute;placer jusqu'&agrave; votre ville : 50
+euros/ km + essence</li>
+  
+    <li> M'interrompre pendant la lecture des newsgroups : 25 euros/heure</li>
+  
+    <li> M'interrompre pendant que je d&eacute;nombre les fen&ecirc;tres
+sur mon&eacute;cran : 35 euros/heure</li>
+  
+    <li> M'interrompre pendant que tentai de r&eacute;soudre le probl&egrave;me 
+de quelqu'un d'autre : 45 euros/heure</li>
+  
+    <li> Vous accrocher et vouloir me faire r&eacute;soudre &ccedil;a maintenant 
+: 50 euros/heure</li>
+  
+    <li> Si vous vous attendez &agrave; ce que je vous dise comment j'ai
+fait :60 euros/heure</li>
+  
+    <li> Si vous me demandez pourquoi quelque chose ne marche pas alors que
+je travaillejustement dessus : 70 euros/heure</li>
+  
+    <li> Si vous me demandez de r&eacute;parer quelque chose que j'ai r&eacute;par&eacute; 
+hier : 75 euros/heure</li>
+  
+    <li> Si vous me demandez de r&eacute;parer quelque chose dont je vous
+ai ditque je l'ai r&eacute;par&eacute; hier : 85 euros/heure</li>
+  
+    <li> Si vous me demandez de r&eacute;parer une modification que j'ai
+faite etqui ne marche pas : 95 euros/heure</li>
+  
+    <li> Si vous m'emm...dez alors qu'il y a un autre administrateur dans
+la sallequi aurait pu vous aider : 150 euros/heure</li>
+  
+    <li> Me faire me d&eacute;placer et vous n'&ecirc;tes pas l&agrave; : 
+1500 euros</li>
+  
+    <li> M'appeler pour un "probl&egrave;me urgent qui concerne tout le monde
+etqui bloque le travail de tous" alors que, apr&egrave;s un sprint, je m'aper&ccedil;ois 
+que personne dans le bureau ne sait de quoi il s'agit et que le travailcontinue 
+normalement : 1700 euros</li>
+  
+    <li> D&eacute;crire pendant une demi-heure un probl&egrave;me PUIS annoncer 
+que c'est votre machine personnelle &agrave; la maison : 500 euros.</li>
+  
+    <li> Faire vous-m&ecirc;me le diagnostic et me dire quoi faire : 150
+euros.</li>
+  
+    <li> Me faire hurler en vous voyant faire vous-m&ecirc;me des r&eacute;parations 
+quand je vous avais dit de ne toucher &agrave; rien : 300 euros.</li>
+  
+    <li> Ne rien dire &agrave; vos coll&egrave;gues alors que vous n'&ecirc;tes 
+pas l&agrave; : 850 euros</li>
+  
+    <li> Confondre "disquette', "disquette Zip", "disque dur" et "RAM" :
+50 euros</li>
+  
+    <li> "R&eacute;parer" votre souris cass&eacute;e avec un tapis de souris
+: 30euros</li>
+  
+    <li> "R&eacute;parer" votre souris cass&eacute;e en nettoyant les mollettes 
+: 50 euros</li>
+  
+    <li> "R&eacute;parer" votre imprimante en changeant le toner ou la cartouche 
+: 100 euros</li>
+  
+    <li> "R&eacute;parer" n'importe quoi en l'&eacute;teignant et en le rallumant 
+: 200 euros</li>
+  
+    <li> "R&eacute;parer" le r&eacute;seau en rebranchant le c&acirc;ble
+Ethernet : 750 euros</li>
+  
+    <li> "R&eacute;parer" votre acc&egrave;s &agrave; Internet en rallumant
+le modem: 1000 euros</li>
+  
+    <li> Demander pourquoi vous ne pouvez pas vous connecter &agrave; une
+machinealors que vous n'y avez pas de compte : 20 euros</li>
+  
+    <li> Oublier votre mot de passe alors que vous vous l'&ecirc;tes tatou&eacute; 
+sur le bras : 25 euros</li>
+  
+    <li> Modifier le partitionnement de votre machine sans me le dire : 50
+euros.</li>
+  
+    <li> Installer des programmes sans permission : 100 euros/programme</li>
+  
+    <li> Support technique pour lesdits programmes : 150 euros/heure (que
+je connaissele programme ou pas)</li>
+  
+    <li> Coca sur le clavier : 25 euros + remplacement du clavier</li>
+  
+    <li> Coca sur le processeur : 200 euros + remplacement de la carte m&egrave;re 
+plus 150 euros/heure en r&eacute;installation</li>
+  
+    <li> Laisser des fichiers sur le bureau : 5 euros / fichier + 10 euros
+/ jouravant que le fichier ne soit r&eacute;clam&eacute;</li>
+  
+    <li> Utiliser votre version des Norton Utilities 1.0 sur un syst&egrave;me
+toutneuf : 200 euros</li>
+  
+    <li> Mordiller le stylo de la tablette graphique : 25 euros</li>
+  
+    <li> Mettre les pieds &agrave; c&ocirc;t&eacute; de la station apr&egrave;s 
+10 km de jogging dans les rues de Paris</li>
+  
+    <li> Me faire perdre 30 minutes &agrave; r&eacute;soudre votre probl&egrave;me, 
+puis dire "Aaaah, c'est donc &ccedil;a que la petite bo&icirc;te &agrave; 
+l'&eacute;cran me disait de faire !" : 40 euros</li>
+  
+    <li> Ecouter vos plaintes sur le r&eacute;seau, vous dire de v&eacute;rifier 
+chaque prise : courant, r&eacute;seau, moniteur... et entendre "Oups, c'&eacute;tait 
+&ccedil;a !" : 35 euros (dont r&eacute;duction pour excuses confuses)</li>
+  
+    <li> Demander de l'aide pour des programmes manifestement pirat&eacute;s
+: 25euros</li>
+  
+    <li> Demander comment copier (ill&eacute;galement) pour chez vous tel
+programme: 45 euros</li>
+  
+    <li> Me pousser &agrave; admettre que j'en suis r&eacute;duit &agrave;
+appelerla hotline de l'&eacute;diteur : 55 euros</li>
+  
+    <li> Cours de notions &eacute;l&eacute;mentaires de copyright : 95 euros
+(dontcours sur les logiciels libres disponibles sur le serveur)</li>
+  
+    <li> Vous montrer que c'est sur le mur en caract&egrave;res de 20 cm
+: 15 euros</li>
+  
+    <li> ...et que je l'ai &eacute;crit : 45 euros</li>
+  
+    <li> Accuser Netscape/IE/le FTP/le r&eacute;seau/Linux d'un taux de transfert 
+bas lors d'un t&eacute;l&eacute;chargement d'un film en MPEG depuis laMoldavie 
+: 25 euros</li>
+  
+    <li> R&eacute;cidiver : 50 euros</li>
+  
+    <li> R&eacute;cidiver et nous accuser de nullit&eacute; pour ne pas r&eacute;soudre 
+ce probl&egrave;me : 200 euros</li>
+ 
+  </ul>
+  
+  <h3> Suppl&eacute;ments :</h3>
+  
+  <ul>
+ 
+    <li> Utilisateur odorant : 75 euros/heure</li>
+  
+    <li> Utilisateur sans la moindre notion d'Unix : 50 euros/heure</li>
+  
+    <li> Utilisateur gourou autoproclam&eacute; qui appelle tous les jours
+: 100euros/heure</li>
+  
+    <li> Utilisateur fan d'ordinateurs : 125 euros/heure</li>
+  
+    <li> Utilisateur sous Windows NT : 200 euros/heure</li>
+  
+    <li> Utilisateur sous Windows 95 : 1000 euros/heure</li>
+ 
+  </ul>
+  
+  <center> 
+  <h1>  
+  <hr width="100%"></h1>
+  </center>
+  
+  <center> 
+  <h1> <a name="hotline"></a>
+Dialogue r&eacute;el (?) &agrave; la hotline de WordPerfect</h1>
+  </center>
+  
+  <p><br>
+- "Ridge Hall computer assistant ; que puis-je pour vous ? " </p>
+  <p>- Et bien j'ai un probl&egrave;me avec WordPerfect. </p>
+  <p>- Quelle sorte de probl&egrave;me ? </p>
+  <p>- Et bien j'&eacute;tais en train de taper et soudain tout est parti. 
+  </p>
+  <p>- Parti ? </p>
+  <p>- Ca a disparu. </p>
+  <p>- Mmm. Et &agrave; quoi ressemble votre &eacute;cran &agrave; pr&eacute;sent 
+? </p>
+  <p>- A rien. </p>
+  <p>- A rien ? </p>
+  <p>- Il est vide ; il se passe rien quand je tape. </p>
+  <p>- Vous &ecirc;tes toujours dans WordPerfect ou vous en &ecirc;tes sorti 
+? </p>
+  <p>- Comment je sais ? </p>
+  <p>- Pouvez-vous voir le prompt C:\ &agrave; l'&eacute;cran ? </p>
+  <p>- C'est quoi un prompte-c&eacute; ? </p>
+  <p>- Laissez tomber. Pouvez-vous bouger le curseur &agrave; l'&eacute;cran 
+? </p>
+  <p>- Y a pas de curseur. Je vous ai dit, il se passe rien quand je tape. 
+  </p>
+  <p>- Est-ce que votre moniteur est allum&eacute; ? </p>
+  <p>- C'est quoi un moniteur ? </p>
+  <p>- Le truc avec l'&eacute;cran qui ressemble &agrave; une t&eacute;l&eacute;. 
+Est-ce qu'il y a une petite lumi&egrave;re qui vous dit qu'il est allum&eacute; 
+? </p>
+  <p>- Je sais pas. </p>
+  <p>- Et bien regardez &agrave; l'arri&egrave;re de votre moniteur et regardez 
+o&ugrave; va la prise courant. Vous pouvez voir ? </p>
+  <p>- Je pense... </p>
+  <p>- Bien ! Suivez le cordon jusqu'&agrave; la prise, et dites-moi si elle 
+est branch&eacute;e. </p>
+  <p>- Oui. </p>
+  <p>- Derri&egrave;re le moniteur, avez-vous remarqu&eacute; qu'il y avait 
+deux c&acirc;bles branch&eacute;s &agrave; l'arri&egrave;re ? </p>
+  <p>- Non. </p>
+  <p>- Et bien il y en a deux. regardez &agrave; nouveau et trouvez le deuxi&egrave;me. 
+  </p>
+  <p>- ...Oui, c'est bon. </p>
+  <p>- Suivez-le et dites-moi s'il est solidement branch&eacute; &agrave; 
+l'ordinateur. </p>
+  <p>- Je ne peux pas l'atteindre. </p>
+  <p>- Oh. Pouvez-vous le voir ? </p>
+  <p>- Non. </p>
+  <p>- M&ecirc;me en vous penchant ou en vous mettant &agrave; genoux ? </p>
+  <p>- Oh non, c'est juste que je n'ai pas le bon angle, il fait si sombre. 
+  </p>
+  <p>- Sombre ? </p>
+  <p>- Oui, le bureau est &eacute;teint, la seule lumi&egrave;re vient de 
+la fen&ecirc;tre. </p>
+  <p>- Et bien allumez la lumi&egrave;re. </p>
+  <p>- Je ne peux pas. </p>
+  <p>- Pourquoi ! ? </p>
+  <p>- Parce qu'il y a une panne de courant. </p>
+  <p>- Une panne... Aha ! Voil&agrave; la raison. Est-ce que vous avez encore 
+les manuels et les bo&icirc;tes et l'emballage que vous avez eus avec l'ordinateur 
+? </p>
+  <p>- Heu... Oui, c'est dans le placard. </p>
+  <p>- Bien ! Allez les chercher, d&eacute;branchez votre syst&egrave;me, 
+emballez-le comme c'&eacute;tait quand vous l'avez eu. Et rapportez-leau magasin
+o&ugrave; vous l'avez achet&eacute;. </p>
+  <p>- Vraiment ? C'est si s&eacute;rieux ? </p>
+  <p>- J'en ai peur. </p>
+  <p>- Et qu'est-ce que je leur dit ? </p>
+  <p>- Dites-leur que vous &ecirc;tes trop con pour poss&eacute;der un ordinateur." 
+  <br>
+ </p>
+  <hr width="100%"> <br>
+&nbsp; 
+  <center> 
+  <h1> <a name="HotlineEntrpFr"></a>
+Dialogue &agrave; la hotline d'une entreprise publique fran&ccedil;aise</h1>
+  </center>
+  
+  <center> 
+  <p><br>
+(&nbsp; Cette histoire est authentique et de premi&egrave;re main; <br>
+pour prot&eacute;ger l'informateur et la r&eacute;putation dudit organisme, 
+toute r&eacute;f&eacute;rence &agrave; qui que ce soit a &eacute;t&eacute; 
+supprim&eacute;)</p>
+  </center>
+  
+  <p><br>
+ <br>
+ <br>
+ <br>
+ <br>
+ </p>
+  <p><b>Pr&eacute;ambule :</b> <br>
+J'assure le support technique bureautique pour... <br>
+Pour simplifier les probl&egrave;mes des utilisateurs, j'utilise unsyst&egrave;me 
+de prise de contr&ocirc;le &agrave; distance des postes(SMS pour les connaisseurs) 
+qui me permet de faire les manipulations &agrave;leurs places pour d&eacute;bloquer 
+la situation. <br>
+Les postes sont rep&eacute;r&eacute;s par un le texte POSTE suivi d'unnum&eacute;ro, 
+coll&eacute; sur la face avant de l'unit&eacute; centrale,pour simplifier 
+la gestion de l'ordinateur dans SMS. </p>
+  <p>Mon plus gros probl&egrave;me est de leur faire lancer le programmede 
+prise de contr&ocirc;le qui n'est pas permanent. </p>
+  <p><b>D&eacute;but de l'appel : 16:45</b> </p>
+  <p>- Hotline, bonsoir... <br>
+- ... Heu... all&ocirc;, l'informatique ? <br>
+(En principe (c'est &agrave; dire "normalement modulo Murphy") quand&ccedil;a 
+commence comme ca, je sais que ca va prendre beaucoup de temps...) <br>
+- Oui Monsieur, vous &ecirc;tes &agrave; l'informatique, que puis-jepour vous
+? <br>
+- ... Heu... j'ai envoy&eacute; un fichier et je suis bloqu&eacute;... <br>
+(a&iuml;e, ca va prendre encore plus de temps, va falloir que je branchele 
+  <br>
+d&eacute;codeur...) <br>
+- Vous l'avez envoy&eacute; par la fen&ecirc;tre ou par la porte ?;-) <br>
+- Hein, quoi... <br>
+(oops...) <br>
+- D&eacute;sol&eacute; je faisais de l'humour... qu'est-ce que vousentendez 
+par "envoyer un fichier" ? <br>
+- Ben j'ai cliqu&eacute; sur l'imprimante quoi... <br>
+- D'accord, et vous travailliez avec Word... ou Excel... (pas de pub)? <br>
+- Hein... <br>
+(oh 'tain je'l sens mal...) <br>
+- Quel programme &eacute;tiez vous en train d'utiliser, le traitementde texte
+ou le tableur; vous savez, l&agrave; o&ugrave; il y &agrave; pleinde case
+&agrave; remplir... <br>
+- Ah non, moi je travaille avec Windows... <br>
+(mode d&eacute;codeur on : travaille avec Windows, donc pas de case&agrave; 
+remplir, donc Word... CQFD) <br>
+- D'accord, le document ne s'est pas imprim&eacute; ? <br>
+- Non tout est bloqu&eacute;. <br>
+(Pour lui &eacute;viter un tas de manipulations, pas forc&eacute;ment&eacute;vidente 
+pour lui, je lui demande...) <br>
+- Bon, vous pouvez me donner le "contr&ocirc;le distant" <br>
+- H&egrave;... le contr&ocirc;le du temps ? <br>
+(pas possible... j'esp&egrave;re qu'il a pas un fr&egrave;re jumeaux...) <br>
+- Non, le contr&ocirc;le DISTANT <br>
+- ... <br>
+- Donnez moi le num&eacute;ro de votre poste, c'est inscrit devant <br>
+(je sens bien qu'il n'&eacute;coute pas) <br>
+(Il me donne son num&eacute;ro de t&eacute;l&eacute;phone) <br>
+- NON, pas votre n&deg; de poste t&eacute;l&eacute;phonique, votrenum&eacute;ro 
+d'ordinateur... , il y &agrave; POSTE avec un nombre <br>
+- "N.E.C." <br>
+- Non, &ccedil;a c'est la marque, cherchez mieux... <br>
+- Ah c'est marqu&eacute; P.O.S.T.E.xxx <br>
+- OK c'est &ccedil;a. Cliquez sur le bouton "D&eacute;marrer". <br>
+- Hein ? <br>
+(Maman pourquoi y tombent toujours sur moi ceux-l&agrave; ?) <br>
+- En bas de l'&eacute;cran &agrave; gauche de l'&eacute;cran, il y&agrave; 
+un bouton sur lequel est inscrit "D&eacute;marrer" <br>
+- ...(Un bruit suspect...) ben l'&eacute;cran est tout noir maintenant... 
+  <br>
+(ho le c.., il &agrave; appuyer sur le bouton d'arr&ecirc;t de l'&eacute;cran...) 
+  <br>
+- Non, vous avez &eacute;teint l'&eacute;cran, rallumez le... <br>
+- Ha &ccedil;a y est tout est revenu. <br>
+- Bon OK, DANS l'&eacute;cran, en bas &agrave; GAUCHE (le bouton d'arr&ecirc;t 
+est &agrave; droite...) AVEC la SOURIS, cliquez &agrave; l'endroit ou il&agrave; 
+marqu&eacute; "D&eacute;marrer" <br>
+- Je peux pas... <br>
+- Pourquoi ? qu'est ce que vous voyez quand vous mettez la souris enbas &agrave;
+gauche de l'&eacute;cran ? <br>
+- J'ai une fl&egrave;che en haut et en bas. <br>
+(En plus il &agrave; r&eacute;duit l'affichage de la barre de t&acirc;che 
+et je suis s&ucirc;r qu'il ne sait m&ecirc;me pas comment). <br>
+- Appuyez sur le bouton GAUCHE de la souris et d&eacute;placez-la,juste un
+peu vers le haut... <br>
+- ...Ca fait rien. <br>
+(Va falloir changer de m&eacute;thode... il &agrave; deux mains gaucheset 
+il est handicap&eacute; des 12 doigts...) <br>
+- Bon appuyez sur Control echap... vous maintenez la touche C.T.R.Lenfonc&eacute;, 
+celle qui est en bas &agrave; gauche sur le clavier et <br>
+- Ca fait rien... <br>
+- Non attendez, vous maintenez Ctrl ET vous appuyez une fois sur latouche 
+ECHAP qui est tout en haut &agrave; gauche sur le clavier <br>
+- ... Ah &ccedil;a y est, j'ai quelque chose qui est apparu. <br>
+- OK, (on avance) vous voyez &eacute;crit "Programmes" ? <br>
+- Oui <br>
+(Ouf, j'avais peur qu'il ne sache pas lire) <br>
+- Bon, cliquez dessus. <br>
+- Sur "Programmes" ? <br>
+- Oui. <br>
+- Y'a des choses qui sont encore arriv&eacute;s sur le c&ocirc;t&eacute;... 
+  <br>
+- Super, vous voyez "client SMS" ? <br>
+- ...(Il &eacute;num&egrave;re tout ce qu'il voie en commen&ccedil;antpar 
+le bas alors que c'est rang&eacute; en ordre alphab&eacute;tique...)Ah j'ai
+trouv&eacute;... <br>
+- Cliquez dessus. <br>
+- Je peux pas, tout est parti. <br>
+('tain encore 5 minutes pour refaire les manips... je vais allez mesuicider 
+en attendant...) <br>
+- Bon c'est pas grave, cliquez &agrave; nouveau sur "Programmes". <br>
+- Ah c'est revenu.. <br>
+- D&eacute;placez votre souris vers la droite. <br>
+- C'est venu en bleu sur "miKoZof Word..." <br>
+- OK, remontez sur "Clients SMS" <br>
+- Ouais j'y suis, je cliquette ? <br>
+- Pas la peine, allez encore &agrave; droite sur "Contr&ocirc;le distant". 
+  <br>
+- J'y suis, je cliquette ? <br>
+(un cliqueteur fou) <br>
+- OUI (incroyable, on y est presque...) <br>
+- Ca y est... y se passe rien... <br>
+- Un instant, je me connecte sur votre poste. <br>
+- H&eacute;, la souris, elle bouge toute seule... <br>
+- C'est normal, c'est moi qui contr&ocirc;le votre poste &agrave; distance... 
+  <br>
+- Euh comment vous faite ? <br>
+(je ne lui ai pas expliqu&eacute;, mais j'ai eu du mal, il voulaitsans arr&ecirc;t
+voir si en bougeant la souris il avait toujours le contr&ocirc;lede son poste...) 
+  </p>
+  <p><b>Epilogue :</b> <br>
+Le format de papier &eacute;tait en Letter US au lieu de A4, il avaitun message
+d'erreur sur l'imprimante qui r&eacute;clamait le papier enquestion et 17
+documents dans la file d'attente (il esp&eacute;rait queca finirait pas imprimer...). 
+  </p>
+  <p><b>Fin de l'appel : 17:15</b> <br>
+Heureusement je n'en ai pas beaucoup comme celui-l&agrave;... <br>
+ </p>
+  <hr width="100%"> <br>
+&nbsp; 
+  <center> 
+  <h1> <a name="curseur"></a>
+O&ugrave; est mon curseur ?</h1>
+  </center>
+  
+  <p><br>
+  <i>De premi&egrave;re main (merci Stef):</i> </p>
+  <p>Vu dans un service de support t&eacute;l&eacute;phonique : <br>
+La secr&eacute;taire appelle "je vois plus mon curseur de souris!" <br>
+Le gars du support passe 45 minutes avec elle, et fait le tour de toutce qui
+est imaginable. <br>
+-"Avez-vous correctement install&eacute; le pilote de la souris ? <br>
+- Si vous la bougez, vous ne voyez rien ? <br>
+- Si vous cliquez &agrave; plusieurs endroits, aucune ic&ocirc;ne nes'active 
+? <br>
+- &Ecirc;tes vous capable de lancer le panneau de contr&ocirc;le ? <br>
+- Pouvez vous partir une application avec le clavier ?" <br>
+La secr&eacute;taire : <br>
+- "Non, non, il ne se passe rien ! <br>
+- La souris est bien branch&eacute;e ?" <br>
+La secr&eacute;taire: <br>
+- "Il faut que j'aille voir la prise derri&egrave;re l'ordinateur ? <br>
+- Oui !" <br>
+La secr&eacute;taire : <br>
+- "Ho l&agrave; l&agrave; je vois rien! il fait trop noir... <br>
+- Ben, allumez la lumi&egrave;re ou approchez votre lampe de table!" <br>
+La secr&eacute;taire : <br>
+- "Ben non, le courant a &eacute;t&eacute; coup&eacute; pour l'apr&egrave;s 
+midi..." <br>
+ </p>
+  <hr width="100%"> <br>
+&nbsp; 
+  <center> 
+  <h1> <a name="NeuneuPowerUser"></a>
+Mon neuneu est un power user</h1>
+  </center>
+  
+  <p><br>
+  <i>Diffus&eacute; sur la liste Bruit le 8 f&eacute;vrier 1999 :</i> <br>
+&nbsp; </p>
+  <p>N'importe quel jour que le dieu des neuneu b&eacute;ni, t&ocirc;t le 
+matin. </p>
+  <p>Mon neuneu est sous WNT4 workstation parce que 95 c'est pour les petits 
+joueurs et demande : </p>
+  <p>- "Dis tu ne pourrais pas me repasser le CD d'office 97 parce que quand 
+je veux faire des graphiques avec Excel, je ne peux pas les faire, alorsje 
+vais r&eacute;installer. <br>
+- Ah ? <br>
+- Oui il ne se passe rien <br>
+- C'est peut-&ecirc;tre pr&eacute;f&eacute;rable. <br>
+- ... Tu ne saurais pas d'o&ugrave; &ccedil;a vient ? <br>
+- Oui tout &agrave; fait, il ne fallait pas installer Excel. <br>
+- ...&nbsp; Je ne me ferai jamais &agrave; l'humour d'informaticien <br>
+- C'est normal &ccedil;a n'en est pas c'est du d&eacute;sespoir. <br>
+- Bon je passe chercher le CD." </p>
+  <p>Beaucoup plus tard : </p>
+  <p>- "Dis tu ne pourrais pas faire quelque chose ? Je suis tr&egrave;semb&ecirc;t&eacute;. 
+  <br>
+- Aaaah&nbsp; ? &lt;fortement teint&eacute; d'inqui&eacute;tude&gt; C'est 
+gentil de me faire partager tes soucis. Tu veux un peu des miens ? Entrecopains. 
+  <br>
+- Bin voil&agrave; quand je veux booter j'obtiens un &eacute;cran toutbleu 
+avec un tas de jurons&nbsp; et &ccedil;a s'arr&ecirc;te l&agrave;. <br>
+- Il est bien &eacute;vident que tout ceci est apparu spontan&eacute;ment. 
+  <br>
+- Heu bin non en fait, j'avais des pb avec mon lecteur de CD alorsj'ai enlev&eacute;
+tout les pilotes de p&eacute;riph. pour voir. <br>
+- ... <br>
+- Heu tu es f&acirc;ch&eacute; ? <br>
+- Pas du tout je suis en train de rechercher un stage de reconversion. <br>
+- Et en quoi ? <br>
+- Serial-killer." <br>
+&nbsp; </p>
+  <p>Vrai dans les moindres d&eacute;tails, bien &eacute;videmment. <br>
+ </p>
+  <hr width="100%"> <br>
+  <i>De la m&ecirc;me source et de premi&egrave;re main &eacute;galement:</i>
+ <br>
+&nbsp; 
+  <p><b>Mon neuneu ne se laisse pas impressionner par le hard.</b> </p>
+  <p>Dialogue entre deux &eacute;berlu&eacute;s : <br>
+&nbsp;- "Fait chier cet onduleur depuis qu'il est coup&eacute; il n'arr&ecirc;te 
+pas de biper. C'est peut-&ecirc;te pour &ccedil;a que le PC ne veut plusd&eacute;marrer. 
+  <br>
+- Pense tu c'est l'alim qu'&agrave; d&eacute;gag&eacute;e. Les alims&agrave; 
+d&eacute;coupage c'est fragile." </p>
+  <p><b>Mon neuneu fait sa connectique lui-m&ecirc;me :</b> </p>
+  <p>- "Il faudrait faire un appel &agrave; la maintenance j'ai des probl&egrave;mes 
+avec mon clavier &ccedil;a bipe au d&eacute;marrage. <br>
+- Ah ? <br>
+- Puisque je te le dis. <br>
+- Bon regardons voir. Ah oui c'est peut-&ecirc;tre parce que tu asenfonc&eacute; 
+la prise DIN du clavier dans le connecteur BNC de la carte r&eacute;seau. 
+  <br>
+- Ce n'est pas l&agrave; que &ccedil;a se met ? (*)" </p>
+  <p>(*) Ri-gou-reu-se-ment authentique. </p>
+  <p><b>Mon neuneu est dans les sph&egrave;res d&eacute;cisionnelles:</b>
+ </p>
+  <p>- "Il faudrait installer des serveurs DHCP. <br>
+-... ? <br>
+- Oui avec &ccedil;a on n'a plus besoin de configurer les PC <br>
+- Bin &ccedil;a ne sert qu'&agrave; affecter des adresses IP dynamiques. <br>
+- Non, non &ccedil;a autoconfigure tout. <br>
+- Ah. Alors c'est bien pratique." <br>
+ </p>
+  <hr width="100%"> <br>
+  <i>Toujours issu de la liste Bruit :</i> 
+  <p><b>Moi </b>: C'est toi qui viens de rebooter la station ? <br>
+  <b>Lui </b>: Oui. <br>
+  <b>Moi </b>: A l'avenir, tu pourrais faire un who et pr&eacute;venirles 
+gens qui ont un telnet sur la machine, histoire qu'ils ne voient pasleurs 
+fen&ecirc;tres dispara&icirc;tre d'un coup. <br>
+  <b>Lui </b>: Ah ben j'avais fait un who, j'avais bien vu que tu &eacute;tais 
+l&agrave;, mais je n'avais pas pens&eacute; que &ccedil;a se passeraitmal 
+pour toi si je rebootais. </p>
+  <p>Il etait cens&eacute; &ecirc;tre informaticien. <br>
+ </p>
+  <hr width="100%"> <br>
+&nbsp; 
+  <center> 
+  <h1> <a name="martine"></a>
+Martine</h1>
+  </center>
+  
+  <center>(directement de l'auteur : <a href="../perdu.html?u=http://perso.wanadoo.fr/btrinquier/">
+http://perso.wanadoo.fr/btrinquier/</a>
+)</center>
+  
+  <p>Au sein d'un grand groupe fran&ccedil;ais, j'ai d&eacute;velopp&eacute; 
+un logiciel de type "carnet d'adresses" pour les commerciaux. J'assurela maintenance
+et la hot-line de ce logiciel. Ma cliente "pr&eacute;f&eacute;r&eacute;e" 
+&eacute;tait une assistante commerciale que j'appelerais Martine pour pr&eacute;server 
+son anonymat. </p>
+  <p><b>Appel n&deg;1 :</b> </p>
+  <p>-"Bonjour, ici c'est Martine. <br>
+-Oui, bonjour ! <br>
+-Je n'arrive pas &agrave; utiliser le carnet. <br>
+-C'est &agrave; dire ? <br>
+-Il me dit : "mot de passe invalide" <br>
+-Et vous entrez quoi comme mot de passe ? <br>
+-Ben, comme d'habitude : XXXXX <br>
+(je me connecte &agrave; la base et je lis : Martine, mot de passeYYYYY) <br>
+-Martine, votre mot de passe, c'est YYYYY. <br>
+-Ah oui, je me souviens, je l'ai chang&eacute; hier ! <br>
+-Vous pouvez essayer avec le nouveau mot de passe. <br>
+-Ok, j'arrive &agrave; entrer. Merci <br>
+-Au revoir." </p>
+  <p><b>Appel n&deg;2, 3 jours apr&egrave;s :</b> </p>
+  <p>- "Allo, c'est Martine <br>
+- Oui ? <br>
+- J'ai encore un probl&egrave;me avec mon mot de passe. <br>
+- Vous avez tap&eacute; YYYYY? <br>
+- Oui, mais il ne veut pas entrer dans le carnet. <br>
+- Vous n'avez pas chang&eacute; votre mot de passe ? <br>
+- Non. Vous savez, j'ai des travaux urgents &agrave; faire et si l'informatique 
+ne marche pas, c'est un probl&egrave;me. Parce que ma chef, <br>
+elle attend des r&eacute;sultats pour ce soir. Et moi, je ne peux rienfaire... 
+  <br>
+- Bon, quand vous cliquez sur Valider dans la fen&ecirc;tre de connexion, 
+quel est le message d'erreur ? <br>
+- "Connexion impossible. Contactez votre administrateur." <br>
+- Mais ce n'est pas "Mot de passe invalide". Ce n'est donc pas un probl&egrave;me 
+de mot de passe ? <br>
+- Non... Et puis, je n'arrive pas &agrave; acc&eacute;der &agrave;mes textes. 
+  <br>
+- Ceux sous Word ? <br>
+- Oui, parce que ma chef ...[bla bla bla]... l'informatique ...[blabla bla]... 
+  <br>
+- Attendez une seconde. (Je sais que ses fichiers Word sont sur unserveur 
+; j'ouvre l'Explorateur R&eacute;seau : aucun serveur de son immeublen'est 
+accessible)... Martine, tous les serveurs sont arr&ecirc;t&eacute;s. <br>
+- Ah, c'est donc &ccedil;a le message que j'ai re&ccedil;u hier ? <br>
+- Quel message ? <br>
+- "Suite &agrave; des travaux &eacute;lectriques dans la salle informatique, 
+tous les serveurs seront arr&ecirc;t&eacute;s de 10h &agrave; 14h. Vousne 
+pourrez donc pas utiliser vos fichiers bureautiques (Word, Excel, PowerPoint), 
+ni acc&eacute;der &agrave; vos bases de donn&eacute;es. Nous faisons lemaximum 
+pour minimiser l'indisponibilit&eacute; de vos applications informatiques. 
+  <br>
+- Je pr&eacute;sume que c'est &ccedil;a. Rappelez-moi &agrave; 14h30si vous
+avez encore des probl&egrave;mes !" </p>
+  <p>(Plus tard, les responsables de la salle informatique m'ont dit queMartine 
+les a appel&eacute; 3 fois pour leur dire qu'elle ne pouvait paslire ses fichiers
+Word). </p>
+  <p><b>Appel n&deg;3, 2 semaines apr&egrave;s :</b> </p>
+  <p>- "Ici, c'est Martine. <br>
+- Oui ???? <br>
+- Les &eacute;tiquettes ne fonctionnent plus. <br>
+(Le logiciel permet de sortir des planches d'&eacute;tiquettes autocollantes 
+avec un choix des formats d'&eacute;tiquettes les plus courants). <br>
+- Vous ne pouvez plus imprimer les &eacute;tiquettes ? <br>
+- Si, mais au d&eacute;part, tout va bien, puis apr&egrave;s c'esttout d&eacute;cal&eacute;. 
+  <br>
+- C'est &agrave; dire ? <br>
+- La ligne avec le code postal et la ville est &agrave; cheval surdeux &eacute;tiquettes. 
+  <br>
+- Faxez-moi une planche d'&eacute;tiquettes qui est d&eacute;cal&eacute;e. 
+Mettez un coup de stylo pour marquer le contour des &eacute;tiquettes." <br>
+(Quelques minutes apr&egrave;s, je re&ccedil;ois la planche. Effectivement, 
+les impressions sont d&eacute;cal&eacute;es. Je mesure: Le d&eacute;calage 
+entre les premi&egrave;res lignes de chaque &eacute;tiquette est de 6 cm, 
+tandis que les marques d'&eacute;tiquettes sont de 4 cm. 2 cm de diff&eacute;rence 
+en hauteur pour chaque &eacute;tiquette !!!. Je ret&eacute;l&eacute;phone) 
+  <br>
+- "All&ocirc;, Martine. Qu'est-ce que vous avez pris comme format d'&eacute;tiquette 
+? <br>
+- Comme d'habitude, 6 cm. <br>
+- Mais vos &eacute;tiquettes font 4 cm de haut. <br>
+- Comment &ccedil;a se fait ? <br>
+- Je ne sais pas. Vous avez la bo&icirc;te d'&eacute;tiquettes sousla main
+? <br>
+- (elle farfouille) Oui. <br>
+- Vous pouvez me lire ce qu'il y a &eacute;crit dessus ?" <br>
+(Elle me lit l'int&eacute;gralit&eacute; des inscriptions sur la bo&icirc;te 
+: fabricant, made in ..., nombre de feuilles, ... Dans le tas, j'entends3,81 
+cm). <br>
+-" Martine ! Il y a marqu&eacute; que les &eacute;tiquettes font 3,81cm de
+hauteur. <br>
+- Oui. <br>
+- Vous pouvez relancer l'impression en choisissant&nbsp; l'option "&eacute;tiquettes 
+3,81 cm". <br>
+- Oui... (quelques secondes plus tard) ... Super, &ccedil;a fonctionne. <br>
+- Les &eacute;tiquettes sont bien cadr&eacute;es ? <br>
+- Oui. <br>
+- C'&eacute;tait juste que vous n'aviez pas pris le bon format d'&eacute;tiquettes. 
+  <br>
+- Ah bon! Mais comment &ccedil;a se fait ? Parce que d'habitude, jeprends 
+des &eacute;tiquettes de 6 cm! <br>
+- Mais cette fois, elles faisaient 3,81 ! <br>
+- Mais comment &ccedil;a se fait ? <br>
+- Je ne sais pas. Peut-&ecirc;tre que vous avez fait une erreur der&eacute;f&eacute;rence 
+&agrave; la commande, ou que votre fournisseurs'est tromp&eacute;. <br>
+- Mais comment &ccedil;a se fait ? Parce que d'habitude, je prendsdes &eacute;tiquettes
+de 6 cm !" <br>
+(Aaaarghhhh) </p>
+  <p><b>Appel n&deg;4, 2 heures apr&egrave;s :</b> </p>
+  <p>- "Allo, c'est Martine, j'ai un probl&egrave;me avec les &eacute;tiquettes. 
+  <br>
+- Oui ????? <br>
+- J'ai une soci&eacute;t&eacute; qui ne rentre pas sur les &eacute;tiquettes. 
+  <br>
+- Qu'est-ce &agrave; dire ? <br>
+- Ben, la "Confr&eacute;rie Ind&eacute;pendante des Scientifiques Universalistes 
+du Poitou et des Charentes-Maritimes R&eacute;unis", &ccedil;a ne rentrepas 
+sur l'&eacute;tiquette." <br>
+(Evidemment, j'ai chang&eacute; le nom de la soci&eacute;t&eacute;,mais c'&eacute;tait
+aussi long que &ccedil;a) <br>
+- " C'est peut-&ecirc;tre un peu long comme nom. Et si vous indiquiezuniquement 
+les initiales : CISUPCMR ! <br>
+- Ah non ! Ma chef, elle veut le nom complet sur l'&eacute;tiquette.Parce 
+que ma chef ...[refrain]... <br>
+- Mais ce n'est pas grave. En g&eacute;n&eacute;ral, le patron, ilne voit
+pas l'enveloppe; il lit seulement la lettre &agrave; l'int&eacute;rieur. <br>
+- Oui, mais ma chef, elle ne veut pas. <br>
+- Ok. Vous savez que vous pouvez changer la taille des caract&egrave;res. 
+Imprimez l'&eacute;tiquette avec des caract&egrave;res plus petits. <br>
+- Ah non. C'est pas beau. <br>
+- ??? <br>
+- Eh oui, il y aura des &eacute;tiquettes avec des grands caract&egrave;res 
+et d'autres avec des petits. <br>
+- Vous pensez que Mr X, PDG de la soci&eacute;t&eacute; S va t&eacute;l&eacute;phoner 
+&agrave; Mme Y, PDG de la soci&eacute;t&eacute; T pour savoir quelle &eacute;tait 
+la taille des caract&egrave;res sur l'&eacute;tiquette coll&eacute;e surl'enveloppe 
+? <br>
+- ??? <br>
+- Expliqu&eacute; diff&eacute;rement : Vous, exp&eacute;diteur, vousvoyez 
+des &eacute;tiquettes diff&eacute;rentes. Mais celui qui re&ccedil;oit,il 
+n'a aucun moyen de comparaison. Et en plus, l'enveloppe, il s'en fout. <br>
+- Oui, mais ma chef, ...[et je passe le reste]... <br>
+- Vous en avez beaucoup des soci&eacute;t&eacute;s qui d&eacute;passent? <br>
+- Non, j'en ai qu'une. <br>
+- Sur combien ? <br>
+- 4500 <br>
+- Et si vous &eacute;criviez l'adresse &agrave; la main sur l'enveloppe... 
+Ca fera plaisir : un envoi personnalis&eacute; ! <br>
+- Ah ca c'est une id&eacute;e. Je suis s&ucirc;r que &ccedil;a va plaire&agrave; 
+ma chef. <br>
+- A votre service !" </p>
+  <p> </p>
+  <hr width="100%"> 
+  <center> 
+  <h1> <a name="TellementVrai"></a>
+C'est tellement vrai...</h1>
+  </center>
+  
+  <p><br>
+Je suis ing&eacute;nieur syst&ecirc;me, je sais je ne devrais pasm'en vanter. 
+  </p>
+  <p>Lorsqu'on me demande quel est mon m&eacute;tier il m'arrive de plusen 
+plus souvent de r&eacute;pondre "je suis dans l'informatique". Cettevague 
+formulation a au moins le m&eacute;rite de m'&eacute;viter la lueurde haine 
+m&eacute;prisante qui appara&icirc;t instantan&eacute;ment dansl'oeil de l'interlocuteur
+le mieux dispos&eacute; au simple &eacute;nonc&eacute;de mes coupables occupations. 
+  </p>
+  <p>Je suis l&acirc;che. La prochaine fois je r&eacute;pondrai tueur &agrave; 
+gages; le rel&acirc;chement des moeurs &eacute;tant ce qu'il est, celadevrait 
+moins choquer.&nbsp; C'est un m&eacute;tier gratifiant &agrave;bien des points
+de vue, c'est vraisemblablement le seul o&ugrave; le n&eacute;ophytetotal, 
+celui qui vient d'ouvrir son premier carton d'ordinateur se senten mesure 
+de vous expliquer votre m&eacute;tier dans le quart d'heure quisuit le montage
+de sa b&eacute;cane. </p>
+  <p>A ma connaissance conduire une voiture ne transforme personne en m&eacute;canicien, 
+pas plus que raboter une porte ne fait de vous un &eacute;b&eacute;niste, 
+mais taper sur un clavier fait de tout un chacun un informaticien. On n'arr&ecirc;te 
+pas le progr&egrave;s. </p>
+  <p>N'allez surtout pas croire que je veux garder pour moi les cles du savoir 
+et en tenir &eacute;loign&eacute; le vulgum. Que je regrette le temps o&ugrave; 
+les ing&eacute;nieurs syst&ecirc;me d&eacute;tenaient le pouvoir abrit&eacute;s 
+derri&egrave;re leurs incantations absconses. </p>
+  <p>Nenni. Bien au contraire, &eacute;tant d'un naturel assez paresseux, 
+pour ne pas dire d'une fain&eacute;antise crasse, je pr&eacute;f&egrave;re 
+de tr&egrave;s loin un utilisateur qui se d&eacute;brouille sans moi. Mais 
+je reste persuad&eacute; qu'informaticien c'est aussi un m&eacute;tier.&nbsp; 
+Par contre je regrette - parfois - le temps o&ugrave; le metier consistait 
+&agrave; surveiller un Vax, ceux qui ont connu cela savent &agrave; quelpoint&nbsp; 
+c'&eacute;tait <br>
+reposant, ou alors &agrave; rebooter une station Unix tous les trentesix du
+mois pour justifier son existence. </p>
+  <p>Avec l'arriv&eacute;e des PC et surtout de Windows nous sommes entr&eacute;s 
+de plain-pied dans ce que l'on pourrait appeler l'&egrave;re du Chapelier 
+Fou, c'est-&agrave;-dire l'irruption de l'irrationnel dans ce qu'il a deplus 
+po&eacute;tique et de moins ma&icirc;trisable au beau milieu d'unmonde jusque
+l&agrave; bien tenu. </p>
+  <p>En vertu d'un darwinisme &eacute;l&eacute;mentaire il a bien fallu s'adapter. 
+Aujourd'hui &ecirc;tre IS dans le monde merveilleux de PetitMou, c'est&ecirc;tre 
+un hybride monstrueux, un m&eacute;lange aussi subtil qu'ind&eacute;finissable 
+de chaman, de Menie Gregoire, de D&eacute;d&eacute;-la-Bricole, de Bobologue, 
+de charlatan et de psychopathe. <br>
+Je ne remercierai jamais assez Bill Gates pour avoir transform&eacute;un metier
+relativement terne et bas&eacute; sur une approche b&ecirc;tementtechnique 
+et rigoureuse des faits, en challenge quotidien, n&eacute;cessitantune remise
+en question permanente &agrave; l'&eacute;chelle du quart d'heure. </p>
+  <p>Quoi de plus stimulant sinon de savoir que r&eacute;soudre un probl&egrave;me 
+ne viendra en aucune facon enrichir ce qu'il est convenu d'appeler l'exp&eacute;rience, 
+puisque le m&ecirc;me probl&egrave;me n&eacute;cessitera lorsqu'il se posera 
+&agrave; nouveau une solution radicalement diff&eacute;rente. On eviteainsi 
+la scl&eacute;rose intellectuelle cons&eacute;cutive aux automatismes.&nbsp; 
+R&eacute;soudre un probl&egrave;me n&eacute;cessite une <br>
+imagination &agrave; c&ocirc;t&eacute; de laquelle le r&eacute;citd'un trip
+sous champignons hallucinog&egrave;nes pourrait passer pour lecompte-rendu 
+de l'assembl&eacute;e g&eacute;n&eacute;rale des actionnairesde la Societe 
+Nouvelle des Acieries Mouchabeuf. </p>
+  <p>Le cart&eacute;sianisme n'est pas un atout mais un grave handicap vous 
+emp&ecirc;chant d'aborder les hypoth&egrave;ses les plus farfelues. Etil faut
+bien cela quand apr&egrave;s avoir &eacute;limin&eacute; les causesraisonnables 
+de dysfonctionnement vous &ecirc;tes amen&eacute; &agrave;envisager le reste,
+qui se situe g&eacute;n&eacute;ralement tout de suiteentre les histoires de
+petit lutin et la quatri&egrave;me dimension. Laseule chose que je me refuse
+encore &agrave; pratiquer c'est l'impositiondes mains et le voyage &agrave;
+Lourdes, plus par r&eacute;action de m&eacute;cr&eacute;antque par doute
+quant &agrave; l'efficacit&eacute; des m&eacute;thodes enquestion. </p>
+  <p>Je sens qu'avec l'arrivee de Windows 98 il va me falloir op&eacute;rer 
+une r&eacute;vision d&eacute;chirante quant &agrave; mes convictions 0profondes. 
+Quand je pense que certains recherchent les paradis artificiels, et quel'on 
+me paye pour &ecirc;tre en &eacute;tat perp&eacute;tuel d'hallucination.&nbsp; 
+La vie est bien injuste, allez. Tout cela serait finalement bien monotone 
+s'il n'y avait l'utilisateur, car il existe l'utilisateur, c'est vous etmoi.&nbsp; 
+Victime d'une intoxication &agrave; l'&eacute;chelle plan&eacute;taire,d'un 
+gigantesque et collectif lavage de cerveau il s'imagine qu'il va pouvoirtirer 
+quelque chose de sa b&eacute;cane, &ecirc;tre productif, voire m&ecirc;me 
+dans les cas les plus graves envisager un retour sur investissement. </p>
+  <p>Aujourd'hui l'utilisateur perverti par des slogans pernicieux du style 
+" Jusqu'o&ugrave; irez vous ? " exige que &ccedil;a marche, et c'est bien 
+l&agrave; o&ugrave; tout se g&acirc;te, le d&eacute;calage entre cettel&eacute;gitime 
+attente et ce que l'illumin&eacute; de Redmond est capabled'apporter me d&eacute;prime. 
+  </p>
+  <p>" Jusqu'o&ugrave; irez vous ? ", jusqu'&agrave; l'asile le plus proche 
+sans doute. Comment voulez-vous qu'un truc qui est &agrave; un systemed'exploitation 
+ce que Mireille Mathieu est &agrave; Edith Piaf, ce bricolageimprobable &eacute;crit
+avec les pieds par une nu&eacute;e de&nbsp; perversschizo&iuml;des puisse
+fonctionner ? Le mensonge le plus grossier colport&eacute;par les sectateurs
+microsoftiens est celui selon lequel un PC convenablement&eacute;quip&eacute; 
+de l'in&eacute;narrable Windows et du fourbi Officedont j'ai oubli&eacute; 
+le mill&eacute;sime car il change en permanence,fonctionnerait seul et sans
+assistance.&nbsp; Le r&eacute;cit d'une journ&eacute;eordinaire au royaume
+du Chapelier Fou contredit quelque peu cette idylliquevision du meilleur
+des mondes possible. Ce doit &ecirc;tre une questionde num&eacute;ro de <br>
+version, sans doute. </p>
+  <p><b><font color="#ffffff">Mardi 8 heures</font></b> </p>
+  <p>Le calme avant la temp&ecirc;te, je peux l'esprit en repos me consacrer 
+&agrave; un projet qui me tient &agrave; coeur; &eacute;muler une calculette 
+quatre op&eacute;rations sur un Vax de la serie 8000. Je tenterai l'inverse 
+des que j'aurai men&eacute; &agrave; bien cette partie. </p>
+  <p><b><font color="#ffffff">Mardi 9 heures</font></b> </p>
+  <p>Un premier coup de t&eacute;l&eacute;phone laconique, " Tu peux venir 
+jeter un coup d'oeil, mon PC est bloqu&eacute; ", sous cette apparenceanodine 
+peut se dissimuler le cauchemar le plus absolu, les raisons quipeuvent amener
+un PC &agrave; se bloquer sont l&eacute;gions, la premi&egrave;re&eacute;tant 
+d'appuyer sur le bouton "marche". </p>
+  <p>Je suis d'autant plus inquiet que mon client est un dingue de la vitesse. 
+C'est un peu l'&eacute;quivalent du chauffard, il parle de bus AGP l&agrave; 
+o&ugrave; les autres parlent de carburateur double corps, mais la d&eacute;marche 
+est la m&ecirc;me, aller le plus vite possible en semant la terreur surson 
+passage. Profitant d'un instant d'&eacute;garement de son chef de service 
+il a reussi &agrave; se faire payer le dernier Pentium &agrave; 333 Mhz,ce 
+qui lui permet de gagner cinq secondes sur la mise en page de sa feuillede 
+calcul. C'est comme on le voit une avanc&eacute;e consid&eacute;rable&agrave; 
+la mesure de l'investissement consenti. Je le trouve un peu d&eacute;prim&eacute; 
+car on annonce d&eacute;j&agrave; le Pentium &agrave; 400 Mhz ou plus etil 
+contemple avec amertume ce qu'il consid&egrave;re d&eacute;j&agrave;comme 
+l'&eacute;quivalent d'une caisse &agrave; savon. </p>
+  <p>J'essaye de le reconforter en lui disant qu'avec la b&ecirc;te qu'il 
+poss&egrave;de il devrait &eacute;viter d'ouvrir deux fen&ecirc;tres enm&ecirc;me 
+temps pour ne pas faire de courants d'air. Une boutade bieninnocente, c'est 
+le c&ocirc;t&eacute; M&eacute;nie Gr&eacute;goire de laprofession, mais je
+sens bien qu'il n'y croit pas. Les grandes douleurssont souvent au-del&agrave; 
+des mots.&nbsp; Mais revenons a nos moutons,PC bloqu&eacute;. </p>
+  <p>Effectivement pass&eacute; le d&eacute;marrage tout ce que nous obtenons 
+c'est un sablier d&eacute;sesp&eacute;r&eacute;ment fig&eacute;, je suistent&eacute; 
+de repondre que c'est parfait pour faire des oeufs &agrave;la coque mais quelque
+chose dans son air &eacute;gar&eacute; me dit que je ferais aussi bien de
+me taire. C'est alors que j'envisage du coin del'oeil un CD-ROM offert par
+  <i>PC truc </i>" Mesurez les performances devotre PC <br>
+", eh oui &ccedil;a ne sert &agrave; rien d'aller vite encore faut-ilpouvoir 
+l'exprimer en Business Graphics, WinMark 98, High End Disk WinMark98 et autres
+CPUMark32, c'est requis pour humilier &agrave; l'heure ducaf&eacute; les
+ploucs avec leurs Pentium 133. </p>
+  <p>Je lui demande si par le plus grand des hasards il n'aurait pas mont&eacute; 
+ce truc-l&agrave; sur sa machine, je connais la r&eacute;ponse. Il estd'ailleurs 
+mentionn&eacute; en tout petit sur le CD que l'installationde cette suite 
+de tests devrait &ecirc;tre effectu&eacute;e sur une machinequasi vierge et
+pas sur un syst&egrave;me normalement op&eacute;rationnel," cela pouvant provoquer
+des dysfonctionnements ". Des " dysfonctionnements", tu l'as dit bouffi. </p>
+  <p>Diagnostic; je t'envoie quelqu'un pour te remettre un syst&egrave;me 
+d'&eacute;querre celui-ci &eacute;tant parti en vill&eacute;giature &agrave; 
+la campagne, pour une dur&eacute;e ind&eacute;termin&eacute;e. Rendez-vous 
+est pris pour la parution du prochain CD de tests de <i>PC machin</i>. </p>
+  <p>Au suivant. </p>
+  <p><b><font color="#ffffff">Mardi 10 heures</font></b> </p>
+  <p>Juste le temps de constater le plantage d'un serveur NT.&nbsp; Quelqu'un 
+a vraisemblablement &eacute;ternu&eacute; devant, c'est tr&egrave;s sensible 
+comme syst&ecirc;me. Bon, reset, red&eacute;marrage, la routine quoi. </p>
+  <p>Deuxi&egrave;me coup de t&eacute;l&eacute;phone " Tu n'aurais pas cinq 
+minutes des fois, il se passe parfois des choses curieuses sur ma machine 
+". Connaissant mon correspondant la seule chose curieuse dans tout celac'est 
+le "parfois", il est stup&eacute;fiant que ce ne soit pas "toujours". </p>
+  <p>C'est qu'il s'agit de la vari&eacute;t&eacute; dite de " l'esth&egrave;te 
+taquin ", &eacute;pouvant&eacute; par l'uniformit&eacute; il a install&eacute; 
+sur sa machine tous les th&egrave;mes possibles, le pointeur de sourisest 
+un calamar, le sablier une horloge comtoise, l'&eacute;conomiseur d'ecran 
+qui se d&eacute;clenche toutes les minutes est un jeu de baston intergalactique 
+avec force sifflements et explosions. Car il a bien &eacute;videmment une 
+carte son.&nbsp; C'est indispensable pour reproduire le rire&nbsp; de Johnny 
+Hallyday selon les <i>Guignols de l'Info</i>, rire qui accompagne les messages 
+d'avertissement. Tout cela est un peu perturbant. </p>
+  <p>Ayant de surcroit acc&egrave;s a l'Internet il a r&eacute;cup&eacute;r&eacute; 
+et install&eacute; tous les sharewares possibles, il n'y a plus aucunepi&egrave;ce 
+d'origine sur sa machine, il a tout remplac&eacute; et ilest seul &agrave; 
+pouvoir s'en servir. Il est assez surprenant qu'il nesoit oblig&eacute; de
+rebooter sa machine qu'une fois par heure. </p>
+  <p>Je suis peut-&ecirc;tre injuste envers PetitMou. A l'int&eacute;rieur 
+de tout grand logiciel il en existe plusieurs petits qui ne demandent qu'&agrave; 
+sortir, l&agrave; c'est la grande &eacute;vasion, il suffit de coller l'oreille 
+contre le bo&icirc;tier pour les entendre se carapater.&nbsp; Tout ce joli 
+monde doit se battre en permanence pour prendre le contr&ocirc;le du syst&egrave;me. 
+C'est un cas d&eacute;sesp&eacute;r&eacute;. Je m'en sort l&acirc;chement 
+en <br>
+lui disant d'aller r&eacute;cup&eacute;rer sur <a href="../perdu.html?u=http://www.crap.com">
+www.crap.com</a>
+&nbsp; la derni&egrave;re version de son anti-virus/gestionnaire de fichiers/explorateur/compacteur-/logicielde 
+sauvegarde/&eacute;diteur de textes/navigateur internet, et me tirevite fait
+sans toucher &agrave; la souris de peur de d&eacute;clencherun Tchernobyl 
+dans sa machine. Au suivant. </p>
+  <p><b><font color="#ffffff">Mardi 11 heures</font></b> </p>
+  <p>De retour dans mon bureau je constate le plantage d'un autre serveur 
+NT, par solidarit&eacute; avec le premier sans doute. L'instinct gr&eacute;gaire 
+ou le d&eacute;but d'un mouvement de revendications. A surveiller. </p>
+  <p>Autre coup de t&eacute;l&eacute;phone, en provenance d'une esp&egrave;ce 
+bien particuli&egrave;re, la vari&eacute;t&eacute; qui se shoote &agrave; 
+la presse informatique, on ne dira jamais assez les ravages que cela peut 
+provoquer. Strat&egrave;ge plan&eacute;taire, il m'explique comment l'introduction 
+de <br>
+Java dans les entreprises va r&eacute;volutionner la fa&ccedil;on dontnous 
+envisageons l'informatique. Comment Sun va bouffer Microsoft &agrave;condition 
+qu'Oracle s'allie avec Apple et que Compaq ne vienne pas jouerles trouble-f&ecirc;te. 
+Il me pr&eacute;dit la mort prochaine d'Intel victimede ses challengers, et
+&eacute;cras&eacute; sous son gigantisme. </p>
+  <p>Au bout d'un moment atterr&eacute; par toutes ces apocalypses &agrave; 
+venir, je ne sais plus tr&egrave;s bien o&ugrave; j'habite et c'est l&eacute;g&egrave;rement 
+comateux que je raccroche en esp&eacute;rant ardemment que tout cela voudra 
+bien patienter jusqu'&agrave; ma retraite. </p>
+  <p><b><font color="#ffffff">Mardi 13 heures</font></b> </p>
+  <p>Coup de t&eacute;l&eacute;phone angoiss&eacute; en provenance d'unesecr&eacute;taire, 
+" Quand je lance mon Word avec un document que j'aitap&eacute; hier, j'ai 
+le message suivant : Cette application va s'arr&ecirc;tercar elle a effectu&eacute; 
+une op&eacute;ration non conforme ". Je suistent&eacute; de lui r&eacute;pondre 
+qu'il s'agit l&agrave; d'un fonctionnementnormal de l'application, mais je
+m'abstiens. Son d&eacute;sarroi est sinc&egrave;reet la perte <br>
+de plusieurs heures de travail ne porte pas &agrave; rire. </p>
+  <p>Bon en route vers de nouvelles aventures. Cette charmante personne au 
+demeurant, appartient &agrave; la cat&eacute;gorie de ceux qui consid&egrave;rent 
+l'introduction de l'informatique dans leur quotidien comme une calamit&eacute;. 
+L'esp&egrave;ce de truc ronronnant qu'on lui a pos&eacute; sur son bureau 
+est pour elle, visiblement habit&eacute; par un esprit hostile et rebelle 
+&agrave; toute collaboration avec le genre <br>
+humain. Elle a bien essay&eacute; de l'apprivoiser en le banalisant,en installant
+un pot de fleurs sur le bo&icirc;tier et la photo de sesgosses sur l'&eacute;cran,
+mais rien n'y fait, habite d'une vie propreil s'ing&eacute;nie &agrave; lui
+pourrir l'existence. </p>
+  <p>Elle serait je crois soulag&eacute;e, si je suspendais des gousses d'ail 
+et des crucifix au plafond et aspergeait sa machine d'eau b&eacute;nite,c'est 
+le c&ocirc;t&eacute; chaman de la profession. A la vingti&egrave;metentative 
+je r&eacute;ussis &agrave; charger son document sans d&eacute;clencherl'inf&acirc;mant 
+message de vacances pour cause de non conformit&eacute;des op&eacute;rations 
+effectu&eacute;es par l'application, il s'agissaitd'un tableau coup&eacute; 
+par un saut de section, quelque chose de tellementgrave selon Microsoft que
+cela m&eacute;ritait un plantage radical. Peut-etre qu'une destruction totale
+de la machine aurait &eacute;t&eacute;plus appropri&eacute;, je les trouve
+un peu laxistes ces <br>
+temps-ci. </p>
+  <p>Probl&egrave;me corrig&eacute;.&nbsp; Au suivant. </p>
+  <p><b><font color="#ffffff">Mardi 15 heures.</font></b> </p>
+  <p>De suivant il n'y en eu point ce jour-l&agrave;, je terminais ma journ&eacute;e 
+tranquillement entre deux reboot de serveur NT, et mes travaux sur la reconversion 
+d'un Vax en calculette. J'en &eacute;tais &agrave; la soustraction, jene d&eacute;sesp&eacute;rais
+pas d'arriver &agrave; la division &agrave;l'horizon 2005.&nbsp; J'aurai
+certainement besoin de 512 m&eacute;gas dememoire vive suppl&eacute;mentaire
+pour l'impl&eacute;menter, c'est ledirecteur financier qui va encore r&acirc;ler. 
+  </p>
+  <p>C'est une certitude demain am&egrave;nera son nouveau lot de victimes. 
+Si tous ces gens savaient qu'au fond je ne ma&icirc;trise gu&egrave;replus 
+qu'eux tout cela, que le m&eacute;tier est de bien peu de secoursquand Word
+ou Excel ou que sais-je se bauge lamentablement, que le tempsou une entreprise
+vivait sur des applications maisons est d&eacute;finitivementr&eacute;volu.&nbsp; 
+Bah je fais comme si je <br>
+dominais, c'est ce qu'ils attendent de moi, c'est le cote charlatandu m&eacute;tier.
+Et puis ils ont au moins quelqu'un d'identifi&eacute;a engueuler. </p>
+  <p>Quant &agrave; moi je m'endors tous les soirs en r&ecirc;vant aux tortures 
+que je ferais subir &agrave; Bill Gates s'il venait &agrave; me tombersous 
+la main. C'est le c&ocirc;t&eacute; psychopathe du m&eacute;tier. </p>
+  <center> 
+  <p><b><i><font color="#ffffff">(Anonyme)</font></i></b></p>
+  </center>
+  
+  <hr width="100%"> <br>
+&nbsp; 
+  <center> 
+  <h1> <a name="LegendesInformatiques"></a>
+L&eacute;gendes informatiques</h1>
+  </center>
+  
+  <center>(r&eacute;colt&eacute;es sur le newsgroup fr.rec.arts.sf , 20 mars 
+1999 et apr&egrave;s)</center>
+  
+  <p><br>
+ </p>
+  <center> 
+  <h2> <a name="LegBugMinuit"></a>
+Le bug de minuit et quart</h2>
+  </center>
+  
+  <p><br>
+  <b>Titre </b>: Le bug de minuit et quart. <br>
+Histoire propos&eacute;e par : Yann Minh. <br>
+E-mail :Yminh@yannminh.com. <br>
+Site Web : <a href="../perdu.html?u=http://www.yannminh.com">http://www.yannminh.com</a>
+ <br>
+Source : Mon fr&egrave;re directeur technique dans un gros groupe informatique 
+qui l'a entendu d'un formateur en Su&egrave;de. <br>
+Date: Ann&eacute;es 80/90 <br>
+Technologie : Ind&eacute;termin&eacute;e (Bull, Control Data, Digitalou IBM) 
+  <br>
+Lieu : Ind&eacute;termin&eacute;, peut-&ecirc;tre la Su&egrave;de. <br>
+&nbsp; </p>
+  <p>Vers la fin des ann&eacute;es 80, un tr&egrave;s gros site informatique 
+organis&eacute; autour d'une m&ecirc;me grosse unit&eacute; centrale etconnect&eacute; 
+en r&eacute;seau avec le monde entier, bug tous les dimanchesentre minuit 
+et minuit et quart. </p>
+  <p>Un premier technicien de maintenance se rend sur les lieux, et, n'identifiant 
+pas la raison de la panne, remplace toutes les cartes d'alimentation etfait 
+changer la moquette qui n'&eacute;tait pas antistatique. La pannecontinue 
+de se produire. </p>
+  <p>Toujours entre minuit et minuit-et-quart, l'unit&eacute; centrale plante. 
+Avec une telle r&eacute;gularit&eacute;, que le personnel a inscrit lebug 
+dans la planification : Backup des fichiers et d&eacute;connexion volontaire 
+des r&eacute;seaux quelques minutes avant le quart d'heure fatidique. </p>
+  <p>Un ing&eacute;nieur est envoy&eacute; sur le site. Il change l'unit&eacute; 
+centrale, remonte le r&eacute;seau &eacute;lectrique pour v&eacute;rifier 
+s'il n'y a pas de manipulations particuli&egrave;res au niveau des centrales 
+dans cette p&eacute;riode. Il fait une enqu&ecirc;te au niveau de l'arm&eacute;e 
+pour v&eacute;rifier si cela ne venait pas d'une installation militaire,du 
+genre radar ou &eacute;metteur tr&egrave;s puissant. <br>
+Sans succ&egrave;s. La panne continue. </p>
+  <p>Finalement on envoie un programmeur, et c'est lui qui trouvera la clef 
+du myst&egrave;re. </p>
+  <p>- Il analyse la plupart des transmissions et des op&eacute;rations effectu&eacute;es 
+par l'ordinateur. Sans succ&egrave;s. <br>
+- Enqu&ecirc;te aupr&egrave;s de la client&egrave;le pour v&eacute;rifier 
+le type de transactions effectu&eacute;es. Sans succ&egrave;s. <br>
+- Il passe plusieurs week-ends &agrave; &eacute;tudier les manipulationsdes 
+op&eacute;rateurs. Sans succ&egrave;s. </p>
+  <p>Mais, &agrave; force d'observer le personnel, il remarque le passage 
+syst&eacute;matique d'un vieux veilleur de nuit manchot dans les couloirs 
+quelques minutes avant le bug. </p>
+  <p>Un soir, &eacute;coutant son intuition, le programmeur suit le gardien. 
+Le vieil homme &eacute;tait un retrait&eacute; qui ne venait que le dimanche. 
+Dans son travail, il devait valider son passage dans les locaux en ins&eacute;rant 
+une clef dans des bo&icirc;tiers &agrave; des heures pr&eacute;cises. <br>
+Un de ces bo&icirc;tiers &eacute;tait install&eacute; dans une remiseobscure 
+jouxtant la salle informatique. Afin de lib&eacute;rer sa seulemain valide, 
+et pour mieux distinguer le fameux bo&icirc;tier dans la p&eacute;nombre, 
+le vieil infirme s'&eacute;clairait d'une lampe torche magn&eacute;tiquequ'il 
+plaquait contre la cloison m&eacute;tallique... La cloison m&eacute;tallique 
+&eacute;tait le dos de l'unit&eacute; centrale. C'&eacute;tait lui, qui,&agrave; 
+son insu, provoquait la panne hebdomadaire. </p>
+  <p>L'histoire ne raconte pas si on a install&eacute; de la lumi&egrave;re 
+ou si on a vir&eacute; le vieil homme... &agrave; vous de choisir... ;-) </p>
+  <p>Remarque : </p>
+  <p>Je pense que l'histoire est trop belle pour &ecirc;tre vraie. Le veilleur 
+manchot en particulier semble appartenir &agrave; un conte fantastique.D'autre 
+part je ne suis pas certain qu'un simple aimant plaqu&eacute; contreune unit&eacute;
+centrale, m&ecirc;me &agrave; l'&eacute;poque, suffisepour provoquer une
+panne. Mais l'histoire est belle... ;-) <br>
+&nbsp; <br>
+&nbsp; </p>
+  <center> 
+  <h2> <a name="LegSauvetage"></a>
+Le sauvetage</h2>
+  </center>
+  
+  <p><br>
+  <b>Titre</b> : Le sauvetage. <br>
+Genre : Vie et mort de l'&eacute;lectronique. <br>
+Histoire propos&eacute;e par : Yann Minh. <br>
+E-mail :Yminh@yannminh.com <br>
+Site Web : <a href="../perdu.html?u=http://www.yannminh.com">http://www.yannminh.com</a>
+ <br>
+Source : Un technicien de maintenance dans l'&eacute;lectronique embarqu&eacute;e 
+en Bretagne. <br>
+Date: Ann&eacute;es 80 <br>
+Technologie : Equipements &eacute;lectroniques et informatiques d'unchalutier 
+  <br>
+Lieu : Le port de Keroman &agrave; Lorient en Bretagne. <br>
+&nbsp; </p>
+  <p>Cela se passe dans le port de p&ecirc;che de Lorient en Bretagne, au 
+d&eacute;but des ann&eacute;es 80. <br>
+Lorsque la mar&eacute;e descend, les lamaneurs, charg&eacute;s de veiller 
+&agrave; l'amarrage des navires, doivent rel&acirc;cher les bouts qui retiennent 
+les b&acirc;timents aux quais. </p>
+  <p>Malheureusement un grand chalutier pour la p&ecirc;che hauturi&egrave;re 
+avait &eacute;t&eacute; oubli&eacute;. La pauvre nef, prisonni&egrave;redes 
+filins trop serr&eacute;s, s'&eacute;tait couch&eacute;e, et avaitembarqu&eacute; 
+suffisamment d'eau pour couler sur place.&nbsp; Comme r&eacute;sistantd&eacute;sesp&eacute;r&eacute;ment 
+&agrave; son triste destin, l'&eacute;normemasse d'acier &agrave; moiti&eacute; 
+engloutie, restait accroch&eacute;eaux amarres tendues &agrave; se rompre. 
+  </p>
+  <p>Toute la population du port, dockers, marins, mareyeurs et armateurs, 
+contemplait ce naufrage d&eacute;risoire &agrave; distance respectueuse,car 
+dans une brutale contorsion serpentine, les c&acirc;bles rompus risquaient 
+de d&eacute;capiter le t&eacute;m&eacute;raire. <br>
+Les liens r&eacute;sist&egrave;rent et l'agonie du vaisseau s'&eacute;ternisa 
+dans une attente qui semblait ne jamais devoir finir. </p>
+  <p>Un pompier se porta volontaire. Il tron&ccedil;onna les filins meurtriers 
+et s'en tira sain et sauf. Lib&eacute;r&eacute; de ses entraves, le chalutier 
+sombra, ne laissant &eacute;merger que le sommet de ses superstructures,symboles 
+funestes en ce lieu, que les marins regagnant le port feignaientne pas voir. 
+  </p>
+  <p>Quelques jours pass&egrave;rent, le temps d'amener les puissantes grues 
+qui extirperaient l'&eacute;pave de son s&eacute;pulcre marin. </p>
+  <p>L'anecdote informatique commence avec l'entr&eacute;e en sc&egrave;ne 
+de l'assurance. En effet la valeur des &eacute;quipements de passerelleest 
+loin d'&ecirc;tre n&eacute;gligeable, et les assureurs tenaient &agrave;ce 
+que tout soit fait pour sauver le maximum d'&eacute;lectronique embarqu&eacute;e. 
+  <br>
+Tant que le b&acirc;timent &eacute;tait submerg&eacute;, le mat&eacute;riel 
+restait intact. Mais d&eacute;s qu'il retrouverait l'air libre, l'oxydation 
+provoqu&eacute;e par le sel allait ravager les composants. </p>
+  <p>Une strat&eacute;gie spectaculaire fut mise en place pour sauver les 
+milliers de petites puces prisonni&egrave;res de la passerelle engloutie, 
+chaque minute allait compter. Les pompiers, leurs r&eacute;servoirs remplis 
+d'eau douce, se pr&eacute;par&egrave;rent &agrave; <br>
+asperger l'&eacute;pave d&eacute;s sa sortie des flots.De grands bacsremplis 
+de fr&eacute;on liquide furent install&eacute;s sur le quai. <br>
+Et les grues commenc&egrave;rent &agrave; tracter lentement l'&eacute;norme 
+carcasse hors des profondeurs. </p>
+  <p>Arm&eacute;s de leurs outils les techniciens en maillot de bain, saut&egrave;rent 
+sur les bordages &agrave; peine &eacute;merg&eacute;s, et se ru&egrave;rent 
+vers la passerelle sous le jet puissant des lances &agrave; incendie.&nbsp; 
+Rapidement, mais sans pr&eacute;cipitation, ils arrach&egrave;rent lesradars, 
+les <br>
+compas,les radios, les sonars et autres instruments de leurs logements,pour 
+les lancer &agrave; leurs comparses post&eacute;s le long du quai.Ceux-ci 
+d&eacute;mont&egrave;rent les appareils dans les bacs de fr&eacute;on,et, 
+&agrave; l'aide de gros pinceaux frott&egrave;rent les cartes pourles d&eacute;barrasser 
+des r&eacute;sidus d'eau sal&eacute;e. </p>
+  <p>Ils r&eacute;ussirent &agrave; sauver le tiers des &eacute;quipements. 
+L'&eacute;lectronique arrach&eacute;e du naufrage pu reprendre sa petitevie 
+  <br>
+&eacute;lectrique, et les techniciens gard&egrave;rent de ces journ&eacute;es 
+une belle histoire &agrave; raconter &agrave; leurs petits enfants de l'&egrave;re 
+informatique. <br>
+&nbsp; </p>
+  <p>Remarques : <br>
+Cette histoire m'a &eacute;t&eacute; racont&eacute;e il y a longtempspar un
+technicien travaillant dans une soci&eacute;t&eacute; sp&eacute;cialis&eacute;e 
+dans l'&eacute;lectronique embarqu&eacute;e. Je n'ai pas assist&eacute;&agrave; 
+l'&eacute;v&eacute;nement, et je ne suis pas certain que c'&eacute;taitun 
+chalutier pour la p&ecirc;che hauturi&egrave;re qui sont en g&eacute;n&eacute;ral 
+gigantesques... </p>
+  <p>A la question de "pourquoi du fr&eacute;on", le technicien m'a regard&eacute; 
+d'un air &eacute;grillard, et m'a dit "Parce que c'est du pur"... &ccedil;a 
+n'oxyde pas ni ne d&eacute;grade les composants &eacute;lectroniques... <br>
+&nbsp; <br>
+&nbsp; </p>
+  <center> 
+  <h2> <a name="LegBug8h"></a>
+Le bug de huit heures du matin</h2>
+  </center>
+  
+  <p><br>
+Titre : Le bug de huit heures du matin. <br>
+Genre : Panne myst&eacute;rieuse. <br>
+Histoire propos&eacute;e par : Yann Minh. <br>
+E-mail :Yminh@yannminh.com. <br>
+Site Web : <a href="../perdu.html?u=http://www.yannminh.com">http://www.yannminh.com</a>
+ <br>
+Source : Un directeur technique et commercial dans un gros groupe informatique. 
+  <br>
+Date: Ann&eacute;es 90 <br>
+Technologie : Volontairement ind&eacute;termin&eacute;e (Bull, ControlData, 
+Digital ou IBM) <br>
+Lieu : Les quais de Seine &agrave; Paris. <br>
+&nbsp; </p>
+  <p>Un gros site informatique est install&eacute; au sommet d'une des tours 
+des quais de Seine. </p>
+  <p>Tous les matins &agrave; 8 heure, l'unit&eacute; centrale bug. Les techniciens 
+ne trouvent pas la panne. On envoie les sp&eacute;cialistes. </p>
+  <p>&Agrave; cette &eacute;poque, ce groupe de constructeurs informatique, 
+qui ne veut pas &ecirc;tre nomm&eacute; pour des raisons commerciales,avait 
+un d&eacute;partement sp&eacute;cialis&eacute; dans l'&eacute;tudedes pannes 
+exceptionnelles : quatre ing&eacute;nieurs qu'on envoyait surles sites lorsque
+le personnel technique traditionnel n'arrivait pas &agrave;r&eacute;soudre 
+le probl&egrave;me. </p>
+  <p>Apr&egrave;s un certain nombre de tests et le remplacement en vain des 
+&eacute;quipements, un de ces supers enqu&ecirc;teurs remarqua que la panne 
+se produisait avec une r&eacute;gularit&eacute; astronomique. Le bug sed&eacute;clenchait 
+pile &agrave; 8 heure du matin, &agrave; la nanosecondepr&egrave;s. </p>
+  <p>Cette r&eacute;v&eacute;lation vertigineuse les plongea dans une perplexit&eacute; 
+elle aussi astronomique. Qu'est ce qui pouvait bien provoquer une panne,avec 
+une pr&eacute;cision &agrave; l'&eacute;chelle de l'univers ? Et surtout&agrave; 
+8 heure du matin pile... </p>
+  <p>Non! je ne vais pas vous le dire comme &ccedil;a, ce ne serait pas dr&ocirc;le... 
+;-) </p>
+  <p>Cherchez un peu. Cette fois-ci ce n'est pas l'agent de s&eacute;curit&eacute; 
+ou la femme de m&eacute;nage, car ils ne sont pas encore ajust&eacute;sdans 
+leurs activit&eacute;s avec une pr&eacute;cision astronomique. Cen'est pas
+le passage r&eacute;gulier d'un transport en commun extra-terrestreau dessus
+de Paris, ou les vagues de particules lourdes d'un quasar lointain...carl'horaire 
+est humain, et l'erreur informatique. </p>
+  <p>La r&eacute;ponse &eacute;tait dans la localisation g&eacute;ographique 
+du site, au sommet d'une tour des quais de seine. Pile en face de... </p>
+  <p>De quoi? </p>
+  <p>De La Tour Eiffel... </p>
+  <p>Tous les matins &agrave; 8 heure, un &eacute;metteur tr&egrave;s puissant 
+install&eacute; au sommet de la tour Eiffel &eacute;met un faisceau d'onde 
+pour remettre &agrave; l'heure des horloges r&eacute;parties sur le territoire. 
+L'unit&eacute; centrale &eacute;tait install&eacute;e pile dans l'axe d'&eacute;mission 
+principal de ce faisceau hertzien, l&eacute;g&egrave;rement plus puissant 
+que ceux pour lesquels le mat&eacute;riel informatique est prot&eacute;g&eacute;... 
+  </p>
+  <p>Il a suffi de renforcer la protection de l'unit&eacute; centrale contre 
+les &eacute;missions hertziennes pour faire dispara&icirc;tre la panne... 
+  <br>
+&nbsp; </p>
+  <p>Remarques : <br>
+J'ai plusieurs doutes sur la v&eacute;racit&eacute; de cette histoire. <br>
+L'heure d'abord, car je ne sais pas si ce faisceau est r&eacute;ellement&eacute;mis 
+&agrave; 8 heure. <br>
+Et je trouve relativement suspect qu'un faisceau hertzien suffisammentpuissant 
+pour planter des ordinateurs soit &eacute;mis dans l'axe de b&acirc;timents 
+abritant du personnel.Cependant je trouve l'histoire belle, &agrave; cause 
+des interrogations cosmiques qu'elle suscite lorsqu'on cherche la causede 
+la panne... ;-) <br>
+&nbsp; <br>
+&nbsp; </p>
+  <center> 
+  <h2> <a name="LegImprimante"></a>
+Imprimante lunatique</h2>
+  </center>
+ De : Alexis M. 
+  <p>Une employ&eacute;e, lors d'une intervention chez un client, me fait 
+un signe discr&egrave;tement. <br>
+- " Je peux vous montrer un truc ? <br>
+- Bien s&ucirc;r... <br>
+- Mais soyez discrets, je ne veux pas qu'on se moque de moi ! <br>
+- Ben, d'accord." </p>
+  <p>Je la suis dans son bureau et elle me fait asseoir, sur son propre si&egrave;ge, 
+devant son &eacute;cran. <br>
+- "Ca marche pas", dit-elle. <br>
+Je regarde le micro qui semble fonctionner, sans comprendre. <br>
+- "Levez-vous." <br>
+Je me l&egrave;ve et lui c&egrave;de la place. <br>
+- "Rasseyez-vous !" <br>
+Je la regarde et me rassois, j'ai envie de lui demander des explications, 
+mais... <br>
+- "C'est bizarre, &ccedil;a marche pas ! <br>
+- Expliquez-moi !" <br>
+Elle ferme la porte, je me l&egrave;ve, et elle m'explique que sonimprimante 
+&eacute;jecte une page d&egrave;s qu'elle arrive ou qu'ellequitte son &eacute;cran.
+Evidemment, je souris et lui demande de me montrer.Elle s'assoit donc et
+l'imprimante &eacute;jecte une feuille blanche. Bon.Elle se l&egrave;ve,
+idem. Je m'assois, rien, me l&egrave;ve, rien. Elles'assoit, pof ! se l&egrave;ve,
+pof. </p>
+  <p>Puis, elle me demande une explication... Merde. <br>
+On fait la m&ecirc;me manip, mais sans asseoir, l'imprimante ne ditrien. L'employ&eacute;e
+d&eacute;chauss&eacute;e, l'imprimante imprime,etc. <br>
+Je n'ai pas trouv&eacute; de raison raisonnable, mais l'employ&eacute;e&eacute;tait 
+tr&egrave;s satisfaite que je constate le probl&egrave;me,et surtout que je
+l'admette sans douter de sa raison. <br>
+&nbsp; <br>
+&nbsp; </p>
+  <center> 
+  <h2> <a name="Leg4emefichier"></a>
+Quatri&egrave;me fichier</h2>
+  </center>
+  
+  <p><br>
+De : Alexis M. </p>
+  <p>Il s'agit d'un nom tr&egrave;s connu, une marque de peinture. P&eacute;riph&eacute;rie 
+nord de Paris. On va installer un bo&icirc;tier permettant &agrave; unmini 
+IBM 36 d'utiliser une imprimante &agrave; laser (&agrave; l'&eacute;poque 
+o&ugrave; ces imprimantes co&ucirc;taient 50000F pour les moins ch&egrave;res). 
+On installe, on teste, les mains dans le cambouis virtuel des connexionsbricol&eacute;es 
+entre mat&eacute;riels parfaitement incompatibles et con&ccedil;uspour &ccedil;a,
+pour finalement trouver une solution. </p>
+  <p>Mais pour que &ccedil;a fonctionne, il faut saisir un fichier de quelques 
+lignes sur le mini, et envoyer ce fichier automatiquement lors de chaqueimpression, 
+&agrave; travers le bo&icirc;tier. On explique &ccedil;a augars qui g&egrave;re 
+l'IBM, LE responsable de LA machine. Je lui <br>
+tends la feuille ou j'avais &eacute;crit les codes barbares : <br>
+- "Monsieur, pouvez-vous copier ce fichier sur le Mini et le placerdans un
+batch d'impression bablabla..." <br>
+Le gars hurle : <br>
+- "Un fichier ? Vous voulez que je mette un fichier sur le 36 ? <br>
+- Ben, heu oui, juste ce fichier de quelques ligne... <br>
+- Ce fichier ? Mais j'ai d&eacute;j&agrave; QUATRE fichier sur le 36! Et
+Vous voulez en mettre un CINQUIEME ?!" </p>
+  <p>Dingue, non ? Il a fallu remuer un sup&eacute;rieur hi&eacute;rarchique 
+qui a fait de m&ecirc;me &agrave; son tour, pour parvenir avec l'aide detrois 
+ou quatre "d&eacute;cideurs" &agrave; convaincre le gars qu'un cinqui&egrave;me 
+fichier sur son 36 &eacute;tait n&eacute;cessaire. <br>
+&nbsp; </p>
+  <center> 
+  <h2> <a name="LegSouris"></a>
+Souris lunatique</h2>
+  </center>
+  
+  <p><br>
+De : Laurent lehman </p>
+  <p>Allez, une autre du m&ecirc;me niveau... Ca se passe en 91. Un comptable 
+veut absolument rajouter une souris sur son vieux micro sous DOS. Il secommande 
+sa souris tout seul comme un grand, je l'installe un matin, enson absence. 
+Tout va bien. </p>
+  <p>&nbsp;Il me t&eacute;l&eacute;phone dans la matin&eacute;e : La souris 
+ne marche pas. Je lui demande de v&eacute;rifier ses connections, c'estbien 
+branch&eacute;, mais &ccedil;a ne marche toujours pas. J'y jette unoeil &agrave;
+midi, toujours en son absence : pas de probl&egrave;me. </p>
+  <p>Rebelote l'apr&egrave;s-midi : il se plaint que &ccedil;a ne fonctionne 
+toujours pas, et qu'il faudrait quand m&ecirc;me que je m'occupe de sonprobl&egrave;me. 
+Je passe le voir : il bougeait sa souris en l'ait, verticalement,devant son
+&eacute;cran ! </p>
+  <p>Oh, et puis l'histoire du patron de PME qui &eacute;tait conscient que 
+ses sauvegardes (sur disquette 5 1/4) &eacute;taient tr&egrave;s importantes 
+: il les archivait soigneusement dans son classeur... apr&egrave;s lesavoir 
+perfor&eacute;es ! <br>
+&nbsp; </p>
+  <center> 
+  <h2> <a name="LegTraitementTexte"></a>
+Traitement de texte</h2>
+  </center>
+  
+  <p><br>
+De : Thierry Schmidlin </p>
+  <p>Dans les ann&eacute;es 85-86, une secr&eacute;taire re&ccedil;oit un 
+PC, une imprimante et un superbe traitement de texte avec pr&eacute;visualisation 
+de page. Une formation appropri&eacute;e d'une semaine pour l'utilisation 
+du tout. Apr&egrave;s quelques semaines d'utilisation, petit debriefingpour 
+v&eacute;rifier que tout va bien. <br>
+- "Alors Mme Machin, qu'en pensez vous ? <br>
+- Ben, c'est pas mal, on peut retrouver les dossier facilement sansrechercher 
+dans les archives, mais tout de m&ecirc;me, avec la vieillemachine &agrave; 
+&eacute;crire c'&eacute;tait plus rapide. <br>
+- Comment cela ? <br>
+- Avec la vieille machine, je tapais le texte, une photocopie et c'&eacute;tait 
+termin&eacute;. <br>
+- Mais maintenant vous &eacute;conomisez le temps de la photocopieen plus,
+non ? <br>
+- Oui, mais je dois taper deux fois le texte. <br>
+- Quoi ? Pourquoi deux fois ? <br>
+- Ben je tape le texte sur le PC, je sauvegarde avec Alt-S et je pr&eacute;visualise 
+avec Alt-P et ensuite je suis bien oblig&eacute; de reprendre le textesur 
+la machine &agrave; &eacute;crire pour envoyer la lettre non ? Et &ccedil;a, 
+c'est plus de boulot. <br>
+- Vous ne faites jamais Alt-P pour imprimer le texte ? <br>
+- Ah bon, on peut imprimer aussi ???" </p>
+  <p>(r&eacute;cit authentique, du pur v&eacute;cu). <br>
+&nbsp; <br>
+&nbsp; </p>
+  <center> 
+  <h2> <a name="LegJoTechnikos"></a>
+Jo, ou la revanche du technikos</h2>
+  </center>
+  
+  <p><br>
+Titre : Jo, ou la revanche du technikos. <br>
+Genre : Panne informatique. <br>
+Histoire propos&eacute;e par : Yann Minh. <br>
+E-mail :Yminh@yannminh.com. <br>
+Site Web : <a href="../perdu.html?u=http://www.yannminh.com">http://www.yannminh.com</a>
+ <br>
+Source : Un directeur g&eacute;n&eacute;ral de groupe informatique,ex technicien
+de maintenance. <br>
+Date: Ann&eacute;es 80 <br>
+Technologie : Ind&eacute;termin&eacute;e volontairement. <br>
+Lieu : Centre de recherche militaire. </p>
+  <p>Ancien drogu&eacute; accroc &agrave; l'h&eacute;ro&iuml;ne, Jo, s'&eacute;tait 
+d&eacute;couvert une passion pour les ordinateurs et s'&eacute;tait reconverti 
+dans la maintenance informatique. De ses ann&eacute;es de d&eacute;rivesdans 
+les paradis artificiels, il n'avait gard&eacute; que le flegme etla lenteur 
+d'&eacute;locution propre aux anciens junkies, mais &agrave;part &ccedil;a, 
+rien dans son personnage ne r&eacute;v&eacute;lait sonpass&eacute; tumultueux, 
+et <br>
+il avait troqu&eacute; son perfecto et ses "tiags", contre ce strict"costard 
+cravate" impeccable qu'il aurait reni&eacute; quelques ann&eacute;esplus t&ocirc;t. 
+  </p>
+  <p>Accr&eacute;dit&eacute;e "confidentiel d&eacute;fense", sa soci&eacute;t&eacute; 
+l'avait mandat&eacute; pour qu'il remette d'urgence en fonctionnement ungros 
+syst&egrave;me informatique dans un laboratoire de recherche militairesp&eacute;cialis&eacute; 
+dans le nucl&eacute;aire.&nbsp; Sortant d'uner&eacute;paration difficile, 
+il &eacute;tait en retard de plusieurs heures,et l'apr&egrave;s-midi &eacute;tait 
+bien entam&eacute;e. Les tr&egrave;sco&ucirc;teuses machines vendues par sa
+soci&eacute;t&eacute; &eacute;quipaientdes sites tellement "sensibles", que
+la moindre panne &eacute;tait unecatastrophe qui mettait leurs utilisateurs 
+  <br>
+dans un &eacute;tat proche de l'hyst&eacute;rie. </p>
+  <p>Une fois pass&eacute; le contr&ocirc;le pointilleux et presque maniaque 
+des cerb&egrave;res de service, Il fut accueilli par un chercheur &eacute;chevel&eacute; 
+au bord de l'apoplexie qui lui d&eacute;crivit les circonstances de lapanne 
+en mangeant la moiti&eacute; de ses mots... <br>
+-"L'ordinateur s'est arr&ecirc;t&eacute; lorsque j'ai lanc&eacute;le calcul
+de l'int&eacute;grale de... " <br>
+Suivit alors une succession de formules herm&eacute;tiques, que seulsquelques 
+rares scientifiques dans le monde auraient &eacute;t&eacute; capablesde comprendre.
+L'homme ponctuait ses r&eacute;flexions de " vous comprenez?"&eacute;nerv&eacute;s, 
+essayant de transmettre un peu de son inqui&eacute;tudef&eacute;brile &agrave; 
+un Jo imperturbable. </p>
+  <p>Fort de son flegme durement acquis par ses ann&eacute;es de d&eacute;fonce, 
+Jo passait les sas de s&eacute;curit&eacute; en opinant de la t&ecirc;temachinalement, 
+sans comprendre un tra&icirc;tre mot de la litanie math&eacute;matiqued&eacute;bit&eacute;e 
+par l'atomiste irrit&eacute;. Mais le contenu globaldu message &eacute;tait 
+limpide : le savant avait cass&eacute; le merveilleuxoutil en lui demandant 
+un myst&eacute;rieux effort calculatoire qui d&eacute;passaitles capacit&eacute;s 
+de la machine. </p>
+  <p>Lorsqu'ils p&eacute;n&eacute;tr&egrave;rent dans la pulsation froide 
+des n&eacute;ons &eacute;clairant le nodal, Il eut droit au bref instantde 
+r&eacute;pit habituel: dans une forme de respect inconsciente, le vieilhomme 
+avait baiss&eacute; le ton afin de ne pas profaner le sanctuairedu monstre
+informatique. </p>
+  <p>Jo s'avan&ccedil;a dans la fra&icirc;cheur s&eacute;pulcrale de la nef 
+d&eacute;di&eacute;e au nouveau dieu des hommes. R&eacute;sign&eacute;d'avance 
+devant l'&eacute;chec &eacute;vident de cette &eacute;bauche detechnicien, 
+le chercheur d&eacute;signa d'un geste las l'imposante armoireblind&eacute;e 
+de l'unit&eacute; centrale, qui tr&ocirc;nait au centred'un labyrinthe rectiligne
+de silicone monolithique enrob&eacute; dansdes cocons d'acier satin&eacute;. 
+  </p>
+  <p>Convaincu que seul un g&eacute;nie pourrait gu&eacute;rir la puissante 
+machine de son autisme soudain, l'illustre scientifique ruminait d&eacute;j&agrave; 
+ses r&eacute;criminations &agrave; l'&eacute;gard de l'incomp&eacute;tence 
+des employeurs de Jo. Sans s'&eacute;mouvoir outre mesure, Jo savait reconna&icirc;tre 
+cette agressivit&eacute; &agrave; peine dissimul&eacute;e de ses clientslorsqu'ils 
+voyaient arriver ce petit bout de technicien, l&agrave; o&ugrave;ils attendaient 
+une arm&eacute;e d'ing&eacute;nieurs. </p>
+  <p>Ses deux ann&eacute;es de pratique de la maintenance avaient donn&eacute; 
+&agrave; Jo une sorte de science intuitive et tr&egrave;s pragmatique des 
+pannes informatiques. Pendant que le savant recommen&ccedil;ait son babillage 
+occulte, s'effor&ccedil;ant de lui transmettre un soup&ccedil;on de sonincommensurable 
+connaissance des arcanes de la science atomique, Jo ouvrit les baies de protection,
+et, d'un geste devenu machinal donnaun coup de pied dans le bloc d'alimentation. 
+  </p>
+  <p>Ce tr&egrave;s irr&eacute;v&eacute;rencieux rappel &agrave; l'ordreeut 
+pour effet imm&eacute;diat de ressusciter le super calculateur. Dansle soudain
+ronflement sourd des disques magn&eacute;tiques, le nodal r&eacute;sonna&nbsp; 
+du mitraillement de dizaines de relais activ&eacute;s. Le mausol&eacute;e 
+reprenait vie. </p>
+  <p>Satisfait d'avoir diagnostiqu&eacute; la panne aussi vite, Jo observait 
+attentivement les lignes de codes d&eacute;filant sur les &eacute;crans,lorsqu'il 
+se rendit compte que le chercheur &eacute;tait brutalement devenusilencieux. 
+L'homme se tenait derri&egrave;re lui la mine d&eacute;faiteet l'observait 
+avec un m&eacute;lange de stup&eacute;faction teint&eacute;ede suspicion. 
+C'&eacute;tait comme si Jo &eacute;tait devenu le diableincarn&eacute;. <br>
+Il venait d'un simple geste an&eacute;antir les illusions du chercheur: convaincu
+d'avoir vaincu la machine dans une sorte de d&eacute;fi <br>
+informationnel,&nbsp; l'ing&eacute;nu savant, n'arrivait pas &agrave;admettre 
+que ce coup de pied d&eacute;risoire avait suffit &agrave; ranimerson rival 
+&eacute;lectronique. Le savant bredouilla quelques mots, et retournad&eacute;pit&eacute; 
+terminer la mise au point de ses bombes atomiques. </p>
+  <p>Tout en changeant les blocs d'alimentation, Jo se sentait malgr&eacute; 
+tout un peu coupable. Il aurait peut-&ecirc;tre d&ucirc; expliquer au vieux 
+g&eacute;nie qu'en g&eacute;n&eacute;ral, ce qui tombait en panne en premier 
+sur ce type de machine c'&eacute;tait l'alimentation, et que son coup depied 
+n'&eacute;tait qu'une sorte de diagnostique. Empirique certe, maissouvent 
+efficace. </p>
+  <p><i>Remarque:</i> <br>
+Cette histoire m'a &eacute;t&eacute; cont&eacute;e par Jo lui-m&ecirc;me, 
+que ce souvenir de ses d&eacute;buts dans l'informatique amuse encore.Pour 
+l'anecdote, bien qu'ayant arr&ecirc;t&eacute; ses &eacute;tudes &agrave;seize 
+ans, et afin de pouvoir s'inscrire dans les stages de formation &agrave;la 
+maintenance qui exigeaient le niveau bac plus 2 en math&eacute;matique,il 
+avait menti sur ses dipl&ocirc;mes et personne n'avait v&eacute;rifi&eacute;. 
+Aussitot engag&eacute; apr&egrave;s une ann&eacute;e d'&eacute;tudes intensives, 
+il a petit &agrave; petit gravi les &eacute;chelons de l'entreprise. Ilest 
+actuellement un des principaux directeurs du groupe et vit aux Etats-Unis. 
+Si si si, les contes de f&eacute;e institutionnels &ccedil;a existe...c'est 
+un peu un parcours &agrave; la Gataca, le junkie libertaire qui s'infiltre 
+dans le syst&egrave;me &agrave; partir d'une supercherie... ;-) <br>
+&nbsp; </p>
+  <center> 
+  <h2> <a name="LegLimite"></a>
+Limite</h2>
+  </center>
+  
+  <p><br>
+De : Eric Gerbier </p>
+  <p>Une histoire v&eacute;cue, en 1986, sur un mini d'une c&eacute;l&egrave;bre 
+bo&icirc;te fran&ccedil;aise (chez qui les administrations &eacute;taient 
+alors oblig&eacute;es d'acheter, quel que soit les qualit&eacute;s et les 
+d&eacute;fauts). </p>
+  <p>Un jour o&ugrave; tout marchait (trop :) ) bien, on se met &agrave;lire 
+la doc d'administration, et on d&eacute;couvre un param&egrave;trepermettant 
+de limiter la dur&eacute;e des connections interactives (tr&egrave;s"co&ucirc;teuses" 
+par rapport au batch) des usagers. </p>
+  <p>Le principe &eacute;tait simple : <br>
+-1 : illimit&eacute; <br>
+autre : dur&eacute;e en heures (en 1 ou plusieurs sessions) </p>
+  <p>Aussitot lu, aussitot fait ! et hop la session en cours dispara&icirc;t 
+au fait sur quel user on &eacute;tait l&agrave; ? <br>
+Administrateur, pourquoi ? </p>
+  <p>Impossible de red&eacute;marrer la machine : il fallait &ecirc;tre administrateur 
+pour cela, il a fallu repartir d'une sauvegarde ... </p>
+  <p> </p>
+  <hr align="Left" width="100%" size="2"> 
+  <center> 
+  <h1> <a name="AutresHistoires"></a>
+Autres histoires de hotline&nbsp;<br>
+ et d'administration syst&egrave;me :</h1>
+  </center>
+  
+  <center> 
+  <h4> (sources diverses et vari&eacute;es)</h4>
+  </center>
+  
+  <p><br>
+Un client nous t&eacute;l&eacute;phone. Son PC avait &eacute;t&eacute;touch&eacute; 
+par une surtension caus&eacute;e par un &eacute;clair. Nouslui avons demand&eacute; 
+pourquoi il n'avait pas &eacute;teint sa machineau d&eacute;but de l'orage. 
+  <br>
+"J'allais le faire, r&eacute;pondit-il, mais &ccedil;a disait "Veuillezpatienter 
+pendant l'arr&ecirc;t de Windows"". <br>
+ </p>
+  <hr width="100%"> 
+  <p>Dans une grande banque parisienne, les mails arrivaient sur une machine 
+VAX-VMS dans une DMZ et &eacute;taient r&eacute;cup&eacute;r&eacute;s par 
+FTP. Un fichier syst&eacute;matiquement &eacute;cras&eacute; &agrave; chaque 
+r&eacute;cup&eacute;ration listait le messages &agrave; r&eacute;cup&eacute;rer. 
+Les r&eacute;cup&eacute;rations se faisaient toutes les 10 minutes. <br>
+Cela a march&eacute; parfaitement un peu plus d'une ann&eacute;e. Puisun beau
+jour <br>
+... <br>
+2500 messages dans ma&nbsp; bo&icirc;te et cela empirait de plus enplus. <br>
+Les m&ecirc;mes messages se r&eacute;p&eacute;taient plusieurs dizainesde 
+fois. Spam ? Non ! <br>
+Simplement, sous VMS, un index donne la version du fichier et un fichiern'est 
+pas &eacute;cras&eacute; mais est remplac&eacute; par un autre fichierdont 
+l'index a &eacute;volu&eacute;. <br>
+Cet index a une valeur limite, 64K. Arriv&eacute; l&agrave;, le fichiern'est 
+plus &eacute;cras&eacute;. <br>
+D'o&ugrave; la progression exponentielle du nombre des messages. </p>
+  <p>(merci &agrave; <a href="../perdu.html?u=http://www.cuvellier.com">JR Cuvellier</a>
+) <br>
+ </p>
+  <hr width="100%"> <br>
+Forum: Linux.Installation <br>
+Subject: kernel <br>
+Price: 10 <br>
+Deadline: 3 days <br>
+Text: <br>
+&nbsp; 
+  <p>I've tried to install this linux crap about nearly five <br>
+times, but everytime it stops with the error message: <br>
+"login:" <br>
+Fix that immediately or I'll go public with that. <br>
+ </p>
+  <hr width="100%"> <br>
+&nbsp;Une cliente appelle le support technique, furieuse, et leur dit: <br>
+"C'est lamentable ! Ca fait une heure que j'appuie sur la touche F1pour avoir
+de l'aide, et personne n'est venu..." <br>
+ 
+  <hr width="100%"> <br>
+&nbsp;Une personne appelle la hot-line pour installer un modem, carelle n'y
+connaissait rien. <br>
+&nbsp;"Bon, connectez votre modem a l'UC, branchez le cable d'alimentation 
+sur une prise, et le cordon t&eacute;l&eacute;phonique sur une prise det&eacute;l&eacute;phone... 
+  <br>
+&nbsp;- N'importe quelle prise de t&eacute;l&eacute;phone ? <br>
+&nbsp;- Oui, oui. <br>
+&nbsp;- BIP... BIP... BIP..." 
+  <p> </p>
+  <hr width="100%"> 
+  <p>&nbsp;Un client (sans doute McGyver) : <br>
+&nbsp;- "O&ugrave; puis-je trouver un Bios pour un 486 ? <br>
+&nbsp;- Votre machine vous a &eacute;t&eacute;&nbsp; fournie avec leBios le
+plus r&eacute;cent... <br>
+&nbsp;- Ben j'ai upgrad&eacute; le processeur moi-m&ecirc;me, et monmicro 
+n'a pas l'air de fonctionner... <br>
+&nbsp;- (Hum, hum...) Et vous l'avez upgrad&eacute; en quoi ? <br>
+&nbsp;- En 486DX-50 <br>
+&nbsp;- Mais monsieur, le 286 est vendu sur la carte m&egrave;re ?! <br>
+&nbsp;- Je sais, je l'ai dessoud&eacute; de la carte m&egrave;re, etj'ai mis
+le 486 &agrave; la place ! <br>
+&nbsp;- Mais le 486 est plus grand qu'un 286 !!! <br>
+&nbsp;- Je sais, j'ai utilis&eacute; de la soudure pour joindre lespattes 
+qui d&eacute;passaient du support... <br>
+ </p>
+  <hr width="100%"> 
+  <p>&nbsp;"Allo, le service informatique ? Je vous appelle parce que mon 
+clavier&nbsp; ne marche plus. Je viens juste de le nettoyer... <br>
+&nbsp;- Vous l'avez nettoy&eacute; comment ? (craignant le pire) <br>
+&nbsp;- Ben j'ai pris une bombe sp&eacute;ciale, qui fait de la mousse. <br>
+&nbsp;- Ah ? (ouf...) <br>
+&nbsp;- Ca doit pas &ecirc;tre de la faute de la mousse, parce qu'apr&egrave;s, 
+pour &ecirc;tre s&ucirc;re, je l'ai bien rince &agrave; l'eau claire !" <br>
+ </p>
+  <hr width="100%"> 
+  <p>&nbsp;C'est un gars qui appelle le service technique : <br>
+&nbsp;"Allo, je n'arrive pas a faire marcher votre CD-ROM d'apprentissage 
+de l'anglais. <br>
+&nbsp;- Mettez le CD dans le lecteur, il d&eacute;marre ? <br>
+&nbsp;- Non. <br>
+&nbsp;- Alors, faites "D&eacute;marrer"... <br>
+&nbsp;- Ca marche pas. Le lecteur ne lit rien. <br>
+&nbsp;- Vous &ecirc;tes sous quel syst&egrave;me d'exploitation ? <br>
+&nbsp;- Vous voulez parler de la marque de ma chaine Hi-Fi ?" <br>
+ </p>
+  <hr width="100%"> 
+  <p>&nbsp;Ca se passe au service informatique de la SNCF. L&agrave;, ils 
+utilisent des&nbsp; machines Bull ancestrales, des DPS6. <br>
+&nbsp;Un matin, les personnes travaillant sur ces machines constatentque pendant
+la nuit, une d'entre elles a reboot&eacute;. Et cela se produisait plusieurs
+fois <br>
+&nbsp;par semaine. <br>
+&nbsp;Ils &eacute;taient loin d'imaginer pourquoi la machine &eacute;tait 
+r&eacute;initialis&eacute;e la&nbsp; nuit : la femme de menage devant nettoyer 
+les bureaux, d&eacute;branchait le DPS6 pour brancher son aspirateur. Ben 
+oui, quoi, la nuit y'a personne qui travaille. <br>
+ </p>
+  <hr width="100%"> <br>
+Entendu au helpdesk d'une grande bo&icirc;te, en communication avecun utilisateur
+de Thinkpad : <br>
+&nbsp;- "Bonjour monsieur ! <br>
+&nbsp;- ... <br>
+&nbsp;- Votre portable est plant&eacute; et vous n'arrivez plus &agrave;l'&eacute;teindre 
+? Oui je vois ce que c'est. Il faut retirer la batteriepour reinitialiser. 
+  <br>
+&nbsp;- ... <br>
+&nbsp;- Vous ne savez pas o&ugrave; elle est ? Il faut retirer le clavier 
+pour la voir. <br>
+&nbsp;- ... <br>
+&nbsp;- Vous voyez les deux verrous de chaque c&ocirc;t&eacute; duportable 
+? <br>
+&nbsp;- ... <br>
+&nbsp;- Non !? Vous ne pouvez pas les rater, de chaque c&ocirc;t&eacute;, 
+un peu sur l'avant ? <br>
+&nbsp;- ... <br>
+&nbsp;- Vous ne les voyez toujours pas ? Attendez ! (le gars commencea s'&eacute;nerver
+mais reste soft) tenez votre portable face a vous...De chaque <br>
+&nbsp;c&ocirc;t&eacute; vers l'avant de la machine vous avez... <br>
+&nbsp;- ... <br>
+&nbsp;- Comment ? Ah oui, oui ! Il faut le sortir de sa sacoche d'abord!..." 
+  <br>
+ 
+  <hr width="100%"> 
+  <p><i>De premi&egrave;re main (merci Antoine) :</i> </p>
+  <p>La premi&egrave;re se passe lorsque j'&eacute;tais encore un formateur 
+d&eacute;butant, lors d'un stage d'initiation Word au minist&egrave;rede la
+Culture. Une stagiaire, la cinquantaine farfelue, m'appelle pourun probl&egrave;me, 
+et s'arr&ecirc;te en plein milieu de sa phrase. </p>
+  <p>- "...Aah bah ! M&ecirc;me la souris ne marche plus maintenant !" </p>
+  <p>Bien s&ucirc;r, elle d&eacute;pla&ccedil;ait l'instrument sur un plan 
+horizontal imaginaire, un m&egrave;tre au-dessus du tapis. On m'avait bien 
+dit que cela arrivait de temps en temps, je n'avais pas voulu le croiremais 
+j'&eacute;tais pr&eacute;venu. Donc, sans me d&eacute;monter, je luidemande 
+de retourner sa souris (une petite d&eacute;monstration vaut mieuxqu'un long
+discours). </p>
+  <p>- "Retourner ma souris ?" <br>
+- "Oui, comme &ccedil;a" (je fais le geste) </p>
+  <p>Elle la retourne, d&eacute;couvre la boule, comprend le probl&egrave;me, 
+rigole et s'&eacute;tonne: "Ah ! je croyais que c'&eacute;tait magique!" </p>
+  <p> </p>
+  <hr width="100%"> <br>
+  <i>De premi&egrave;re main (merci Antoine) :</i> 
+  <p>La seconde se passe deux ans plus tard, je croyais qu'on m'avait tout 
+fait &agrave; propos des souris: la prendre de travers, la l&acirc;cherpour 
+faire clic, crisper l'index sur le bouton jusqu'&agrave; ne pas pouvoirtraverser 
+l'&eacute;cran sans d&eacute;placer des morceaux de texte aupassage, etc. 
+  </p>
+  <p>Ce n'&eacute;tait cette fois-ci pas un stage, des mais un cours particulier 
+que je donnai &agrave; la m&egrave;re d'un ami. Je pr&eacute;cise que son 
+mari est ing&eacute;nieur commercial chez IBM. </p>
+  <p>Elle apprenait bien, avec juste un probl&egrave;me, elle avait beaucoup 
+de difficult&eacute;s pour le double-clic, qui lui demandait visiblementbeaucoup 
+d'efforts. Je lui refais une d&eacute;monstration, elle m'observetr&egrave;s 
+attentivement, et me demande: </p>
+  <p>- "Mais en fait, pour cliquer, tu appuies juste sur le bouton avec ton 
+doigt ?" </p>
+  <p>Non, vraiment, il n'y a pas de p&eacute;riph&eacute;rique intuitif ! 
+Elle avait vu son petit-fils de trois ans jouer furieusement sur un portable 
+&eacute;quip&eacute; d'un gros trackball rouge vif... et donc elle donnait 
+un coup de paume &agrave; la souris &agrave; chaque clic. <br>
+ </p>
+  <hr width="100%"> <br>
+  <i>De premi&egrave;re main (merci encore Antoine)</i> 
+  <p>Allez, une derni&egrave;re qui me revient &agrave; l'esprit et qui remonte 
+&agrave; 1992. Avant d'&ecirc;tre formateur, j'&eacute;tais "moniteur"dans 
+les salles de libre-service informatique d'une grande &eacute;colecens&eacute;e 
+former "la future &eacute;lite fran&ccedil;aise"... Ma coll&egrave;guede la
+salle d'&agrave; c&ocirc;t&eacute; arrive, me dit "Ecoute, j'en aiune qui
+est furieuse, j'ai d&eacute;j&agrave; eu des probl&egrave;mes avecelle, tu
+ne veux pas t'en occuper ?" </p>
+  <p>Je vais voir la furie, qui a travaill&eacute; toute l'apr&egrave;s-midi 
+sans enregistrer une seule fois, et qui a &eacute;videmment quitt&eacute; 
+Word sans enregistrer non plus. J'essaie de la refroidir un peu: </p>
+  <p>- "Quand vous avez quitt&eacute; Word, il vous a bien propos&eacute; 
+d'enregistrer ?" <br>
+- "Oui mais j'ai dit NON parce que moi, mon XYZYXYZ??? (marque de portable 
+sp&eacute;cifique et inconnue), il sauve automatiquement tout ce que jefais, 
+donc je n'ai jamais besoin d'enregistrer" </p>
+  <p>J'examine le poste, il n'&eacute;tait pas r&eacute;gl&eacute; pour faire 
+des sauvegardes automatiques, et Word a nettoy&eacute; tous les .TMP &agrave; 
+la fermeture. Je tente un Undelete d&eacute;sesp&eacute;r&eacute; et inutile. 
+  </p>
+  <p>- "Ecoutez, je suis d&eacute;sol&eacute;, mais il n'y a vraiment plus 
+rien." <br>
+- (tr&egrave;s agressive) "Non, mais vous vous rendez compte, j'aiperdu toute
+mon apr&egrave;s-midi de travail, ce n'est pas possible !" <br>
+- "Dites, vous travaillez sans jamais sauvegarder ni v&eacute;rifierl'enregistrement 
+automatique, quand vous fermez il vous propose d'enregistreret vous refusez, 
+vous l'avez un peu cherch&eacute; quand m&ecirc;me ?" </p>
+  <p>Elle se tait, ramasse son sac et sort de la salle sans un mot. Ma coll&egrave;gue 
+arrive, rigole un peu et me dit: "Comment, tu ne sais qui c'est ? elleest 
+prof d'informatique ici !" </p>
+  <p>(NB: cours d'info = cours de Word et Excel) <br>
+ </p>
+  <hr width="100%"> 
+  <p><b>Hotliner</b> : Monsieur, faites control+alt+suppr. <br>
+  <b>Client</b> : Ah oui, je connais &ccedil;a. (on entend en fond :click 
+click click....) <br>
+H : Que se passe-t-il &agrave; l'&eacute;cran Monsieur ? <br>
+C : Ben rien... <br>
+H : Recommencez ctrl+alt+supp <br>
+C : (click click click click...) <br>
+H : Et maintenant ? <br>
+C : Toujours rien ! <br>
+H : Comment faites vous la manipulation ? <br>
+C : Ben j'appuie sur les touches c,o,n,t,r,o,l et apr&egrave;s surle + et
+ainsi de suite. Y faut peut &ecirc;tre l'accent sur contr&ocirc;le? <br>
+ </p>
+  <hr width="100%"> <br>
+  <b>Client</b> : Mon disque dur est f&ecirc;l&eacute; ! <br>
+  <b>Hotline</b> : Et y'a quoi &agrave; l'&eacute;cran ? <br>
+C : Ben que mon disque est f&ecirc;l&eacute; ! <br>
+H : Lisez moi exactement ce qu'il y a sur l'&eacute;cran. <br>
+C : Hard drive faillure ! <br>
+ 
+  <hr width="100%"> <br>
+  <b>Client</b> : C'est quoi toutes ces saloperies l&agrave; que vousm'avez 
+mis sur mon ordinateur.&nbsp; Je pars une semaine et quand je reviensy a
+des ic&ocirc;nes d&eacute;geulasses sur mon &eacute;cran ! <br>
+  <b>Hotliner</b> : Madame, nous ne pouvons pas placer des ic&ocirc;nessur 
+votre bureau comme &ccedil;a, et de plus nous n'avons aucun inter&ecirc;t 
+&agrave; le faire. <br>
+C : C'est qui alors ? <i>(On v&eacute;rifie l'historique : pendanttoutes ses
+vacances, tous les jours il y a eu consultation de pleins desites de cul...
+Dans l'acc&egrave;s reseau &agrave; distance il y a desconnexions style 'charme'
+et 'cyberbaise'...).</i> <br>
+H : Ce ne peut &ecirc;tre que quelqu'un chez vous madame. <br>
+C : C'est pas possible, j'ai demand&eacute; &agrave; mon mari et &agrave; 
+mes fils qui sont rest&eacute;s pendant cette semaine, ils n'ont pas surf&eacute;. 
+J'ai confiance en eux. <br>
+H : Alors ils faut pr&eacute;venir la police madame, quelqu'un rentrechez 
+vous la nuit. <br>
+C : Ca doit &ecirc;tre &ccedil;a, j'ai confiance en eux... <i>(avecun petit
+doute dans la voix quand m&ecirc;me).</i> <br>
+H : Avez vous install&eacute; un concurent r&eacute;cement, ou install&eacute; 
+un logiciel ? <br>
+C : Non, et y'a que moi qui touche &agrave; la machine, et j'ai touch&eacute; 
+&agrave; rien. <br>
+H : Double cliquez sur acc&egrave;s reseau &agrave; distance, et lisezmoi 
+ce qu'il y a dedans. <br>
+C : OH PUTAIN ! (elle jette le t&eacute;l&eacute;phone) REMY, QU'ESTCE QUE
+T'AS ENCORE FOUTU ? C'EST QUOI 'CHARMES', HEIN, ET 'CYBERBAISE',C'EST QUOI
+HEIN ? VA DANS TA CHAMBRE ! <br>
+ 
+  <hr width="100%"> 
+  <p><b>Hotliner</b> : Vous cliquez sur suivant <br>
+  <b>Client</b> : Mais l&agrave; je ne dois pas s&eacute;lectionner monmodem 
+? <br>
+H: Si madame, qu'y a-t-il de marqu&eacute; ? <br>
+C: xxxx <br>
+H: Bien, vous cliquez sur la triangle pointe en bas et s&eacute;lectionnez 
+"usr v90" <br>
+C: C'est fait. <br>
+H: Pourquoi avez-vous rachet&eacute; un modem, l'autre ne marchaitpas ? <br>
+C: Aah bon, j'avais un modem ? <br>
+H: Oui madame :-), mais rassurez-vous, c'est un modem interne qui nefonctionne 
+pas tr&egrave;s bien, vous avez bien fait. <br>
+ </p>
+  <hr width="100%"> <br>
+  <b>Client</b> : (avec l'accent du sud) Bonjour monsieur, vous &ecirc;tes 
+mon dernier espoir, je ne sais plus quoi faire. <br>
+  <b>Hotliner</b> : Je vous &eacute;coute. <br>
+C : Eh ben voil&agrave;, je suis emb&eacute;t&eacute;, y a un coll&egrave;gue 
+qui m'a fait une blague <i>(petit rire nerveux).</i> Lorsque je cliquette 
+sur quelque chose, y'a une souris avec une paire de couilles &eacute;normes 
+qui appara&icirc;t &agrave; l'&eacute;cran... <br>
+H : (commence &agrave; rigoler) <br>
+C : ...et quand j'essaie de cliquetter dessus (C se marre) cette conneelle 
+soul&eacute;ve ses couilles et elle se barre. (C et H commencent &agrave; 
+franchement rire). Le pire c'est que mon patron revient demain de vacances 
+et y va passer dans mon bureau. Quand y verra une souris avec des couilles 
+&eacute;normes qui se barre quand je veux cliquer dessus y va gueuler cecon 
+  <i>(et l&agrave; les deux pissent de rire).</i> <br>
+ 
+  <hr width="100%"> <br>
+  <b>Client</b> : All&ocirc;, &ccedil;a marche pas !<i> (&eacute;trange......)</i>
+ <br>
+  <b>Hotline</b> : Oui monsieur XXX, qu'y a t il sur votre &eacute;cran?? 
+  <br>
+C : Un pot de fleur ..... <br>
+H : Monsieur, quand je disais dessus, je voulais savoir ce qu'il yavait d'&eacute;crit..... 
+  <br>
+C : Toshiba ..... <br>
+H :<i>(c'est pas gagn&eacute; ..............)</i> <br>
+ 
+  <hr width="100%"> <br>
+  <b>Hotliner</b> : Double-cliquez sur le Poste de travail SVP. <br>
+  <b>Client </b>: C'est o&ugrave; &ccedil;a? <br>
+H :A l'&eacute;cran vous avez une ic&ocirc;ne Poste de Travail. <br>
+C : Je ne comprends rien du du tout! pourquoi vous me parlez de postede travail
+? <br>
+H : Vous n'avez pas de Poste de Travail madame ? <br>
+C : Ah ben non ! Je suis retrait&eacute;e moi ! <br>
+ 
+  <hr width="100%"> 
+  <p>Hotliner : Double-cliquez sur le poste de travail. <br>
+Client : Ah bon, il faut &ecirc;tre devant son ordinateur ? Non, parceque 
+l&agrave; je suis au travail. <br>
+H :<i> (Non, c'est pas utile, c'est juste pour emmerder le monde, nouson aime
+bien &ccedil;&agrave;.)</i> <br>
+ </p>
+  <hr width="100%"> 
+  <p><b>Hotliner</b> : D&eacute;crivez moi votre &eacute;cran <br>
+  <b>Client</b> : Echap, F1 F2 F3.... <br>
+H : Non &ccedil;&agrave; c'est votre clavier, l'&eacute;cran c'estla t&eacute;l&eacute; 
+  <br>
+C : Vous me prenez pour un con l&agrave; ou je r&ecirc;ve ? <br>
+ </p>
+  <hr width="100%"> 
+  <p>C'est un client qui d&eacute;sire utiliser Internet. Au bout de 30 minutes 
+il s'&eacute;nerve et demande un moyen pour se former. <br>
+  <b>Hotliner</b> : Monsieur je vous conseille <i>Internet pour les nuls</i>
+ . <br>
+C : Comment &ccedil;a je suis nul ? <br>
+H : je ne vous ai pas dit que vous &eacute;tiez nul je vous conseilled'acheter 
+le livre intitul&eacute; <i>Internet pour les nuls.</i> <br>
+C : C'est un scandale ; passez moi votre responsable je me plaindrai. <br>
+ </p>
+  <hr width="100%"> 
+  <p><b>Client</b> : Ca me met "nom d'utilisateur ou mot de passe incorrect". 
+  <br>
+  <b>Hotliner</b> : Fermez la fen&ecirc;tre Monsieur SVP. <br>
+C : Euh oui, c'est vrai qu'il y a un peu de bruit dehors... <br>
+ </p>
+  <hr width="100%"> <br>
+  <b>Client</b> : Bonjour, j'ai un probleme de mail. <br>
+  <b>Hotliner</b> : Oui ? Quel probl&egrave;me au juste ? <br>
+C : Un monsieur m'&eacute;crit, c'est quelqu'un de chez vous, maisc'est en
+anglais, monsieur d&eacute;mon... <br>
+H : Ce ne serait pas Monsieur Mailer Daemon par hasard ? <br>
+C : Si c'est &ccedil;a ! J'aimerais qu'il arr&ecirc;te ! <br>
+ 
+  <hr width="100%"> 
+  <p><b>Client</b> : Bonjour, comment on efface l'historique SVP ? <br>
+  <b>Hotliner</b> : Vous vous rendez dans le menu <i>Outils</i>, puis<i>Options 
+Internet </i>et <i>Effacer l'historique</i>. On a fait de mauvaises visites 
+? <br>
+C : Non, non tr&egrave;s bonnes, mais je suis sur le PC de ma copineet elle
+rentre de vacances demain... <br>
+ </p>
+  <hr width="100%"> 
+  <p><b>Client</b> : Bonjour, mon fils a pris un abonnement chez vous, mais 
+je n'ai pas le mot de passe pour me connecter... Il a 13 ans et j'aimerais 
+bien aller voir Internet. <br>
+  <b>Hotliner</b> : Oui, (apr&egrave;s v&eacute;rif de ses coordonn&eacute;es) 
+monsieur, veuillez noter : T-R-O-U (oblig&eacute; d'&eacute;peler, mortde 
+rire..) D-U-C-U-L <br>
+C : Aargh ! sale gosse ! Y va se prendre sa racl&eacute;e quand ilreviendra.. 
+  <br>
+ </p>
+  <hr width="100%"> 
+  <p><b>Client</b> : Bonjour, j'ai mon Nescaf&eacute; qui ne marche pas ... 
+  <br>
+  <b>Hotliner</b> : Heu .. je suis d&eacute;sol&eacute; Madame, maisnous ne
+faisons pas de support pour les appareils &eacute;lectrom&eacute;nager. <br>
+C : Non non c'est Nescaf&eacute; pour internet ... <br>
+H : (???) .. Ne vous voulez vous pas parler de Netscape par hasard? <br>
+C : Oui c'est bien &ccedil;a .. ! Nescape .. Nescaf&eacute; .. c'estla m&ecirc;me
+chose... <i>(Pour se r&eacute;veiller le matin, rien de mieuxqu'une bonne
+tasse de Netscape)</i> <br>
+&nbsp; </p>
+  <p> </p>
+  <hr align="Left" width="100%" size="2"> <br>
+  <b>True MS tech support story</b> (de : Checkered Daemon ; trouv&eacute; 
+sur <a href="../perdu.html?u=http://slashdot.org/articles/01/04/27/1715203.shtml">Slashdot</a>
+ , 27 avril 2001, traduit par votre serviteur) : 
+  <p>Un jour je travaillai &agrave; faire marcher l'Acc&egrave;s R&eacute;seau 
+&agrave; Distance de Windows. Apr&egrave;s bien trop d'essais, j'ai finalement 
+eu l'autorisation de claquer 200 $ pour appeler le support technique de Microsoft.
+Je pouvais composer le num&eacute;ro mais n'arrivais pas &agrave; lancer
+et afficher l'application &agrave; distance. Microsoft se connecte &agrave;
+ce moment. </p>
+  <p><b>MS </b>: Pouvez-nous nous donner un r&eacute;pertoire partag&eacute; 
+que nous pouvons tenter de mapper ? <br>
+  <b>Moi</b> : Bien s&ucirc;r. Essayer D slash temp. <br>
+MS : C'est un slash ou un backslash ? </p>
+  <p>Ma m&acirc;choire m'a fait mal pendant deux jours apr&egrave;s avoir 
+heurt&eacute; le sol si violemment . </p>
+  <p> </p>
+  <hr align="Left" width="100%" size="2"> <br>
+  <b>My MS Access support call</b> (par scotchie, <a href="../perdu.html?u=http://slashdot.org/articles/01/04/27/1715203.shtml">
+Slashdot</a>
+, 27 avril 2001, traduit par votre serviteur) 
+  <p>Le probl&egrave;me &eacute;tait que ma base MS Access &eacute;tait corrompue. 
+A chaque fois que je tentais de lancer un certain rapport, Access plantait. 
+Malheureusement, j'avais pass&eacute; plus d'une semaine &agrave; cr&eacute;er 
+ce rapport, et je voulais r&eacute;cup&eacute;rer autant de mon travail que
+possible. </p>
+  <p>J'appelle le support MS, passe quelques minutes &agrave; progresser &agrave;
+travers leur for&ecirc;t t&eacute;l&eacute;phonique, puis attend environ
+20 minutes. </p>
+  <p><b>Moi : </b>Ma base Access est corrompue. Access crashe &agrave; chaque 
+fois que j'essaie de lancer un certain rapport.Je voudrais r&eacute;cup&eacute;rer 
+autant de mon rapport que possible. <br>
+  <b>MS : </b>OK, essayez de faire Fichier/Ouvrir, et choisissez le nom de
+votre base. <br>
+Moi : Vous voulez que je tue et red&eacute;marre Access d'abord, parce que
+l&agrave; il est plant&eacute;. <br>
+MS : Hein ? <br>
+Moi : Je vais le tuer et le red&eacute;marrer d'abord.&nbsp; OK, la base
+est ouverte. <br>
+MS : Et &ccedil;a marche, je vois. Vous pouvez appuyer sur "Rapports" ? <br>
+Moi : OK, j'ai la liste des mes rapports. Et apr&egrave;s ? <br>
+MS : Vous pouvez me dire quels rapport sont sur la liste. <br>
+Moi : S&ucirc;r, voil&agrave; les noms... <br>
+MS : Et lequel pose probl&egrave;me ? <br>
+Moi : Celui-ci... <br>
+MS : OK, pouvez-vous le double-cliquer ? <br>
+Moi : Bien s&ucirc;r. Il d&eacute;marre, l&agrave;. Maintenant j'ai le probl&egrave;me.
+Access a plant&eacute;. <br>
+MS : Pouvez-vous d&eacute;crire le probl&egrave;me ? <br>
+Moi : Il y a de dr&ocirc;les de couleurs partout sur l'&eacute;cran, et rien
+de ce que je fais dans Access n'a d'effet. <br>
+MS : Oh, j'ai compris. Cela veut dire que votre base de donn&eacute;es est
+corrompue. Au revoir. <br>
+Moi : ATTENDEZ ! Je sais qu'elle est corrompue. C'est pour &ccedil;a que
+j'appelle. Mais qu'est-ce que vous pouvez y faire&nbsp; ? <br>
+MS : Vous devez cr&eacute;er une autre base de donn&eacute;es. Au revoir. 
+  <br>
+Moi : Mais ce que je demandai c'&eacute;tait comment... <br>
+  <i>CLICK</i> <br>
+Fin de l'appel.&nbsp;<br>
+  <br>
+  </p>
+  <hr width="100%" size="2" align="Left">
+  <p><b>Histoire de support technique sur Mac</b> (trouv&eacute; sur <a href="../perdu.html?u=http://slashdot.org/comments.pl%3Fsid%3D01/09/12/1440200%26cid%3D2287932">
+Slashdot</a>
+, 12 septembre 2001, auteur anonyme, traduit par votre serviteur)</p>
+  <p></p>
+  <p>Dans un premier appel, j'avais trouv&eacute; que la cause de leurs probl&egrave;mes
+&eacute;tait que le disque dur &eacute;tait plein. La personne qui avait
+appel&eacute; n'&eacute;tait pas d'accord, j'ai donc "tombukt&eacute;" sur
+la machine et leur ai montr&eacute; que le disque &eacute;tait plein. L'appelant
+d&eacute;clara que j'avais tout faux car "Tous mes documents sont stock&eacute;s
+dans ce r&eacute;pertoire sur le bureau." Ils prirent la souris et ouvrirent
+un dossier sur le bureau... Evidemment il contenait des centaines de fichiers
+Office. "Vous voyez, tous mes fichiers sont sur le bureau, pas sur mon disque
+dur." Bien s&ucirc;r je lui ai expliqu&eacute; que ce qui &eacute;tait sur
+le bureau &eacute;tait en fait sur le disque dur. L'utilisateur dit : "Vous
+voulez dire que ce n'est pas stock&eacute; dans le moniteur ?".<br>
+  </p>
+  <p>Le second utilisateur &eacute;tait une personne qui gardait tous ses
+fichiers dans la poubelle. Quand je lui demandai pourquoi, il dit : "De cette
+mani&egrave;re &ccedil;a ne prendra pas de place sur le disque !". Je lui
+expliquai qu'en fait si et qu'en plus c'&eacute;tait bizarre de garder tous
+ses fichiers dans la poubelle et courir le risque qu'un autre utilisateur
+de l'ordinateur viderait la poubelle et effacerait leurs fichiers. L'utilisateur
+admit : "Oui, c'est d&eacute;j&agrave; arriv&eacute; plusieurs fois."<br>
+  </p>
+  <p>&nbsp; </p>
+  <p> </p>
+  <hr width="100%"> <br>
+&nbsp; 
+  <center> 
+  <h1> <a name="journeeMurphyOrdinaire"></a>
+Une journ&eacute;e Murphy-ordinaire</h1>
+  </center>
+  
+  <p><br>
+Par une belle journ&eacute;e, heu non, en fait cela commence unsoir... </p>
+  <p><b>19H / 19H30</b> <br>
+Donc : Mardi soir, le t&eacute;l&eacute;phone sonne : dring dring ...heu non,
+tiluli tiluli. <br>
+Je d&eacute;croche : All&ocirc;... <br>
+"Bonsoir Jean-Louis, c'est biiiiiip..." (<i>pour des raisons de confidentialit&eacute;, 
+le biiiiip remplace son nom)</i> <br>
+JL : "Ah salut cher patron directeur chef" (<i>c'est mon big boss</i>) <br>
+Cher patron directeur chef : "bon changement de programme, demain tune vas
+plus faire la formation chez machin chose, tu vas installer uneconnexion Internet
+chez M. Truc &agrave; 10H" (<i>nous garderons l&agrave;aussi son anonymat</i>
+) <br>
+JL : "Ah bon..." <br>
+Patron directeur : "Oui, il faut que tu lui installes Internet Explorersur 
+son poste avec une connexion Wanamou." <br>
+JL : "OK pas de probl&egrave;me" <br>
+Chef directeur : "Je pense que tu en auras pour une heure ou deux pourfaire 
+l'installation et pour lui expliquer comment &ccedil;a marche, vuqu'il n'y
+connait rien du tout." <br>
+JL : "Bien patron, j'y serai demain matin &agrave; 10H." <br>
+Enfoir&eacute; : "OK, amuse toi bien et tu peut prendre le reste dela journ&eacute;e
+pour toi, tchao" <br>
+JL : (<i>l&agrave;, je dois dire que je crains un peu ce genre de phrasevenant 
+de sa part</i>) "Au revoir cher biiiiiip" </p>
+  <p><b>8H</b> <br>
+Le lendemain matin, je me l&egrave;ve &agrave; l'aube, je r&eacute;cup&egrave;re 
+THE CD de Krosoft avec le tout dernier IE5, un CD de Wanamou et, par acquis 
+de conscience, un CD de diff&eacute;rente connexion gratuite ou &agrave;l'essai 
+de diff&eacute;rent fournisseurs, et je vais chez M. Truc. </p>
+  <p><b>D&eacute;tail n&deg; 1 :</b> M Truc est &agrave; 70 Km de chez moi 
+et &agrave; 60Km du bureau </p>
+  <p><b>8H20</b> <br>
+Ayant un peu de temps, je passe chez mon fournisseur de mat&eacute;rielhabituel 
+pour y r&eacute;cup&eacute;rer des onduleurs et un &eacute;cran17" que je
+dois installer sur le bureau de mon boss. Les onduleurs ne sontpas encore 
+arriv&eacute;s et l'&eacute;cran qui m'int&eacute;resse n'estplus en stock 
+! (et 1 heure de perdu, une...) <br>
+Bon je repasserai ce soir, car il ne seront livr&eacute; qu'en find'apr&egrave;s 
+midi. (et 1'apr&egrave;s-midi de foutu, une...) </p>
+  <p><b>9H55</b> <br>
+Apr&egrave;s les traditionnels embouteillages du matin et apr&egrave;sm'&ecirc;tre 
+perdu 3 ou 4 fois, j'arrive chez M. Truc. <br>
+Dring.... heu non, ding dong... <br>
+M. Truc : "Ah bonjour M. Ji&egrave;L" (<i>anonymat toujours. Explicationen 
+fin de document</i>) <br>
+JL : "Bonjour M. Truc, je viens pour vous installer la connexion Internet 
+" <br>
+M. Truc : "Ah oui, biiiiip m'avais pr&eacute;venu... mais vous ne deviezvenir 
+que la semaine prochaine..." <br>
+JL : "Ah... J'ai pourtant &eacute;t&eacute; pr&eacute;venu hier soirque je
+devais venir ce matin..." <br>
+M. Truc : "Bon ben puisque vous &ecirc;tes l&agrave;, allez y..." <br>
+Ouf, je l'ai senti mal celle-la. Mais bon passons &agrave; l'action. </p>
+  <p><b>D&eacute;tail n&deg; 2 : </b>M. Truc a un ordinateur mini tour (donc 
+avec seulement deux emplacements pour des extensions) et chaque emplacements 
+est rempli avec un tiroir amovible pour deux disques dur. Donc pas de CD-ROM... 
+glups </p>
+  <p>M. Truc : "biiiiip m'avais dit que vous deviez venir avec un lecteur 
+de CD-Rom portable et adaptable &agrave; ma machine, car comme vous levoyez, 
+je n'ai PLUS de lecteur de CD..." <br>
+JL : (<i>note personnelle : penser &agrave; tuer mon boss en rentrant...</i>
+ )"Ben je crois que je n'ai pas eue l'information... Mais vous avez peut-&ecirc;tre 
+gard&eacute; l'ancien lecteur de CD rom que vous aviez avant de mettredes 
+tiroirs amovibles ?!" <br>
+M. Truc : "Mais non, pas du tout, je n'ai rien gard&eacute;, je n'avaispas 
+la place donc le vendeur me l'a repris..."(<i>j'abr&egrave;ge car ilest extr&ecirc;mement
+bavard</i>) <br>
+JL : "Bon ben comme la semaine prochaine je n'ai pas du tout le temps,je retourne
+le chercher..." <br>
+Me voil&agrave; donc repartie pour faire 120Km de plus pour r&eacute;cup&eacute;rer 
+ce $%!&sect;$ de CD portable. (et 1H30 de perdu, 1H30) </p>
+  <p><b>10H25</b> <br>
+En chemin, j'appelle mon boss qui est en train de prendre l'avion etje lui
+demande "Tu n'as rien oubli&eacute; de me dire ??? !!!" <br>
+Boss : "heuuuuuuuuuu.... non, je ne crois pas" <br>
+JL : niark niark "Et si je te dit "CD-Rom portable", &ccedil;a te rappelle 
+quelque chose ?" <br>
+Biiiiiip : "Oh pu***, je te l'avais pas dit ?" <br>
+JL : (<i>note personnelle : penser &agrave; tuer mon boss une deuxi&egrave;me 
+fois en rentrant</i>) "Ben je crois pas, sinon je l'aurai pris." <br>
+... <br>
+J'arrive au bureau, je r&eacute;cup&egrave;re le lecteur, les disquettesdu 
+driver, je taille une bavette avec un coll&egrave;gue et je repart. <br>
+Ah plus d'essence; qu'a cela ne tienne, je m'arr&ecirc;te &agrave;la pompe
+juste &agrave; cot&eacute; du bureau et je fais le plein que jepaye avec
+mon dernier ch&egrave;que. <br>
+Le portefeuille plus l&eacute;ger et la voiture plus lourde, je repars. </p>
+  <p><b>D&eacute;tail n&deg; 3 :</b> Le chemin emprunt&eacute; passe parun 
+tunnel &agrave; p&eacute;age </p>
+  <p>Arriv&eacute; au p&eacute;age, je m'aper&ccedil;ois que je n'ai pasassez 
+de liquide pour payer. <br>
+Glups bis <br>
+Plus de ch&egrave;que et ma Carte Bleue qui m'attend sagement chezmoi, des
+fois que je soit tent&eacute; d'acheter quelque chose en route. <br>
+Apr&egrave;s avoir cherch&eacute; de partout les trois francs qui memanque 
+(et accessoirement avoir bloqu&eacute; une file du p&eacute;agependant 15
+mn), un employ&eacute; me fait signer une&nbsp; esp&egrave;cede reconnaissance 
+de dette que je suis sens&eacute; rembourser dans lestrois jours (et 15 mn
+de perdu, 15) </p>
+  <p><b>12H20</b> <br>
+Je ne r&eacute;siste pas &agrave; l'appel de la frite et aux grognementsde 
+mon estomac, je d&eacute;guste un super sandwich qui me fait une jolietache 
+sur ma superbe chemise du dimanche... et&nbsp; me*** </p>
+  <p><b>13H10</b> <br>
+Ding dong... je me REpr&eacute;sente chez M. Truc avec ma chemise tach&eacute;e... 
+Je m'installe devant son ordi, j'appui sur le bouton ON et glups, c'estdu 
+Windows version 3.11. </p>
+  <p><b>D&eacute;tail n&deg; 3 :</b> Le CD de Krosoft que j'ai contient bien 
+IE5, mais pour Windows 95, 98 voire NT 4, mais pas pour Windows 3.11 </p>
+  <p>M. Truc me dit "J'avais re&ccedil;u ce CD de Wanamou il y &agrave; quelques 
+ann&eacute;es..." Ouf sauv&eacute;, le CD contient bien une version 3 d'IE 
+compatible avec Windows 3.11 (Murphy m'a rat&eacute; ce coup ci...) <br>
+Bon, je commence l'installation du kit de Wanamou et au moment le pluscritique, 
+il me demande le N&deg; de carte bancaire de mon client. <br>
+JL : "Pouvez vous me donner le n&deg; de votre carte bancaire ?!" <br>
+M. Truc : "Quoi ? mais je n'ai pas de carte bancaire..." <br>
+JL : <i>Glups again</i>. "Sans carte bancaire, pas de connexion...Bon c'est
+pas grave, puisque Internet Explorer est install&eacute;, jevais utiliser
+le CD que j'ai emport&eacute; ce matin pour vous faire uneconnexion &agrave;
+un fournisseur gratuit." <br>
+Donc, installation du kit de connexion de chez tuuuuut (pas de pub).Sauf que
+le kit d'installation, y fonctionne pas avec Windows 3.11... <br>
+Bon, je vais donc faire une inscription en ligne. Ah oui, mais pours'inscrire 
+en ligne, ben y faut justement &ecirc;tre en ligne et c'estexactement ce que
+je cherche &agrave; faire. <br>
+J'appelle la secr&eacute;taire de ma bo&icirc;te, et je lui demandede retrouver
+dans les archives super rang&eacute;es du boss, le papiercontenant tous les
+param&egrave;tres de la connexion que nous utilisonsau bureau. <br>
+30 mn plus tard, j'ai les param&egrave;tres de connexions. <br>
+Je configure IE, et je me connecte chez tuuuut pour faire mon inscription 
+en ligne. <br>
+Je donne toutes les r&eacute;f&eacute;rences demand&eacute;es et laderni&egrave;re 
+page me dit que je vais recevoir prochainement chez M.Truc les param&egrave;tres 
+de connexion de son compte avec son mot de passe...Re Glups again. j'en ai
+besoin tout de suite moi. Oh dit tu me les donneou je te casse la bouche... 
+  <br>
+Donc je me d&eacute;connecte et je t&eacute;l&eacute;phone &agrave;la Hot
+Line de tuuuut qui me dit qu'elle ne peut rien faire pour moi. <br>
+GRRRRRR (<i>note personnelle, penser &agrave; r&eacute;silier mon abonnement 
+chez tuuuuuut et &agrave; tuer encore une fois mon patron</i>) <br>
+Qu'a cela ne tienne, il y a d'autres fournisseurs gratuit, et c'estbien le
+diable si je n'en trouve pas un qui me donne les param&egrave;trestout de
+suite. </p>
+  <p><b>D&eacute;tail n&deg; 4 :</b> Il y a aujourd'hui, au bureau, une formation 
+Internet qui utilise les param&egrave;tres que j'ai pr&eacute;c&eacute;demment 
+configur&eacute; chez mon client. </p>
+  <p><b>14H20</b> <br>
+Je relance la connexion pour allez m'inscrire chez un autre FAI, maisMurphy 
+veille, et le compte &eacute;tant actuellement utilis&eacute; parune autre 
+personne, je me fais rejeter violemment ma connexion. <br>
+Re re Glups <br>
+&Eacute;tant devant un mur l&eacute;g&egrave;rement Murphyque, je commence 
+&agrave; avoir mal &agrave; la t&ecirc;te &agrave; force de taper dedans. 
+  <br>
+M. Truc me dit qq chose du genre "avec beaucoup de patience, un chevalpourrait 
+enc*** une mouche". <br>
+Int&eacute;ressant, sauf que je ne suis pas un cheval et qu'Internetne ressemble
+pas &agrave; une mouche (je ne lui ai rien dit sur la volaille,mais bon...) 
+  <br>
+Mais il viens de me piquer, je l'aurai sa pu*** de connexion. (Oui,mais comment...) 
+  <br>
+Je t&eacute;l&eacute;phone chez moi et, par miracle, mon &eacute;pouse(qui 
+a une sainte horreur de l'informatique) est &agrave; la maison (etseule), 
+ouf ;-))) (enfin c'est ce qu'elle dit ;-))...) <br>
+Commence alors une superbe partie de cache tampon, pour la guider versl'endroit 
+pr&eacute;sum&eacute; (et super rang&eacute;) ou doit(devrait)se trouver la
+feuille que j'avais re&ccedil;u de tuuuuut et o&ugrave; sontnot&eacute;s mes
+param&egrave;tres de connexions. </p>
+  <p><b>15H10</b> <br>
+Ca y est, je peux me connecter &agrave; Internet. <br>
+Il me reste 2H pour lui expliquer comment cela fonctionne. <br>
+... </p>
+  <p><b>17H20</b> <br>
+Je pars de chez mon client, il faut encore que je repasse chez monfournisseur 
+de mat&eacute;riel pour r&eacute;cup&eacute;rer les onduleurset l'&eacute;cran 
+17" qui doivent &ecirc;tre arriv&eacute;s. <br>
+&Eacute;quation &agrave; une seule inconnue : sachant qu'il est 17H20,que 
+ma vitesse maximum est de 220 km/h (c'est normal, j'ai une voiturerouge, et
+sur tous les panneaux, les voitures rouges d&eacute;passent lesvoitures bleus),
+que la distance &agrave; parcourir est de 60 km, &agrave;quelle heure serais-je
+chez mon fournisseur ? <br>
+  <b>R&eacute;ponse </b>: beaucoup trop tard, car toutes les autoroutesde 
+la r&eacute;gions enti&egrave;res sont compl&egrave;tements bloqu&eacute;es. 
+Par quoi ? &ccedil;a je ne le saurai jamais, mais c'etait bel et bien bloqu&eacute;. 
+  </p>
+  <p><b>19H30</b> <br>
+Je suis &agrave; 100 ou 200 m de la maison, et mon portable sonne. <br>
+Ma tendre &eacute;pouse me dit "tu as le temps de prendre du pain surle chemin
+?" <br>
+... <br>
+De toute fa&ccedil;on, cette journ&eacute;e &eacute;tait marqu&eacute;ecomme 
+journ&eacute;e pourrie pour moi, alors pour ne pas envenimer leschoses, je
+fais demi tour et je trouvais un bout de pain horrible vu qu'ilne restait 
+plus rien de potable dans la plus proche boulangerie (c'est-&agrave;-dire 
+3 km) <br>
+ </p>
+  <hr width="100%"> <br>
+&nbsp; 
+  <center> 
+  <h1> <a name="regles"></a>
+Les r&egrave;gles du support</h1>
+  </center>
+  
+  <center>(The rules of tech support)</center>
+  
+  <p>1. Always assume the customer is lying.&nbsp;&nbsp;&nbsp;&nbsp; (<i>
+ Supposeztoujours que le client vous ment</i>). </p>
+  <p>2. Always assume your company lies to you.&nbsp;&nbsp; (<i>Supposeztoujours 
+que votre entreprise vous ment</i>). </p>
+  <p>3. Never test for more then one variable at a time.&nbsp; (<i>Ne testez 
+jamais plus d'une variable &agrave; la fois</i>). </p>
+  <p>4. Learn to smoke. The deeper and raspier your voice is the better.Nobody 
+fucks with you when they think you're 35 and 6'4".&nbsp;&nbsp;&nbsp;&nbsp; 
+(<i>Apprenez &agrave; fumer. Plus votre voix sera profonde et rocailleuse 
+mieux ce sera. Personne ne vous emmerde quand il pense que vous avez 35ans 
+et faites 2 m</i>). </p>
+  <p>5. Never show fear.&nbsp;&nbsp;&nbsp; (<i>Ne montrez jamais que vous 
+avez peur</i>). </p>
+  <p>6. The customers is stupid. If he knew anything he wouldn't need totalk 
+to you. Never deviate from this stance.&nbsp;&nbsp;&nbsp;&nbsp; (<i>Lesclients 
+sont stupides. S'ils savaient quoi que ce soit, ils n'auraientpas besoin de
+vous parler. Ne d&eacute;viez jamais de ce principe</i>). </p>
+  <p>7. MCSE ALWAYS need to be smacked.&nbsp;&nbsp;&nbsp;&nbsp; (<i>Les Certifi&eacute;s 
+Microsoft ont toujours besoin d'&ecirc;tre gifl&eacute;s</i>). </p>
+  <p>8. Some people want help, some want to abuse you. Don't take it personally.&nbsp;&nbsp;&nbsp;&nbsp; 
+(<i>Certaines personnes veulent de l'aide, d'autres abusent. Ne le prenez 
+pas personnellement</i>). </p>
+  <p>9. You won't last more then 18 months. Keep the resume updated.&nbsp;&nbsp;&nbsp;&nbsp; 
+(<i>Vous ne durerez pas plus de 18 mois. Gardez votre CV &agrave; jour</i>
+ ). </p>
+  <p>Author : kashani, <a href="../perdu.html?u=http://www.slashdot.org">Slashdot</a>
+, 5d&eacute;cembre 2000 <br>
+&nbsp; </p>
+  <p> </p>
+  <hr width="100%"> 
+  <center> 
+  <p>Un excellent site (en anglais h&eacute;las) sur le sujet&nbsp; : <a href="../perdu.html?u=http://www.rinkworks.com/stupid">
+ComputerStupidities</a>
+  </p>
+  </center>
+  
+  <hr width="100%"> 
+  <p><a href="mailto:christophe@courtois.cc">Me laisser un mot</a>
+ </p>
+  <p>Retour &agrave; la <a href="index_blagues.htm">page humour</a>
+. </p>
+  <p><a href="index.html#sommaire">Retour &agrave; la page principale.</a>
+ </p>
+  <div style="font:11px monospace;color:#888;text-align:center;padding:8px;background:#fff;clear:both">archive de multimania.com/courtois/hotline.htm · capture archive.org du 01/11/2001</div></body>
+  </html>
