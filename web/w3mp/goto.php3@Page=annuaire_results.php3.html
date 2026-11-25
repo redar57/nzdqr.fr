@@ -1,0 +1,677 @@
+<HTML>
+
+
+<!-- All the PHP3 code, except Phorum, is copyright Nicolas Richeton (nicolas.richeton@free.fr) -->
+<!-- http://nicolas.richeton.free.fr -->
+
+<HEAD><meta name="nzdqr-original" content="http://w3mp.free.fr/goto.php3?Page=annuaire_results.php3">
+<TITLE>W3MP - Le site de la Taupe Pictave</TITLE>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<meta charset="utf-8">
+<LINK REL=HOME HREF="goto.php3@Page=index.php3.html">
+<LINK REL=INDEX HREF="goto.php3@Page=index.php3.html">
+<LINK REL=GLOSSARY HREF="goto.php3@Page=avant_propos.php3.html">
+<LINK REL=COPYRIGHT HREF="goto.php3@Page=credits.php3.html">
+<LINK REL=AUTHOR HREF="../perdu.html?u=http://w3mp.free.fr/nicolas.richeton%40free.fr">
+<LINK REL=HELP HREF="goto.php3@Page=help.php3.html">
+<LINK REL=BOOKMARK HREF="index.html">
+<META NAME="Author" CONTENT="Nicolas "Trashman" Richeton">
+<META NAME="Generator" CONTENT="EditPad / Duron 800">
+<META HTTP-EQUIV="Keywords" CONTENT="lycée,pc,pcsi,psi,maths, physique,tipe,taupe,pictave,mp,mpsi,prepa,86,camille,guerin,poitiers,69">
+<META HTTP-EQUIV="Reply-to" CONTENT="nicolas.richeton@free.fr">
+</HEAD>
+
+
+<script>
+<!--
+	function psch()
+	{
+  		document.all.sound.src="php3/pschksss/psch.wav"
+	}
+	function ksss()
+	{
+  		document.all.sound.src="php3/pschksss/ksss.wav"
+	}
+
+-->
+</script>
+	
+<STYLE type=text/css>
+A:link {	COLOR: #5f7fe4; TEXT-DECORATION: none}
+A:active {	COLOR: #5f7fe4; TEXT-DECORATION: none}
+A:visited {	COLOR: #5f7fe4; TEXT-DECORATION: none}
+A:hover {	COLOR: #acbbf2; TEXT-DECORATION: none}
+A.Title:link {	COLOR: black; TEXT-DECORATION: none}
+A.Title:active {	COLOR: black; TEXT-DECORATION: none}
+A.Title:visited {	COLOR: black; TEXT-DECORATION: none}
+A.Title:hover {	COLOR: #5f7fe4; TEXT-DECORATION: none}
+BODY {	SCROLLBAR-FACE-COLOR: #ffffff; FONT-SIZE: 10pt; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; SCROLLBAR-SHADOW-COLOR: #999999; SCROLLBAR-3DLIGHT-COLOR: #999999; SCROLLBAR-ARROW-COLOR: #000000; SCROLLBAR-TRACK-COLOR: #ffffff; FONT-FAMILY: lucidagrande, verdana, helvetica, arial, sans-serif; SCROLLBAR-DARKSHADOW-COLOR: #ffffff; SCROLLBAR-BASE-COLOR: #ffffff; BACKGROUND-COLOR: white}
+TABLE {	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px}
+H2 {	FONT-WEIGHT: bolder; COLOR: #5f7fe4; TEXT-ALIGN: center}
+UNKNOWN {	DISPLAY: none! important}
+
+</STYLE>
+
+<BODY style="FONT-SIZE: 8pt; FONT-FAMILY: lucidagrande" bgColor=#ffffff leftMargin=0 topMargin=0 rightMargin=0 >
+<map name="navi-bar">
+<area shape="rect" coords="226,0,272,19" href="goto.php3@Page=accueil.php3.html">
+<area shape="rect" coords="278,0,348,19" href="goto.php3@Page=news_archive.php3_From=1.html">
+</map>
+<TABLE CELLSPACING=0 CELLPADDING=0 HSPACE=0 VSPACE=0 BORDER=0 WIDTH=100%>
+<TR>
+<TD background="Custom/Design/Global/Images/Menu/menubg.png" WIDTH=100%>
+<CENTER><IMG height=33 alt="News" src="Custom/Design/Global/Images/Menu/news.png" width=123 border=0
+><A HREF="goto.php3@Page=serieux.php3.html"
+><IMG height=33 alt="Articles" src="Custom/Design/Global/Images/Menu/articles.png" width=96 border=0></A
+><A HREF="goto.php3@Page=galerie.php3_TitleNb=1.html"
+><IMG height=33 alt="Photos" src="Custom/Design/Global/Images/Menu/photos.png" width=96 border=0
+></A
+><A HREF="goto.php3@Page=download.php3_TitleNb=1.html"
+><IMG height=33 alt="Téléchargements" src="Custom/Design/Global/Images/Menu/download.png" width=96 border=0
+></A
+><A HREF="goto.php3@Page=e-mail.php3.html"
+><IMG height=33 alt="Contact" src="Custom/Design/Global/Images/Menu/contact.png" width=96 border=0></A
+><A HREF="goto.php3@Page=credits.php3.html"
+><IMG height=33 alt="Divers" src="Custom/Design/Global/Images/Menu/divers.png" width=122 border=0></A></CENTER>
+</TD>
+</TR>
+<TR>
+<TD background="Custom/Design/Global/Images/Menu/news_fill.png">
+<CENTER><IMG SRC="Custom/Design/Global/Images/Menu/news_line.png" USEMAP="#navi-bar" BORDER=0></CENTER>
+</TD>
+</TR>
+</TABLE>
+<TABLE CELLSPACING=0 CELLPADDING=0 HSPACE=0 VSPACE=0 BORDER=0 WIDTH=100%>
+<TR>
+<TD COLSPAN=2 WIDTH=100% ALIGN=CENTER BGCOLOR=BLACK HEIGHT=1></TD>
+</TR>
+<TR>
+<TD COLSPAN=2 WIDTH=100% ALIGN=CENTER>
+<TABLE border=0 cellPadding=0 cellSpacing=0 height=85 width=100%>
+<TR>
+<TD WIDTH=148 ALIGN=CENTER>
+<A href="index.php3.html">
+<IMG border=0 height=85 src="Custom/Design/Global/Images/logo.gif" width=132>
+</A>
+</TD>
+<TD width=100% ALIGN=CENTER>
+<A href="index.php3.html">
+<IMG border=0 src="Custom/Design/Global/Images/titre_big.gif">  
+</A>
+</TD>
+<TD width=148>
+<A href="index.php3.html">
+<IMG border=0 height=85 src="Custom/Design/Global/Images/logo.gif" width=132>		
+</A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+<TR>
+<TD COLSPAN=2 WIDTH=100% ALIGN=CENTER BGCOLOR=BLACK HEIGHT=1></TD>
+</TR>
+<TR>
+<TD COLSPAN=2 WIDTH=100% ALIGN=CENTER>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=148>
+<BR>
+<TABLE CELLSPACING=0 CELLPADDING=0 HSPACE=0 VSPACE=0 BORDER=0 WIDTH=148>
+                <tr> 
+                  <td><img src="Custom/Design/Global/Images/bartop-left-corner.png" ></td>
+                  <td><img src="Custom/Design/Global/Images/bartop-left.png" ></td>
+                  <td WIDTH=100% COLSPAN=3><img height=20 src="Custom/Design/Global/Images/bartop-title.png" width=100%></td>
+                  <td><img src="Custom/Design/Global/Images/bartop-right.png" ></td>
+                  <td><img src="Custom/Design/Global/Images/bartop-right-corner.png" ></td>
+                </tr>
+                <tr> 
+                  <td background="Custom/Design/Global/Images/barleft-fill.png">&nbsp;</td>
+<td>&nbsp;</TD>
+<td colspan=3>
+                  
+<CENTER><FONT SIZE=-2><B>Mercredi 29 novembre</B></FONT></CENTER><BR>
+
+<font size=-1>
+ <img src="Custom/Design/Global/Images/pointrouge.gif" alt="*" width="4" height="4" ALIGN=CENTER><a href="goto.php3@Page=accueil.php3.html">Accueil</a><br>
+                    <img src="Custom/Design/Global/Images/pointrouge.gif" alt="*" ALIGN=CENTER><a href="goto.php3@Page=avant_propos.php3.html">Avant-propos</a><br>
+                    <img src="Custom/Design/Global/Images/pointrouge.gif" alt="*" ALIGN=CENTER><a href="goto.php3@Page=serieux.php3.html">Pages 
+                    s&eacute;rieuses</a><br>
+                    <img src="Custom/Design/Global/Images/pointrouge.gif" alt="*" ALIGN=CENTER><a href="goto.php3@Page=classes.php3_TitleNb=1.html">Classes</a><br>
+                    <img src="Custom/Design/Global/Images/pointrouge.gif" alt="*" ALIGN=CENTER><a href="goto.php3@Page=photos_classe.php3_TitleNb=1.html">Photos 
+                    de Classe</a><br>
+                    <img src="Custom/Design/Global/Images/pointrouge.gif" alt="*" ALIGN=CENTER><a href="goto.php3@Page=galerie.php3_TitleNb=1.html">Galerie</a><br>
+                    <img src="Custom/Design/Global/Images/pointrouge.gif" alt="*" ALIGN=CENTER><a href="../perdu.html?u=http://w3mp.free.fr/goto.php3%3FPage%3Dspirit.php3">Pages 
+                    spirituelles</a><br>
+                    <img src="Custom/Design/Global/Images/pointrouge.gif" alt="*" ALIGN=CENTER><a href="goto.php3@Page=download.php3_TitleNb=1.html">Downloads</a><br>
+                    <img src="Custom/Design/Global/Images/pointrouge.gif" alt="*" ALIGN=CENTER><a href="Pages/Forum/index.php3.html">Forum</a><br>
+                    <img src="Custom/Design/Global/Images/pointrouge.gif" alt="*" ALIGN=CENTER><a href="goto.php3@Page=chat.php3.html">Chat</a><br>
+                    <img src="Custom/Design/Global/Images/pointrouge.gif" alt="*" ALIGN=CENTER><a href="goto.php3@Page=annuaire_search.php3.html">Annuaire</a><br>
+                    <img src="Custom/Design/Global/Images/pointrouge.gif" alt="*" ALIGN=CENTER><a href="../perdu.html?u=http://w3mp.free.fr/goto.php3%3FPage%3Dhttp://books.dreambook.com/w3mp/w3mp.html">Livre 
+                    d'or</a><br>
+                    <img src="Custom/Design/Global/Images/pointrouge.gif" alt="*" ALIGN=CENTER><a href="goto.php3@Page=liens.php3_TitleNb=1.html">Liens</a><br>
+                    <img src="Custom/Design/Global/Images/pointrouge.gif" alt="*" ALIGN=CENTER><a href="goto.php3@Page=credits.php3.html">Cr&eacute;dits</a><br>
+                    <img src="Custom/Design/Global/Images/pointrouge.gif" alt="*" ALIGN=CENTER><a href="goto.php3@Page=e-mail.php3.html">Contact</a><br>
+                    <img src="Custom/Design/Global/Images/pointrouge.gif" alt="*" ALIGN=CENTER><a href="../perdu.html?u=http://w3mp.free.fr/Admin/">Admin</a><br><BR>
+<CENTER>
+<IMG src="" ALT="Compteur" ALIGN=MIDDLE>
+<BR>
+0 connect&eacute;<BR>
+<IMG SRC="" ALT="La m&eacute;t&eacute;o &agrave; Camille Gu&eacute;rin">
+<BR><BR>
+<A HREF="../perdu.html?u=http://nicosoft.atari.free.fr">
+<IMG SRC="Custom/Design/Global/Images/nicosoft.png" BORDER=0>
+</A>
+<BR>
+<BR>
+</CENTER>
+
+
+</font> </td>
+<td>&nbsp;</TD>
+
+                  <td background="Custom/Design/Global/Images/barright-fill.png" >&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td><img src="Custom/Design/Global/Images/barbottom-left-corner.png" ></td>
+                  <td><img src="Custom/Design/Global/Images/barbottom-left.png" ></td>
+                  <td COLSPAN=3><IMG SRC="Custom/Design/Global/Images/barbottom-fill.png" WIDTH=100% HEIGHT=12></td>
+                  <td><img src="Custom/Design/Global/Images/barbottom-right.png" ></td>
+                  <td><img src="Custom/Design/Global/Images/barbottom-right-corner.png" ></td>
+                </tr> 
+              </table>
+
+<TABLE CELLSPACING=0 CELLPADDING=0 HSPACE=0 VSPACE=0 BORDER=0 WIDTH=148>
+                <tr>
+                  <td><img src="Custom/Design/Global/Images/bartop-left-corner.png" ></td>
+                  <td><img src="Custom/Design/Global/Images/bartop-left.png" ></td>
+                  <td WIDTH=100% COLSPAN=3><img height=20 src="Custom/Design/Global/Images/bartop-title.png" width=100%></td>
+                  <td><img src="Custom/Design/Global/Images/bartop-right.png" ></td>
+                  <td><img src="Custom/Design/Global/Images/bartop-right-corner.png" ></td>
+                </tr>
+                <tr>
+                  <td background="Custom/Design/Global/Images/barleft-fill.png">&nbsp;</td>
+<td>&nbsp;</TD>
+<td colspan=3>
+
+<CENTER>
+<FONT SIZE=-1>
+Site Officiel
+
+<A HREF="../perdu.html?u=http://www.lycee-camille-guerin.fr.fm">
+<IMG SRC="Custom/Design/Global/Images/site_cg.jpg" BORDER=0 ALT="Lycée Camille Guérin">
+</A>
+</FONT>
+</CENTER>
+
+</td>
+<td>&nbsp;</TD>
+
+                  <td background="Custom/Design/Global/Images/barright-fill.png" >&nbsp;</td>
+                </tr>
+                <tr>
+                  <td><img src="Custom/Design/Global/Images/barbottom-left-corner.png" ></td>
+                  <td><img src="Custom/Design/Global/Images/barbottom-left.png" ></td>
+                  <td COLSPAN=3><IMG SRC="Custom/Design/Global/Images/barbottom-fill.png" WIDTH=100% HEIGHT=12></td>
+                  <td><img src="Custom/Design/Global/Images/barbottom-right.png" ></td>
+                  <td><img src="Custom/Design/Global/Images/barbottom-right-corner.png" ></td>
+                </tr>
+              </table>
+</TD>
+<TD VALIGN=TOP WIDTH=100%>
+<BR>
+
+<CENTER>
+<H1>
+Annuaire
+</H1>
+<BR>
+<BR>
+<I>Résultats</I><BR><BR>
+<TABLE BORDER=1>
+
+<TR>
+<TD>
+<FONT COLOR=BLUE>ARDILLON Guillaume</FONT> (Taupeman) - guillaume.ardillon@epita.fr - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI1 (1998-1999)&nbsp;&nbsp;<B>3/2</B> : MP (1999-2000)&nbsp;&nbsp;<B>Intègre</B> :<I>EPITA, Paris</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>AUDINET Philippe</FONT> (Tuttle) - p.audinet@caramail.com - ICQ : 172284347<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI1 (1999-2000)&nbsp;&nbsp;<B>3/2</B> : MP (2000-2001)&nbsp;&nbsp;<B>Intègre</B> :<I>ENSAI, Rennes</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>AUTHIER Matthieu</FONT> (Ahuri) - ahuri9@hotmail.com - ICQ : 116844676<BR>
+<FONT SIZE=-2>
+<B>3/2</B> : MP* (2000-2001)&nbsp;&nbsp;<B>Intègre</B> :<I>FAC, Saint Denis de la Réunion</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>AVRIL Josselin</FONT> (Jay Kay) - joss16@libertysurf.fr - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : PCSI1 (2001-2002)&nbsp;&nbsp;</FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>BAPTISTE Meneux</FONT> () - baptiste.meneux@wanadoo.fr - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI2 (1996-1997)&nbsp;&nbsp;<B>3/2</B> : MP (1997-1998)&nbsp;&nbsp;<B>5/2</B> : MP (1998-1999)&nbsp;&nbsp;<B>Intègre</B> :<I>ENSPM, Marseille</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>BARBUT marc</FONT> () - marc.barbut@ensg.inpl-nancy.fr - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : PCSI1 (1998-1999)&nbsp;&nbsp;<B>3/2</B> : PC* (1999-2000)&nbsp;&nbsp;<B>5/2</B> : PC* (2000-2001)&nbsp;&nbsp;<B>Intègre</B> :<I>ENSG  (Géol), Nancy</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>BELLANGER Yves</FONT> () - dar.emp@caramail.com - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI1 (1997-1998)&nbsp;&nbsp;<B>3/2</B> : MP (1998-1999)&nbsp;&nbsp;<B>5/2</B> : MP (1999-2000)&nbsp;&nbsp;<B>Intègre</B> :<I>E3I, Tours</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>BERGER Julien</FONT> (Julio) - juju.bisounours@netcourrier.com - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI1 (1999-2000)&nbsp;&nbsp;<B>3/2</B> : PSI* (2000-2001)&nbsp;&nbsp;<B>Intègre</B> :<I>ESSAIM, Mulhouse</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>BERGER Vivien</FONT> (ZorteK) - bergervivien@hotmail.com - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI2 (2000-2001)&nbsp;&nbsp;<B>3/2</B> : MP (2001-2002)&nbsp;&nbsp;</FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>BERGET maxime</FONT> () - maxime.berget@voila.fr - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : PCSI1 (1996-1997)&nbsp;&nbsp;<B>3/2</B> : PC* (1997-1998)&nbsp;&nbsp;<B>Intègre</B> :<I>esip, poitiers</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>BERRADA GOUZI NAJIB</FONT> () - berada_najib@yahoo.fr - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI1 (1981-1982)&nbsp;&nbsp;<B>Intègre</B> :<I>ECN , NANTES</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>BILLY Alexandre</FONT> (Billy 3/2) - Alexandre.Billy@ifma.fr - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI1 (1999-2000)&nbsp;&nbsp;<B>3/2</B> : PSI* (2000-2001)&nbsp;&nbsp;<B>Intègre</B> :<I>IFMA, Clermont-Ferrand</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>BOURDIER Tony</FONT> (NuGuNuS) - nugunus@fr.st - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI1 (2002-2003)&nbsp;&nbsp;<B>3/2</B> : MP (2003-2004)&nbsp;&nbsp;</FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>BOURUMEAU Pierre</FONT> (Rusé) - pbourumeau@voila.fr - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI2 (1999-2000)&nbsp;&nbsp;<B>3/2</B> : MP (2000-2001)&nbsp;&nbsp;<B>Intègre</B> :<I>FAC, Poitiers</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>BRUGIER christophe</FONT> (Z  3/2 et  Z 5/2) - brugier.c@voila.fr - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI2 (1998-1999)&nbsp;&nbsp;<B>3/2</B> : MP (1999-2000)&nbsp;&nbsp;<B>5/2</B> : MP (2000-2001)&nbsp;&nbsp;<B>Intègre</B> :<I>ESEM, Orléans</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>CAMUS Sylvain</FONT> () - sylvain.camus@netcourrier.com - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI1 (1996-1997)&nbsp;&nbsp;<B>3/2</B> : MP (1997-1998)&nbsp;&nbsp;<B>Intègre</B> :<I>ENSSAT, Lannion (22)</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>CARRé Camille</FONT> () - camille239@caramail.com - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI1 (2000-2001)&nbsp;&nbsp;<B>3/2</B> : MP* (2001-2002)&nbsp;&nbsp;</FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>CHALLEAU Bertrand</FONT> (Chamou) - chamou@9online.fr - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI1 (1993-1994)&nbsp;&nbsp;<B>3/2</B> : MP (1994-1995)&nbsp;&nbsp;<B>5/2</B> : MP (1995-1996)&nbsp;&nbsp;<B>Intègre</B> :<I>ESTP, PARIS</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>CHASTEL Vincent</FONT> (Pico) - pico_prod@yahoo.fr - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI1 (1998-1999)&nbsp;&nbsp;<B>3/2</B> : MP* (1999-2000)&nbsp;&nbsp;<B>5/2</B> : MP* (1999-2000)&nbsp;&nbsp;<B>Intègre</B> :<I>CUST, Clermont-Ferrand</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>CORDIER Marie</FONT> () - mar.cordier@wanadoo.fr - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>5/2</B> : MP (2000-2001)&nbsp;&nbsp;</FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>DUIVON MAROT lulus</FONT> () - lucile.duivon@laposte.net - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : PCSI1 (2000-2001)&nbsp;&nbsp;</FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>DUJOL Romain</FONT> (VM) - romain.dujol@etu.enseeiht.fr - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI2 (1997-1998)&nbsp;&nbsp;<B>3/2</B> : MP* (1998-1999)&nbsp;&nbsp;<B>5/2</B> : MP* (1999-2000)&nbsp;&nbsp;<B>Intègre</B> :<I>ENSEEIHT, Toulouse</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>DUPONT Virginie</FONT> () - dupontve@ensma.fr - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI1 (2000-2001)&nbsp;&nbsp;<B>3/2</B> : PSI* (2001-2002)&nbsp;&nbsp;<B>Intègre</B> :<I>ENSMA, Futuroscope</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>FLOC'H Antoine</FONT> (Toutoune 3/2) - kurt.666@caramail.com - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI1 (1999-2000)&nbsp;&nbsp;<B>3/2</B> : PSI* (2000-2001)&nbsp;&nbsp;</FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>FORGET Guillaume</FONT> (Guyome) - g.forget@caramail.com - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : PCSI1 (1998-1999)&nbsp;&nbsp;<B>3/2</B> : PC* (1999-2000)&nbsp;&nbsp;<B>5/2</B> : PC* (2000-2001)&nbsp;&nbsp;<B>Intègre</B> :<I>ESPCI, Paris</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>GRANDRIE Matthieu</FONT> (Cham) - ind13@etu.enseeiht.fr - ICQ : 123577107<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI2 (1998-1999)&nbsp;&nbsp;<B>3/2</B> : MP (1999-2000)&nbsp;&nbsp;<B>Intègre</B> :<I>ENSEEIHT, Toulouse</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>HAIE Julie</FONT> (Julie) - j.haie@wanadoo.fr - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI1 (2000-2001)&nbsp;&nbsp;<B>3/2</B> : MP* (2001-2002)&nbsp;&nbsp;<B>Intègre</B> :<I>ENSEEIHT, Toulouse</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>HARADJI Florian</FONT> (Prince) - florian.haradji@orange.fr - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI1 (1999-2000)&nbsp;&nbsp;<B>3/2</B> : MP (2000-2001)&nbsp;&nbsp;<B>5/2</B> : MP (2001-2002)&nbsp;&nbsp;</FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>HENRY Julien</FONT> (Morgoth_le_Furb) - morgothfr@yahoo.fr - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI1 (2001-2002)&nbsp;&nbsp;</FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>JOMIER Rémy</FONT> (Surprise) - thorgal_fr@yahoo.fr - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : AGRO1B (1999-2000)&nbsp;&nbsp;<B>Intègre</B> :<I>FAC, Limoges</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>KAMSU DE PEDHOM Frederic</FONT> (black powersorbpunisher) - pedhom@caramail.com - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI1 (1999-2000)&nbsp;&nbsp;<B>3/2</B> : MP* (2000-2001)&nbsp;&nbsp;<B>Intègre</B> :<I>Ecole Polytechnique de Montreal, Montreal (Canada)</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>LACOTTE Matthieu</FONT> (Cocotte) - matthieu.lacotte@ifma.fr - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI1 (1999-2000)&nbsp;&nbsp;<B>3/2</B> : PSI* (2000-2001)&nbsp;&nbsp;<B>Intègre</B> :<I>IFMA, Clermont-Ferrand</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>LAMOLIATTE Stéphane</FONT> (Targ) - targ@caramail.com - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : PCSI1 (2000-2001)&nbsp;&nbsp;</FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>LEVILLAIN Roland</FONT> (RPL) - rpl@levillain.net - ICQ : 3728748<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI1 (1998-1999)&nbsp;&nbsp;<B>3/2</B> : MP (1999-2000)&nbsp;&nbsp;<B>Intègre</B> :<I>EPITA, Paris</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>LUCE Benoît</FONT> (hypo fun) - moveslang@caramail.com - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : PCSI1 (2001-2002)&nbsp;&nbsp;</FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>MAZE David</FONT> () - david.maze@esial.uhp-nancy.fr - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI1 (1998-1999)&nbsp;&nbsp;<B>3/2</B> : MP* (1999-2000)&nbsp;&nbsp;<B>5/2</B> : MP* (2000-2001)&nbsp;&nbsp;<B>Intègre</B> :<I>ESIAL, NANCY</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>MECHOUK Nicolas</FONT> (Chouk) - chouk666@multimania.com - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI2 (2000-2001)&nbsp;&nbsp;<B>3/2</B> : MP* (2001-2002)&nbsp;&nbsp;</FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>MENEGALDO Raphaël</FONT> (Membrax) - farelli@netcourrier.com - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI1 (1999-2000)&nbsp;&nbsp;<B>3/2</B> : MP (2000-2001)&nbsp;&nbsp;</FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>MUSSET Florent</FONT> (Flo) - fmusset@messel.emse.fr - ICQ : 92825500<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI2 (1997-1998)&nbsp;&nbsp;<B>3/2</B> : MP (1998-1999)&nbsp;&nbsp;<B>5/2</B> : MP (1999-2000)&nbsp;&nbsp;<B>Intègre</B> :<I>EMSE (école des mines de St Etienne), St Etienne</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>OUTTERS caroline</FONT> (cdal) - caroutters@yahoo.com - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI2 (1998-1999)&nbsp;&nbsp;<B>Intègre</B> :<I>, angouleme</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>PARNAUDEAU julie</FONT> (pox) - julie_parnaudeau@yahoo.fr - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> :  (1993-1994)&nbsp;&nbsp;<B>3/2</B> : MP (1994-1995)&nbsp;&nbsp;<B>5/2</B> : MP (1995-1996)&nbsp;&nbsp;<B>Intègre</B> :<I>ISIMA, Clermont-ferrand</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>RAYET Olivier</FONT> (Levrette) - vrette@hotmail.com - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> :  (1991-1992)&nbsp;&nbsp;<B>3/2</B> :  (1992-1993)&nbsp;&nbsp;<B>5/2</B> :  (1993-1994)&nbsp;&nbsp;<B>Intègre</B> :<I>CESTI, Paris</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>RICHETON Nicolas</FONT> (Trashman) - nicolas.richeton@free.fr - ICQ : 86740146<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI1 (1999-2000)&nbsp;&nbsp;<B>3/2</B> : MP (2000-2001)&nbsp;&nbsp;<B>Intègre</B> :<I>ESIAL, Nancy</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>ROUSSEY David</FONT> (demi playmobil) - demi.p@orange.fr - ICQ : 33744416<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI1 (1998-1999)&nbsp;&nbsp;<B>3/2</B> : MP (1999-2000)&nbsp;&nbsp;<B>5/2</B> : MP (2000-2001)&nbsp;&nbsp;<B>Intègre</B> :<I>ENSMA, Poitiers</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>SAUVAGE Florence</FONT> (Bestiole) - fl_o@netcourrier.com| - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : PCSI1 (1999-2000)&nbsp;&nbsp;<B>3/2</B> : PC* (2000-2001)&nbsp;&nbsp;<B>Intègre</B> :<I>HMG, Grenoble</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>SICARD JL</FONT> (JL) - chewie6@caramail.com - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI1 (1997-1998)&nbsp;&nbsp;<B>3/2</B> : MP (1998-1999)&nbsp;&nbsp;<B>5/2</B> : MP (1999-2000)&nbsp;&nbsp;<B>Intègre</B> :<I>ENSEIRB, Bordeaux</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>TEMPLIER Julien</FONT> (Simon Templar) - littleboy22@free.fr - ICQ : 86682779<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI2 (1999-2000)&nbsp;&nbsp;<B>3/2</B> : MP (2000-2001)&nbsp;&nbsp;<B>Intègre</B> :<I>Polytech, Nantes</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>TESTON David</FONT> (davd) - dteston@voila.fr - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : PCSI1 (1999-2000)&nbsp;&nbsp;<B>3/2</B> : PC* (2000-2001)&nbsp;&nbsp;<B>Intègre</B> :<I>ENSMA, Poitiers</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>TIZON Xavier</FONT> () - xavier@cb.uu.se - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> :  (1990-1991)&nbsp;&nbsp;<B>3/2</B> :  (1991-1992)&nbsp;&nbsp;<B>5/2</B> :  (1992-1993)&nbsp;&nbsp;<B>Intègre</B> :<I>ENSPS, Strasbourg</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>TRANCHANT GAEL</FONT> (BINOOZE) - gael270@caramail.com - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : PCSI1 (2000-2001)&nbsp;&nbsp;<B>3/2</B> : PSI* (2001-2002)&nbsp;&nbsp;</FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>TROUVé Lucie</FONT> () - ptitlu22@hotmail.com - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI1 (1999-2000)&nbsp;&nbsp;<B>3/2</B> : MP* (2000-2001)&nbsp;&nbsp;<B>Intègre</B> :<I>ENSMA, Poitiers</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>TURQUOIS Fabien</FONT> () - tapkuncoup@yahoo.fr - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI1 (2001-2002)&nbsp;&nbsp;</FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>VERGNAULT Etienne</FONT> () - stever123@caramail.com - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI1 (2000-2001)&nbsp;&nbsp;<B>3/2</B> : PSI* (2001-2002)&nbsp;&nbsp;</FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>VIOT Nicolas</FONT> (Nikovio) - nikovio@messel.emse.fr - ICQ : 92518329<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI2 (1998-1999)&nbsp;&nbsp;<B>3/2</B> : MP* (1999-2000)&nbsp;&nbsp;<B>Intègre</B> :<I>ENSMSERA, Saint Etienne</I></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>WIPLIER François-Xavier</FONT> (fx) - fx@nerim.net - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI1 (1999-2000)&nbsp;&nbsp;</FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<FONT COLOR=BLUE>WITZMAN Stéphane</FONT> (BiLL) - bill.area51@free.fr - ICQ : 0<BR>
+<FONT SIZE=-2>
+<B>Hypo</B> : MPSI2 (1999-2000)&nbsp;&nbsp;<B>3/2</B> : MP* (2000-2001)&nbsp;&nbsp;<B>Intègre</B> :<I>FAC, Paris</I></FONT>
+</TD>
+</TR>
+
+</TABLE>
+<BR>
+<FONT SIZE=-1>Pour vous inscrire, cliquez <A HREF="goto.php3@Page=annuaire_submit.php3.html">ici</A></FONT><BR>
+
+</CENTER>
+
+<CENTER>
+<IMG SRC="" HEIGHT=1 WIDTH=617>
+</CENTER>
+</TD>
+</TR>
+<TR>
+<TD COLSPAN=2 WIDTH=100% ALIGN=CENTER BGCOLOR=BLACK HEIGHT=1></TD>
+</TR>
+<TR>
+<TD COLSPAN=2 WIDTH=100%>
+<TABLE border=0 cellPadding=0 cellSpacing=0 height=85 width=100%>
+<TR>
+<TD WIDTH=148 ALIGN=CENTER>
+<A href="index.php3.html">
+<IMG border=0 height=85 src="Custom/Design/Global/Images/logo.gif" width=132>
+</A>
+</TD>
+<TD width=100% ALIGN=CENTER>
+
+
+<A HREF="../perdu.html?u=http://www.artso.net"><IMG SRC="Ads/artsonic.gif" BORDER=0></A></TD>
+<TD width=148>
+<A href="index.php3.html">
+<IMG border=0 height=85 src="Custom/Design/Global/Images/logo.gif" width=132>		
+</A> 
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+<TR>
+<TD COLSPAN=2 WIDTH=100% ALIGN=CENTER BGCOLOR=BLACK HEIGHT=1></TD>
+</TR>
+<TR>
+<TD COLSPAN=2 WIDTH=100% ALIGN=RIGHT>
+<FONT SIZE=-1>Copyright &copy; 1999-2001, <A HREF="mailto:w3mp@free.fr">w3mp@free.fr</A></FONT>
+</TD>
+</TR>
+
+</TABLE>
+<EMBED SRC="php3/pschksss/psch.wav" HIDDEN=TRUE AUTOSTART=FALSE HEIGHT=0 WIDTH=0>
+<EMBED SRC="php3/pschksss/ksss.wav" HIDDEN=TRUE AUTOSTART=FALSE HEIGHT=0 WIDTH=0>
+<BGSOUND ID="sound">
+<div style="font:11px monospace;color:#888;text-align:center;padding:8px;background:#fff;clear:both">archive de w3mp.free.fr/goto.php3?Page=annuaire_results.php3 · capture archive.org du 29/11/2006</div></body>
+

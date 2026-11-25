@@ -1,0 +1,165 @@
+<script language="javascript">
+
+myreg=new RegExp("lycos\.fr","i");
+if ( !myreg.test("'"+top.location+"'") ) {
+	nwreg=new RegExp ("http://([^/]+)?(/([a-z0-9A-Z\-\_]+)?[^']+)","i");
+	rn=nwreg.exec("'"+self.location+"'");
+	if (parent.frames.length==2) { top.location="docno.htm" + rn[1] + rn[2]; }
+	else { top.location="docno.htm" + rn[1] + "/" + rn[3]; }
+}
+
+if(window == window.top) {
+        var address=window.location;
+        var s='<html><head><meta name="nzdqr-original" content="http://membres.lycos.fr/hx4203/pages/docno.htm"><title>'+'</title></head>'+
+        '<frameset cols="*,140" frameborder="0" border="0" framespacing="0" onload="return true;" onunload="return true;">'+
+        '<frame src="" name="memberPage" marginwidth="0" marginheight="0" scrolling="auto" noresize>'+
+		'<frame src="" name="LycosAdFrame"  marginwidth="0" marginheight="0" scrolling="auto" noresize>'+
+        '</frameset>'+
+        '</html>';
+
+        document.write(s);      
+}
+</script>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title>DOCNO</title>
+</head>
+
+<body bgcolor="#000000">
+
+<p align="center">&nbsp;</p>
+
+<p align="center"><img src=""
+width="609" height="839"></p>
+
+<p align="center"><a href="bouli1.htm"><font color="#00FFFF"><strong>Les
+aventures de Bouli le Boulos</strong></font></a><font
+color="#00FFFF"><strong><br>
+</strong></font><a href="docno.htm"><font color="#00FFFF"><strong>Bouli
+le Boulos contre Docteur NO</strong></font></a><font
+color="#00FFFF"><strong><br>
+</strong></font><a href="mini1.htm"><font color="#00FFFF"><strong>Mini
+bouli 1</strong></font></a><font color="#00FFFF"><strong><br>
+</strong></font><a href="mini2.htm"><font color="#00FFFF"><strong>Mini
+bouli 2</strong></font></a><font color="#00FFFF"><strong><br>
+</strong></font><a href="mini3.htm"><font color="#00FFFF"><strong>Mini
+bouli 3</strong></font></a><font color="#00FFFF"><strong><br>
+</strong></font><a href="mini4.htm"><font color="#00FFFF"><strong>Mini
+bouli 4</strong></font></a><font color="#00FFFF"><strong><br>
+</strong></font><a href="../../perdu.html?u=http://membres.lycos.fr/hx4203/pages/cancer.htm"><font color="#00FFFF"><strong>Bouli
+attrape le cancer de la peau</strong></font></a><font
+color="#00FFFF"><strong><br>
+</strong></font><a href="part1.htm"><font color="#00FFFF"><strong>Les
+nouvelles aventures de Bouli le Boulos I </strong></font></a><font
+color="#00FFFF"><strong><br>
+</strong></font><a href="part2.htm"><font color="#00FFFF"><strong>Les
+nouvelles aventures de Bouli le Boulos II</strong></font></a><font
+color="#00FFFF"><strong><br>
+</strong></font><a href="part3.htm"><font color="#00FFFF"><strong>Les
+nouvelles aventures de Bouli le Boulos III</strong></font></a><font
+color="#00FFFF"><strong><br>
+</strong></font><a href="r2bouli.htm"><font color="#00FFFF"><strong>Retour
+au sommaire des Bouli</strong></font></a><font color="#00FFFF"><strong><br>
+</strong></font><font color="#0000FF" size="3"><br>
+</font><a href="httpcode.htm#sommaire"><font color="#0000FF"
+size="3"><strong>Retour au sommaire</strong></font></a></p>
+</body>
+</html>
+
+</pre></xmp></noscript><script language="javascript" src=""></script>
+
+<script language="javascript">
+if (!AD_clientWindowSize()) {
+        document.write("<NOSC"+"RIPT>");
+}
+</script>
+
+<script type="text/javascript">
+        function setCookie(name, value, expires, path, domain, secure) {
+           var curCookie = name + "=" + escape(value) +
+             ((expires) ? "; expires=" + expires.toGMTString() : "") +
+             ((path) ? "; path=" + path : "") +
+             ((domain) ? "; domain=" + domain : "") +
+             ((secure) ? "; secure" : "");
+           document.cookie = curCookie;
+        }
+
+        var ad_url = "http://ads.multimania.lycos.fr/ad/google/frame.php?_url="+escape(self.location)+"&gg_bg=&gg_template=&mkw=&cat=noref";
+        var ref=window.document.referrer;
+
+        if(parent.LycosAdFrame) {
+                if(parent.memberPage && parent.memberPage.document.title ) {
+                        parent.document.title=parent.memberPage.document.title;
+                }
+
+                if(parent.LycosAdFrame && parent.LycosAdFrame.location && (ref != "" && (ref+"?" != window.location) && (ref.substr(ref.length-1,1) != "/")) ) {
+						parent.LycosAdFrame.location.replace(ad_url);
+                }
+                setCookie("adFrameForcePHP",0,0," ");
+				parent.document.body.cols = "*,140";
+        }
+        else if(top.LycosAdFrame && top.LycosAdFrame.location) {
+                if ((ref != "" && (ref+"?" != top.window.location) && (ref.substr(ref.length-1,1) != "?"))) {
+						top.LycosAdFrame.location.replace(ad_url);
+                }
+                setCookie("adFrameForcePHP",0,0," ");
+				top.document.body.cols = "*,140";
+        }
+        else {
+                if (!window.opener) {
+                        setCookie("adFrameForcePHP",1,0," ");
+                }
+                else {
+                        setCookie("adFrameForcePHP",0,0," ");
+                }
+        }
+		
+	if (window.top.location.href.indexOf("http://membres.lycos.fr")!=-1) {
+		ad_frame = 1 ;
+		window.top.document.body.cols="*,140" ;
+	}
+
+function resizeGoogleAdFrame() {
+	window.top.document.body.cols = "*,140";
+}
+
+
+	if (ad_frame == 1 && AD_clientWindowSize()) {
+		setInterval("resizeGoogleAdFrame()", 30);
+	}
+		
+</script>
+
+<script language="javascript" src=""></script>
+
+<script type="text/javascript" src=""></script>
+
+<!-- START RedSheriff Measurement V5.01 -->
+<!-- COPYRIGHT 2002 RedSheriff Limited -->
+<script language="JavaScript" type="text/javascript"><!--
+  var _rsCI='lycos-fr';
+  var _rsCG='noref';
+  var _rsDT=1;
+  var _rsSI=escape(window.location);
+  var _rsLP=location.protocol.indexOf('https')>-1?'https:':'http:';
+  var _rsRP=escape(document.referrer);
+  var _rsND=_rsLP+'//secure-uk.imrworldwide.com/';
+
+  if (parseInt(navigator.appVersion)>=4) {
+    var _rsRD=(new Date()).getTime();
+    var _rsSE=0;
+    var _rsSV='';
+    var _rsSM=0;
+    _rsCL='<scr'+'ipt language="JavaScript" type="text/javascript" src=""><\/scr'+'ipt>';
+  } else {
+    _rsCL='<img src="">';
+  }
+  document.write(_rsCL);
+//--></script>
+<noscript>
+<img src="" alt="">
+</noscript>
+<!-- END RedSheriff Measurement V5 -->

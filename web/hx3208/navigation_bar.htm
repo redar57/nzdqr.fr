@@ -1,0 +1,236 @@
+<html>
+
+
+
+<head><meta name="nzdqr-original" content="http://hx3208.free.fr/navigation_bar.htm">
+<title>La Sup3, le site !</title> <meta charset="utf-8"> 
+<SCRIPT LANGUAGE="JavaScript">
+	function ChangeBackGround(fichier) {
+		document.body.background=""
+	}
+</SCRIPT> <script language="JavaScript">
+function PlayMusique() {
+	eval("document.musique.play();");
+}
+</script> <SCRIPT LANGUAGE="JavaScript">
+var H=new Object;
+function AffHorloge() {
+	var d=new Date();
+	var heure=d.getHours();
+	var min=d.getMinutes();
+	var sec=d.getSeconds();
+	if (heure<10) heure="0"+heure;
+	if (min<10) min="0"+min;
+	if (sec<10) sec="0"+sec;
+	contenu="<SPAN style='"+H.CSS+"'>"+heure+"h "+min+"min "+sec+"</SPAN>";
+
+	if (document.layers) {
+		document.layers["horloge"].document.write(contenu);
+		document.layers["horloge"].document.close();
+	}
+	if (document.all) {horloge.innerHTML=contenu;}
+	setTimeout("AffHorloge()",1000);
+}
+
+function InitHorloge(X,Y,CSS) {
+	H.CSS=CSS;H.X=X;H.Y=Y;
+	if (document.all) {
+		document.write("<DIV id='horloge' style='position:absolute;top:"+Y+";left:"+X+";visibility:show'></DIV>");
+		AffHorloge();
+	}
+	if (document.layers) {
+		document.write("<LAYER name='horloge' top='"+Y+"' left='"+X+"' visibility='show'></LAYER>");
+		setTimeout('AffHorloge()',200);
+	}
+}
+</SCRIPT> <script language="JavaScript">
+<!--
+
+function MM_nbGroup(event, grpName) { //v3.0
+
+
+
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+
+
+
+  if (event == "init" && args.length > 2) {
+
+
+
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+
+
+
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+
+
+
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+
+
+
+      nbArr[nbArr.length] = img;
+
+
+
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+
+
+
+        if (!img.MM_up) img.MM_up = img.src;
+
+
+
+        img.src="" = args[i+1];
+
+
+
+        nbArr[nbArr.length] = img;
+
+
+
+    } }
+
+
+
+  } else if (event == "over") {
+
+
+
+    document.MM_nbOver = nbArr = new Array();
+
+
+
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+
+
+
+      if (!img.MM_up) img.MM_up = img.src;
+
+
+
+      img.src="" && args[i+2]) ? args[i+2] : args[i+1];
+
+
+
+      nbArr[nbArr.length] = img;
+
+
+
+    }
+
+
+
+  } else if (event == "out" ) {
+
+
+
+    for (i=0; i < document.MM_nbOver.length; i++) {
+
+
+
+      img = document.MM_nbOver[i]; img.src="" ? img.MM_dn : img.MM_up; }
+
+
+
+  } else if (event == "down") {
+
+
+
+    if ((nbArr = document[grpName]) != null)
+
+
+
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src="" img.MM_dn = 0; }
+
+
+
+    document[grpName] = nbArr = new Array();
+
+
+
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+
+
+
+      if (!img.MM_up) img.MM_up = img.src;
+
+
+
+      img.src="" = args[i+1];
+
+
+
+      nbArr[nbArr.length] = img;
+
+
+
+  } }
+
+
+
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=""
+}
+//-->
+</script> 
+</head>
+
+
+
+
+
+
+
+<body bgcolor="#000000" text="#FFFFFF" link="#FFFF66" vlink="#99FF00" alink="#FF0000" onLoad="MM_preloadImages('images/menu_accueil_down.png','images/menu_accueil.jpg','images/menu_accueil_down.jpg','images/menu_lycee_down.jpg','images/menu_sup3_down.jpg','images/menu_photo_down.jpg','images/menu_souvenirs_down.jpg','images/menu_forum_down.jpg','images/menu_liens_down.jpg','images/menu_jeux_down.jpg')">
+<p>&nbsp;</p>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="137" HEIGHT="333"> 
+<TR> <TD WIDTH="135"><A HREF="accueil.htm" ONCLICK="MM_nbGroup('down','group1','Accueil','images/menu_accueil_down.png',1)" ONMOUSEOVER="MM_nbGroup('over','Accueil','images/menu_accueil_down.png','',1)" ONMOUSEOUT="MM_nbGroup('out')" TARGET="mainFrame"></A><A HREF="accueil.htm" TARGET="mainFrame" ONCLICK="MM_nbGroup('down','group1','Accueil','images/menu_accueil_down.jpg',1)" ONMOUSEOVER="MM_nbGroup('over','Accueil','images/menu_accueil_down.jpg','',1)" ONMOUSEOUT="MM_nbGroup('out')"></A><A HREF="accueil.htm" TARGET="mainFrame" ONCLICK="MM_nbGroup('down','group1','Accueil','images/menu_accueil_down.jpg',1)" ONMOUSEOVER="MM_nbGroup('over','Accueil','images/menu_accueil_down.jpg','',1)" ONMOUSEOUT="MM_nbGroup('out')"></A><a href="accueil.htm" target="mainFrame" onClick="MM_nbGroup('down','group1','Accueil','images/menu_accueil_down.jpg',1)" onMouseOver="MM_nbGroup('over','Accueil','images/menu_accueil_down.jpg','',1)" onMouseOut="MM_nbGroup('out')"><IMG NAME="Accueil" SRC="images/menu_accueil_down.jpg" BORDER="0" ONLOAD="MM_nbGroup('init','group1','Accueil','images/menu_accueil.jpg',1)" WIDTH="135" HEIGHT="45" ALT="Accueil"></a></TD></TR> 
+<TR> <TD><A HREF="lycee/lycee_frame.htm" ONCLICK="MM_nbGroup('down','group1','Le Lycee','images/menu_lycee_down.jpg',1)" ONMOUSEOVER="MM_nbGroup('over','Le Lycee','images/menu_lycee_down.jpg','',1)" ONMOUSEOUT="MM_nbGroup('out')" TARGET="mainFrame"><IMG NAME="Le Lycee" SRC="images/menu_lycee.jpg" BORDER="0" ONLOAD="" WIDTH="135" HEIGHT="45" ALT="Le lyc&eacute;e"></A></TD></TR> 
+<TR> <TD><A HREF="sup3/sup3_frame.htm" ONCLICK="MM_nbGroup('down','group1','La Sup3','images/menu_sup3_down.jpg',1)" ONMOUSEOVER="MM_nbGroup('over','La Sup3','images/menu_sup3_down.jpg','',1)" ONMOUSEOUT="MM_nbGroup('out')" TARGET="mainFrame"><IMG NAME="La Sup3" SRC="images/menu_sup3.jpg" BORDER="0" ONLOAD="" WIDTH="135" HEIGHT="45" ALT="La Sup3"></A></TD></TR> 
+<TR> <TD><A HREF="photo/photo.htm" ONCLICK="MM_nbGroup('down','group1','La photo','images/menu_photo_down.jpg',1)" ONMOUSEOVER="MM_nbGroup('over','La photo','images/menu_photo_down.jpg','',1)" ONMOUSEOUT="MM_nbGroup('out')" TARGET="mainFrame"><IMG NAME="La photo" SRC="images/menu_photo.jpg" BORDER="0" ONLOAD="" WIDTH="135" HEIGHT="45" ALT="La photo"></A></TD></TR> 
+<TR> <TD></TD></TR> <TR> <TD HEIGHT="38" VALIGN="top"> <DIV ALIGN="LEFT"><A HREF="jeux/jeux.htm" ONCLICK="MM_nbGroup('down','group1','Jeux','images/menu_jeux_down.jpg',1)" ONMOUSEOVER="MM_nbGroup('over','Jeux','images/menu_jeux_down.jpg','',1)" ONMOUSEOUT="MM_nbGroup('out')" TARGET="mainFrame"> 
+<IMG NAME="Jeux" SRC="images/menu_jeux.jpg" BORDER="0" ONLOAD="" WIDTH="135" HEIGHT="45" ALT="Jeux"></A></DIV></TD></TR> 
+<TR> <TD><A HREF="souvenirs/souvenirs.htm" ONCLICK="MM_nbGroup('down','group1','Souvenirs','images/menu_souvenirs_down.jpg',1)" ONMOUSEOVER="MM_nbGroup('over','Souvenirs','images/menu_souvenirs_down.jpg','',1)" ONMOUSEOUT="MM_nbGroup('out')" TARGET="mainFrame"><IMG NAME="Souvenirs" SRC="images/menu_souvenirs.jpg" BORDER="0" ONLOAD="" WIDTH="135" HEIGHT="45" ALT="Souvenirs"></A></TD></TR> 
+<TR> 
+    <TD><a href="dforum/index.php3.html" onClick="MM_nbGroup('down','group1','Forum','images/menu_forum_down.jpg',1)" onMouseOver="MM_nbGroup('over','Forum','images/menu_forum_down.jpg','',1)" onMouseOut="MM_nbGroup('out')" target="mainFrame"><img name="Forum" src="images/menu_forum.jpg" border="0" onLoad="" width="135" height="45" alt="Forum"></a></TD>
+  </TR> 
+<TR> <TD><A HREF="liens.htm" ONCLICK="MM_nbGroup('down','group1','Liens','images/menu_liens_down.jpg',1)" ONMOUSEOVER="MM_nbGroup('over','Liens','images/menu_liens_down.jpg','',1)" ONMOUSEOUT="MM_nbGroup('out')" TARGET="mainFrame"><IMG NAME="Liens" SRC="images/menu_liens.jpg" BORDER="0" ONLOAD="" WIDTH="135" HEIGHT="45" ALT="Liens"></A></TD></TR> 
+</TABLE>
+<p><a href="mailto:hx3208@free.fr"><img src="images/mail.gif" width="130" height="38" border="0" alt="E-Mail"></a> 
+</p>
+<p> 
+  <script language="javascript" src=""></script>
+  <font face="Arial" size='-1' color="#000099"> 
+  <script language="javascript">
+	InitHorloge(30,10,"font-family:verdana,timesnewroman;font-size:12px;color:white"); 
+	// Paramètres (position en X, position en Y, style)
+</script>
+  </font></p>
+<p align="center"><font face="Times New Roman, Times, serif">Derni&egrave;re mise 
+  &agrave; jour</font> :<br>
+  28 mars 2008 </p>
+<p align="center"><font face="Arial" size='-1' color="#000099">
+  <script language="javascript" src=""></script>
+  </font></p>
+<div style="font:11px monospace;color:#888;text-align:center;padding:8px;background:#fff;clear:both">archive de hx3208.free.fr/navigation_bar.htm · copie du 25/11/2026</div></body>
+
+
+
+</html>
+
+
+
