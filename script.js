@@ -25,7 +25,7 @@ document.getElementById('qbtn').onclick = nouvelleCitation;
 // url: null = mot sans page (pour l'instant).
 // cadre: false pour les sites qui refusent d'être affichés dans une autre page.
 const marque = {
-  'fdhrb': { url: null }
+  'fdhrb': { url: 'web/fdhrb/index.php.html', titre: 'Faidherbard Online' }
 };
 
 const sansAccent = t => t.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().trim();
