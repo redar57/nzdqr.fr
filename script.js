@@ -20,12 +20,12 @@ function nouvelleCitation() {
 nouvelleCitation();
 document.getElementById('qbtn').onclick = nouvelleCitation;
 
-// --- pense-bête et navigateur ---
-// mot-clé (en minuscules, sans accents) → page.
+// --- post-it et web ---
+// mot-clé (en minuscules, sans accents) → page. Chaque mot apparaît sur le post-it.
+// url: null = mot sans page (pour l'instant).
 // cadre: false pour les sites qui refusent d'être affichés dans une autre page.
 const marque = {
-  'babel':   { url: 'https://libraryofbabel.info/', titre: 'La bibliothèque de Babel' },
-  'avion':   { url: 'https://redar57.github.io/air-game/', titre: 'air-game' }
+  'fdhrb': { url: null }
 };
 
 const sansAccent = t => t.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().trim();
@@ -48,14 +48,13 @@ function afficher(mot) {
   if (!cle) {
     nadr.value = '';
     npage.innerHTML = '<div class="logo"><span>n</span><span>z</span><span>d</span><span>q</span><span>r</span></div>' +
-      '<div class="sous">le moteur de recherche qui ne connaît que quelques mots.<br>regarde le pense-bête.</div>';
+      '<div class="sous">le moteur de recherche qui ne connaît que quelques mots.</div>';
     nstat.textContent = 'prêt';
-  } else if (!p) {
-    npage.innerHTML = '<div class="err"><h1>Aucun résultat</h1>Le mot « ' + echap(mot) + ' » n\'est pas dans le pense-bête.<br><br>' +
-      'Essaie autre chose. Ou relis le pense-bête. Ou va lire le code source.</div>';
+  } else if (!p || !p.url) {
+    npage.innerHTML = '<div class="err"><h1>Aucun résultat</h1>Rien trouvé pour « ' + echap(mot) + ' ».<br><br>Essaie autre chose.</div>';
     nstat.textContent = '0 résultat';
   } else if (p.cadre === false) {
-    npage.innerHTML = '<div class="err"><h1>⚠ Accès refusé</h1>Ce site ne veut pas s\'afficher dans nzdqr navigator.<br>' +
+    npage.innerHTML = '<div class="err"><h1>⚠ Accès refusé</h1>Ce site ne veut pas s\'afficher ici.<br>' +
       'Il a ses raisons.<br><br><a href="' + echap(p.url) + '" target="_blank" rel="noopener">→ ouvrir « ' + echap(p.titre) + ' » dans un nouvel onglet</a></div>';
     nstat.textContent = p.url;
   } else {

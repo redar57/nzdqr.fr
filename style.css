@@ -88,7 +88,6 @@ a { color: #2b2bd6; }
 .postit .bd { font-family: 'Pixelify Sans', sans-serif; font-size: 18px; color: #3d2e00; }
 .mots div { border-bottom: 1px dashed #c9a93a; padding: 3px 0; }
 .mots div::before { content: '☐ '; }
-.psst { margin-top: 8px; font-family: 'VT323', monospace; font-size: 16px; color: #8a6d1a; }
 
 /* navigateur */
 .outils { display: flex; gap: 4px; padding: 4px; background: #c0c0c0; border-bottom: 2px solid #808080; }
