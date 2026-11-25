@@ -20,6 +20,64 @@ function nouvelleCitation() {
 nouvelleCitation();
 document.getElementById('qbtn').onclick = nouvelleCitation;
 
+// --- pense-bête et navigateur ---
+// mot-clé (en minuscules, sans accents) → page.
+// cadre: false pour les sites qui refusent d'être affichés dans une autre page.
+const marque = {
+  'babel':   { url: 'https://libraryofbabel.info/', titre: 'La bibliothèque de Babel' },
+  'avion':   { url: 'https://redar57.github.io/air-game/', titre: 'air-game' }
+};
+
+const sansAccent = t => t.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().trim();
+const echap = t => t.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+document.getElementById('mots').innerHTML =
+  Object.keys(marque).map(m => '<div>' + echap(m) + '</div>').join('');
+
+const nadr = document.getElementById('nadr'), npage = document.getElementById('npage');
+const ncadre = document.getElementById('ncadre'), nstat = document.getElementById('nstat');
+let hist = [], pos = -1;
+
+function afficher(mot) {
+  const cle = sansAccent(mot);
+  const p = marque[cle];
+  nadr.value = mot;
+  ncadre.style.display = 'none';
+  npage.style.display = 'block';
+  ncadre.src = 'about:blank';
+  if (!cle) {
+    nadr.value = '';
+    npage.innerHTML = '<div class="logo"><span>n</span><span>z</span><span>d</span><span>q</span><span>r</span></div>' +
+      '<div class="sous">le moteur de recherche qui ne connaît que quelques mots.<br>regarde le pense-bête.</div>';
+    nstat.textContent = 'prêt';
+  } else if (!p) {
+    npage.innerHTML = '<div class="err"><h1>Aucun résultat</h1>Le mot « ' + echap(mot) + ' » n\'est pas dans le pense-bête.<br><br>' +
+      'Essaie autre chose. Ou relis le pense-bête. Ou va lire le code source.</div>';
+    nstat.textContent = '0 résultat';
+  } else if (p.cadre === false) {
+    npage.innerHTML = '<div class="err"><h1>⚠ Accès refusé</h1>Ce site ne veut pas s\'afficher dans nzdqr navigator.<br>' +
+      'Il a ses raisons.<br><br><a href="' + echap(p.url) + '" target="_blank" rel="noopener">→ ouvrir « ' + echap(p.titre) + ' » dans un nouvel onglet</a></div>';
+    nstat.textContent = p.url;
+  } else {
+    npage.style.display = 'none';
+    ncadre.style.display = 'block';
+    ncadre.src = p.url;
+    nstat.innerHTML = 'chargement de ' + echap(p.url) + '… · <a href="' + echap(p.url) + '" target="_blank" rel="noopener">ouvrir à part</a>';
+    ncadre.onload = () => { if (ncadre.src !== 'about:blank') nstat.innerHTML = echap(p.titre) + ' · <a href="' + echap(p.url) + '" target="_blank" rel="noopener">ouvrir à part</a>'; };
+  }
+}
+function aller(mot) {
+  hist = hist.slice(0, pos + 1);
+  hist.push(mot);
+  pos = hist.length - 1;
+  afficher(mot);
+}
+document.getElementById('nform').onsubmit = e => { e.preventDefault(); aller(nadr.value); };
+document.getElementById('nacc').onclick = () => aller('');
+document.getElementById('nprec').onclick = () => { if (pos > 0) afficher(hist[--pos]); };
+document.getElementById('nsuiv').onclick = () => { if (pos < hist.length - 1) afficher(hist[++pos]); };
+aller('');
+
 // --- fenêtres ---
 const desk = document.getElementById('desk');
 let z = 20;
@@ -58,12 +116,14 @@ document.querySelectorAll('.win').forEach(w => {
   bar.addEventListener('mousedown', e => {
     if (e.target.classList.contains('x')) return;
     const ox = e.clientX - w.offsetLeft, oy = e.clientY - w.offsetTop;
+    document.body.classList.add('drag');
     function bouge(ev) {
       w.style.right = 'auto';
       w.style.left = Math.max(0, Math.min(desk.clientWidth - 80, ev.clientX - ox)) + 'px';
       w.style.top = Math.max(0, Math.min(desk.clientHeight - 60, ev.clientY - oy)) + 'px';
     }
     function lache() {
+      document.body.classList.remove('drag');
       document.removeEventListener('mousemove', bouge);
       document.removeEventListener('mouseup', lache);
     }

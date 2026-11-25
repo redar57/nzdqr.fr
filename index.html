@@ -21,7 +21,7 @@
     <title>nzdqr OS</title>
     <meta name="description" content="nzdqr.fr — mon coin d'internet.">
     <link rel="icon" type="image/png" href="sigma.png?v=100">
-    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 <div id="desk" class="wp-points">
@@ -56,6 +56,14 @@
     <div class="ic" style="right:12px;top:14px;" data-open="c">
         <svg width="32" height="28" viewBox="0 0 12 10" shape-rendering="crispEdges"><rect x="0" y="2" width="12" height="8" fill="#f5c542"/><rect x="0" y="1" width="5" height="2" fill="#e0a92a"/></svg>
         <span>ℂ</span>
+    </div>
+    <div class="ic" style="right:12px;top:90px;" data-open="nav">
+        <svg width="30" height="30" viewBox="0 0 11 11" shape-rendering="crispEdges"><rect x="1" y="1" width="9" height="9" fill="#1d4fb8"/><rect x="2" y="2" width="7" height="7" fill="#3a8be0"/><rect x="3" y="3" width="3" height="2" fill="#4dc36b"/><rect x="5" y="6" width="3" height="2" fill="#4dc36b"/><rect x="0" y="5" width="11" height="1" fill="#f3d36b"/></svg>
+        <span>navigateur</span>
+    </div>
+    <div class="ic" style="right:12px;top:166px;" data-open="pense">
+        <svg width="30" height="30" viewBox="0 0 11 11" shape-rendering="crispEdges"><rect x="1" y="1" width="9" height="9" fill="#f3d36b"/><rect x="1" y="1" width="9" height="2" fill="#e0b93a"/><rect x="2" y="4" width="6" height="1" fill="#8a6d1a"/><rect x="2" y="6" width="5" height="1" fill="#8a6d1a"/><rect x="8" y="8" width="2" height="2" fill="#c99f2a"/></svg>
+        <span>pense-bête</span>
     </div>
     <div class="ic" style="right:12px;bottom:44px;" data-open="trash">
         <svg width="26" height="30" viewBox="0 0 9 11" shape-rendering="crispEdges"><rect x="1" y="2" width="7" height="1" fill="#ccc"/><rect x="3" y="1" width="3" height="1" fill="#ccc"/><rect x="2" y="3" width="5" height="7" fill="#aaa"/><rect x="3" y="4" width="1" height="5" fill="#777"/><rect x="5" y="4" width="1" height="5" fill="#777"/></svg>
@@ -130,6 +138,29 @@
         </div>
     </div>
 
+    <div class="win postit" id="w-pense" style="right:110px;top:150px;width:230px;">
+        <div class="bar"><span>pense-bête</span><span class="x">×</span></div>
+        <div class="bd">
+            <div class="mots" id="mots"></div>
+            <div class="psst">→ à taper dans le navigateur</div>
+        </div>
+    </div>
+
+    <div class="win" id="w-nav" style="left:140px;top:40px;width:680px;">
+        <div class="bar"><span>nzdqr navigator</span><span class="x">×</span></div>
+        <div class="outils">
+            <button class="btn98" id="nprec" title="précédent">◀</button>
+            <button class="btn98" id="nsuiv" title="suivant">▶</button>
+            <button class="btn98" id="nacc" title="accueil">⌂</button>
+            <form id="nform"><input id="nadr" autocomplete="off" spellcheck="false" placeholder="tape un mot…"><button class="btn98">aller</button></form>
+        </div>
+        <div class="ecran">
+            <div id="npage"></div>
+            <iframe id="ncadre" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin allow-forms allow-popups"></iframe>
+        </div>
+        <div class="statut" id="nstat">prêt</div>
+    </div>
+
     <!-- menu démarrer -->
     <div id="start">
         <div class="titre">nzdqr OS</div>
@@ -137,6 +168,8 @@
         <div class="it" data-link="https://redar57.github.io/air-game/">Jouer à air-game</div>
         <div class="it" data-link="https://libraryofbabel.info/">Bibliothèque de Babel</div>
         <div class="it" data-link="https://github.com/redar57">GitHub</div>
+        <div class="it" data-open="nav">Navigateur</div>
+        <div class="it" data-open="pense">Pense-bête</div>
         <div class="it" data-open="guest">Livre d'or</div>
         <div class="it" data-open="fond">Fond d'écran…</div>
         <div class="it" id="shut" style="border-top:1px solid #808080;">Éteindre…</div>
@@ -150,6 +183,6 @@
 
     <div id="off">Il est maintenant possible d'éteindre<br>votre ordinateur en toute sécurité.<br><span style="font-size:18px;color:#888;">(clique pour rallumer)</span></div>
 </div>
-<script src="script.js?v=2"></script>
+<script src="script.js?v=3"></script>
 </body>
 </html>
